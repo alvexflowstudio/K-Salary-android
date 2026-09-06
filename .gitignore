@@ -1,0 +1,38 @@
+# Android Studio / IntelliJ
+.idea/
+*.iml
+
+# Gradle
+.gradle/
+build/
+*/build/
+
+# Local Android SDK settings
+local.properties
+
+# Kotlin
+.kotlin/
+
+# Native build
+.externalNativeBuild/
+.cxx/
+
+# macOS
+.DS_Store
+
+# Android Studio captures
+captures/
+
+# Release builds
+app/release/
+
+# Signing keys — never upload
+*.jks
+*.keystore
+
+# Heap dumps
+*.hprof
+
+# Project-local files
+*.dc.html
+photo_2026-09-03_22-57-13.png
