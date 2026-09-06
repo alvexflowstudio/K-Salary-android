@@ -105,7 +105,13 @@ Version: **1.0.0**
 
 ## License
 
-License information will be added before the first public release.
+Copyright © 2026 AlvexFlow.
+
+All rights reserved. See [LICENSE](LICENSE) for details.
+
+## Privacy
+
+See the [Privacy Policy](PRIVACY_POLICY.md).
 
 ---
 
