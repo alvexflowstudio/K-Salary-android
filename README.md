@@ -1,5 +1,8 @@
 # K-Salary
 
+[![Android CI](https://github.com/alvexflowstudio/K-Salary-android/actions/workflows/android-ci.yml/badge.svg?branch=main)](https://github.com/alvexflowstudio/K-Salary-android/actions/workflows/android-ci.yml)
+[![Latest Release](https://img.shields.io/github/v/release/alvexflowstudio/K-Salary-android)](https://github.com/alvexflowstudio/K-Salary-android/releases/latest)
+
 **K-Salary** is an Android salary calculator designed for workers in South Korea.
 
 It helps calculate estimated monthly earnings based on working hours, overtime, night shifts, holiday work, allowances and deductions. The app also includes a severance pay calculator and multilingual information about salary-related rules in Korea.
