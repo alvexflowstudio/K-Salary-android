@@ -1,0 +1,173 @@
+[
+  {
+    "text": "KO\/true",
+    "font_sp": 15,
+    "width_px": 105,
+    "height_px": 40,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "버전 1.0.4",
+    "font_sp": 15,
+    "width_px": 130,
+    "height_px": 44,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "2026년 11월 1일",
+    "font_sp": 16,
+    "width_px": 229,
+    "height_px": 46,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "8",
+    "font_sp": 15,
+    "width_px": 480,
+    "height_px": 40,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "기본 (8시간까지, 1.0×)",
+    "font_sp": 12,
+    "width_px": 225,
+    "height_px": 35,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "휴일이라면 1.5×(8시간까지)와 2.0×(8시간 초과) 항목에 입력하세요.",
+    "font_sp": 12,
+    "width_px": 544,
+    "height_px": 67,
+    "lines": 2,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "2.5",
+    "font_sp": 15,
+    "width_px": 480,
+    "height_px": 40,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "연장·휴일 근로 (1.5×)",
+    "font_sp": 12,
+    "width_px": 211,
+    "height_px": 35,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "4",
+    "font_sp": 15,
+    "width_px": 480,
+    "height_px": 40,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "야간 가산 (+0.5×)",
+    "font_sp": 12,
+    "width_px": 175,
+    "height_px": 35,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "2",
+    "font_sp": 15,
+    "width_px": 480,
+    "height_px": 40,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "휴일 8시간 초과 (2.0×)",
+    "font_sp": 12,
+    "width_px": 224,
+    "height_px": 35,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "유급휴일",
+    "font_sp": 12,
+    "width_px": 88,
+    "height_px": 35,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "주휴일",
+    "font_sp": 12,
+    "width_px": 66,
+    "height_px": 35,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "Audit shift",
+    "font_sp": 15,
+    "width_px": 480,
+    "height_px": 40,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "메모",
+    "font_sp": 12,
+    "width_px": 44,
+    "height_px": 36,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "오늘 기록 삭제",
+    "font_sp": 14,
+    "width_px": 160,
+    "height_px": 76,
+    "lines": 2,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "취소",
+    "font_sp": 14,
+    "width_px": 52,
+    "height_px": 40,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "저장",
+    "font_sp": 14,
+    "width_px": 52,
+    "height_px": 40,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  }
+]

@@ -104,7 +104,12 @@ The application does not replace professional legal, tax or accounting advice.
 
 K-Salary is currently under active development.
 
-Version: **1.0.0**
+Version: **1.0.5** (versionCode **6**).
+
+The v1.0.5 milestone release contains source code and verification documentation.
+The Samsung-tested build uses Android Debug signing; no production-signed APK is
+attached. See [release notes](docs/releases/v1.0.5.md) for changes, compatibility
+and verification limits.
 
 ## License
 

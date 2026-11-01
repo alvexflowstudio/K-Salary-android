@@ -1,0 +1,128 @@
+[
+  {
+    "text": "FIL\/true",
+    "font_sp": 15,
+    "width_px": 139,
+    "height_px": 53,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "5",
+    "font_sp": 12,
+    "width_px": 18,
+    "height_px": 37,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "Holiday",
+    "font_sp": 9,
+    "width_px": 78,
+    "height_px": 32,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "9",
+    "font_sp": 12,
+    "width_px": 18,
+    "height_px": 37,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "Holiday",
+    "font_sp": 9,
+    "width_px": 78,
+    "height_px": 32,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "11",
+    "font_sp": 12,
+    "width_px": 36,
+    "height_px": 37,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "Pahinga",
+    "font_sp": 9,
+    "width_px": 84,
+    "height_px": 32,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "25",
+    "font_sp": 12,
+    "width_px": 36,
+    "height_px": 37,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "10.5 oras",
+    "font_sp": 8.761353,
+    "width_px": 93,
+    "height_px": 31,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "6",
+    "font_sp": 12,
+    "width_px": 18,
+    "height_px": 37,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "8 oras",
+    "font_sp": 9,
+    "width_px": 64,
+    "height_px": 32,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "10",
+    "font_sp": 12,
+    "width_px": 36,
+    "height_px": 37,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "8 oras",
+    "font_sp": 9,
+    "width_px": 64,
+    "height_px": 32,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "18",
+    "font_sp": 12,
+    "width_px": 36,
+    "height_px": 53,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  }
+]

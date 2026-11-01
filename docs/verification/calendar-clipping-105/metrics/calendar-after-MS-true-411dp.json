@@ -1,0 +1,577 @@
+[
+  {
+    "day": 1,
+    "tag": "calendar-date-1",
+    "text": "1",
+    "font_sp": 12,
+    "lines": 1,
+    "cell": "Rect.fromLTRB(60.0, 166.0, 154.0, 277.0)",
+    "bounds": "Rect.fromLTRB(100.0, 170.0, 114.0, 198.0)",
+    "contained": true,
+    "text_overflow": false,
+    "paragraph_exceeds": false,
+    "height_overflow": false,
+    "layout_width": 14,
+    "layout_height": 28,
+    "line_left": [
+      0
+    ],
+    "line_right": [
+      14
+    ],
+    "overlap": false,
+    "readable": true
+  },
+  {
+    "day": 1,
+    "tag": "calendar-badge-1",
+    "text": "8 jam",
+    "font_sp": 9,
+    "lines": 1,
+    "cell": "Rect.fromLTRB(60.0, 166.0, 154.0, 277.0)",
+    "bounds": "Rect.fromLTRB(66.0, 198.0, 148.0, 219.0)",
+    "contained": true,
+    "text_overflow": false,
+    "paragraph_exceeds": false,
+    "height_overflow": false,
+    "layout_width": 82,
+    "layout_height": 21,
+    "line_left": [
+      18
+    ],
+    "line_right": [
+      64
+    ],
+    "overlap": false,
+    "readable": true
+  },
+  {
+    "day": 2,
+    "tag": "calendar-date-2",
+    "text": "2",
+    "font_sp": 12,
+    "lines": 1,
+    "cell": "Rect.fromLTRB(162.0, 166.0, 256.0, 277.0)",
+    "bounds": "Rect.fromLTRB(202.0, 170.0, 216.0, 198.0)",
+    "contained": true,
+    "text_overflow": false,
+    "paragraph_exceeds": false,
+    "height_overflow": false,
+    "layout_width": 14,
+    "layout_height": 28,
+    "line_left": [
+      0
+    ],
+    "line_right": [
+      14
+    ],
+    "overlap": false,
+    "readable": true
+  },
+  {
+    "day": 2,
+    "tag": "calendar-badge-2",
+    "text": "10.5 jam",
+    "font_sp": 9,
+    "lines": 1,
+    "cell": "Rect.fromLTRB(162.0, 166.0, 256.0, 277.0)",
+    "bounds": "Rect.fromLTRB(168.0, 198.0, 250.0, 219.0)",
+    "contained": true,
+    "text_overflow": false,
+    "paragraph_exceeds": false,
+    "height_overflow": false,
+    "layout_width": 82,
+    "layout_height": 21,
+    "line_left": [
+      6
+    ],
+    "line_right": [
+      76
+    ],
+    "overlap": false,
+    "readable": true
+  },
+  {
+    "day": 3,
+    "tag": "calendar-date-3",
+    "text": "3",
+    "font_sp": 12,
+    "lines": 1,
+    "cell": "Rect.fromLTRB(264.0, 166.0, 358.0, 277.0)",
+    "bounds": "Rect.fromLTRB(304.0, 170.0, 318.0, 198.0)",
+    "contained": true,
+    "text_overflow": false,
+    "paragraph_exceeds": false,
+    "height_overflow": false,
+    "layout_width": 14,
+    "layout_height": 28,
+    "line_left": [
+      0
+    ],
+    "line_right": [
+      14
+    ],
+    "overlap": false,
+    "readable": true
+  },
+  {
+    "day": 3,
+    "tag": "calendar-badge-3",
+    "text": "23.75 jam",
+    "font_sp": 9,
+    "lines": 1,
+    "cell": "Rect.fromLTRB(264.0, 166.0, 358.0, 277.0)",
+    "bounds": "Rect.fromLTRB(270.0, 198.0, 352.0, 219.0)",
+    "contained": true,
+    "text_overflow": false,
+    "paragraph_exceeds": false,
+    "height_overflow": false,
+    "layout_width": 82,
+    "layout_height": 21,
+    "line_left": [
+      1
+    ],
+    "line_right": [
+      81
+    ],
+    "overlap": false,
+    "readable": true
+  },
+  {
+    "day": 4,
+    "tag": "calendar-date-4",
+    "text": "4",
+    "font_sp": 12,
+    "lines": 1,
+    "cell": "Rect.fromLTRB(366.0, 166.0, 459.0, 275.0)",
+    "bounds": "Rect.fromLTRB(406.0, 170.0, 420.0, 198.0)",
+    "contained": true,
+    "text_overflow": false,
+    "paragraph_exceeds": false,
+    "height_overflow": false,
+    "layout_width": 14,
+    "layout_height": 28,
+    "line_left": [
+      0
+    ],
+    "line_right": [
+      14
+    ],
+    "overlap": false,
+    "readable": true
+  },
+  {
+    "day": 4,
+    "tag": "calendar-badge-4",
+    "text": "0.5 jam",
+    "font_sp": 9,
+    "lines": 1,
+    "cell": "Rect.fromLTRB(366.0, 166.0, 459.0, 275.0)",
+    "bounds": "Rect.fromLTRB(372.0, 198.0, 453.0, 219.0)",
+    "contained": true,
+    "text_overflow": false,
+    "paragraph_exceeds": false,
+    "height_overflow": false,
+    "layout_width": 81,
+    "layout_height": 21,
+    "line_left": [
+      10
+    ],
+    "line_right": [
+      71
+    ],
+    "overlap": false,
+    "readable": true
+  },
+  {
+    "day": 5,
+    "tag": "calendar-date-5",
+    "text": "5",
+    "font_sp": 12,
+    "lines": 1,
+    "cell": "Rect.fromLTRB(467.0, 166.0, 560.0, 275.0)",
+    "bounds": "Rect.fromLTRB(507.0, 170.0, 521.0, 198.0)",
+    "contained": true,
+    "text_overflow": false,
+    "paragraph_exceeds": false,
+    "height_overflow": false,
+    "layout_width": 14,
+    "layout_height": 28,
+    "line_left": [
+      0
+    ],
+    "line_right": [
+      14
+    ],
+    "overlap": false,
+    "readable": true
+  },
+  {
+    "day": 5,
+    "tag": "calendar-badge-5",
+    "text": "Cuti",
+    "font_sp": 9,
+    "lines": 1,
+    "cell": "Rect.fromLTRB(467.0, 166.0, 560.0, 275.0)",
+    "bounds": "Rect.fromLTRB(473.0, 198.0, 554.0, 219.0)",
+    "contained": true,
+    "text_overflow": false,
+    "paragraph_exceeds": false,
+    "height_overflow": false,
+    "layout_width": 81,
+    "layout_height": 21,
+    "line_left": [
+      24
+    ],
+    "line_right": [
+      57
+    ],
+    "overlap": false,
+    "readable": true
+  },
+  {
+    "day": 6,
+    "tag": "calendar-date-6",
+    "text": "6",
+    "font_sp": 12,
+    "lines": 1,
+    "cell": "Rect.fromLTRB(568.0, 166.0, 661.0, 275.0)",
+    "bounds": "Rect.fromLTRB(608.0, 170.0, 622.0, 198.0)",
+    "contained": true,
+    "text_overflow": false,
+    "paragraph_exceeds": false,
+    "height_overflow": false,
+    "layout_width": 14,
+    "layout_height": 28,
+    "line_left": [
+      0
+    ],
+    "line_right": [
+      14
+    ],
+    "overlap": false,
+    "readable": true
+  },
+  {
+    "day": 6,
+    "tag": "calendar-badge-6",
+    "text": "Rehat",
+    "font_sp": 9,
+    "lines": 1,
+    "cell": "Rect.fromLTRB(568.0, 166.0, 661.0, 275.0)",
+    "bounds": "Rect.fromLTRB(574.0, 198.0, 655.0, 219.0)",
+    "contained": true,
+    "text_overflow": false,
+    "paragraph_exceeds": false,
+    "height_overflow": false,
+    "layout_width": 81,
+    "layout_height": 21,
+    "line_left": [
+      16
+    ],
+    "line_right": [
+      65
+    ],
+    "overlap": false,
+    "readable": true
+  },
+  {
+    "day": 11,
+    "tag": "calendar-date-11",
+    "text": "11",
+    "font_sp": 12,
+    "lines": 1,
+    "cell": "Rect.fromLTRB(669.0, 166.0, 762.0, 275.0)",
+    "bounds": "Rect.fromLTRB(702.0, 170.0, 730.0, 198.0)",
+    "contained": true,
+    "text_overflow": false,
+    "paragraph_exceeds": false,
+    "height_overflow": false,
+    "layout_width": 28,
+    "layout_height": 28,
+    "line_left": [
+      0
+    ],
+    "line_right": [
+      28
+    ],
+    "overlap": false,
+    "readable": true
+  },
+  {
+    "day": 11,
+    "tag": "calendar-badge-11",
+    "text": "8 jam",
+    "font_sp": 9,
+    "lines": 1,
+    "cell": "Rect.fromLTRB(669.0, 166.0, 762.0, 275.0)",
+    "bounds": "Rect.fromLTRB(675.0, 198.0, 756.0, 219.0)",
+    "contained": true,
+    "text_overflow": false,
+    "paragraph_exceeds": false,
+    "height_overflow": false,
+    "layout_width": 81,
+    "layout_height": 21,
+    "line_left": [
+      18
+    ],
+    "line_right": [
+      63
+    ],
+    "overlap": false,
+    "readable": true
+  },
+  {
+    "day": 7,
+    "tag": "calendar-date-7",
+    "text": "7",
+    "font_sp": 12,
+    "lines": 1,
+    "cell": "Rect.fromLTRB(60.0, 285.0, 154.0, 396.0)",
+    "bounds": "Rect.fromLTRB(92.0, 293.0, 122.0, 337.0)",
+    "contained": true,
+    "text_overflow": false,
+    "paragraph_exceeds": false,
+    "height_overflow": false,
+    "layout_width": 14,
+    "layout_height": 40,
+    "line_left": [
+      0
+    ],
+    "line_right": [
+      14
+    ],
+    "overlap": false,
+    "readable": true
+  },
+  {
+    "day": 10,
+    "tag": "calendar-date-10",
+    "text": "10",
+    "font_sp": 12,
+    "lines": 1,
+    "cell": "Rect.fromLTRB(162.0, 285.0, 256.0, 396.0)",
+    "bounds": "Rect.fromLTRB(187.0, 293.0, 231.0, 337.0)",
+    "contained": true,
+    "text_overflow": false,
+    "paragraph_exceeds": false,
+    "height_overflow": false,
+    "layout_width": 28,
+    "layout_height": 40,
+    "line_left": [
+      0
+    ],
+    "line_right": [
+      28
+    ],
+    "overlap": false,
+    "readable": true
+  },
+  {
+    "day": 18,
+    "tag": "calendar-date-18",
+    "text": "18",
+    "font_sp": 12,
+    "lines": 1,
+    "cell": "Rect.fromLTRB(264.0, 285.0, 358.0, 396.0)",
+    "bounds": "Rect.fromLTRB(289.0, 293.0, 333.0, 337.0)",
+    "contained": true,
+    "text_overflow": false,
+    "paragraph_exceeds": false,
+    "height_overflow": false,
+    "layout_width": 28,
+    "layout_height": 40,
+    "line_left": [
+      0
+    ],
+    "line_right": [
+      28
+    ],
+    "overlap": false,
+    "readable": true
+  },
+  {
+    "day": 8,
+    "tag": "calendar-date-8",
+    "text": "8",
+    "font_sp": 12,
+    "lines": 1,
+    "cell": "Rect.fromLTRB(366.0, 285.0, 459.0, 394.0)",
+    "bounds": "Rect.fromLTRB(406.0, 289.0, 420.0, 317.0)",
+    "contained": true,
+    "text_overflow": false,
+    "paragraph_exceeds": false,
+    "height_overflow": false,
+    "layout_width": 14,
+    "layout_height": 28,
+    "line_left": [
+      0
+    ],
+    "line_right": [
+      14
+    ],
+    "overlap": false,
+    "readable": true
+  },
+  {
+    "day": 8,
+    "tag": "calendar-badge-8",
+    "text": "Save",
+    "font_sp": 9,
+    "lines": 1,
+    "cell": "Rect.fromLTRB(366.0, 285.0, 459.0, 394.0)",
+    "bounds": "Rect.fromLTRB(372.0, 317.0, 453.0, 338.0)",
+    "contained": true,
+    "text_overflow": false,
+    "paragraph_exceeds": false,
+    "height_overflow": false,
+    "layout_width": 81,
+    "layout_height": 21,
+    "line_left": [
+      20
+    ],
+    "line_right": [
+      61
+    ],
+    "overlap": false,
+    "readable": true
+  },
+  {
+    "day": 9,
+    "tag": "calendar-date-9",
+    "text": "9",
+    "font_sp": 12,
+    "lines": 1,
+    "cell": "Rect.fromLTRB(467.0, 285.0, 560.0, 394.0)",
+    "bounds": "Rect.fromLTRB(507.0, 289.0, 521.0, 317.0)",
+    "contained": true,
+    "text_overflow": false,
+    "paragraph_exceeds": false,
+    "height_overflow": false,
+    "layout_width": 14,
+    "layout_height": 28,
+    "line_left": [
+      0
+    ],
+    "line_right": [
+      14
+    ],
+    "overlap": false,
+    "readable": true
+  },
+  {
+    "day": 9,
+    "tag": "calendar-badge-9",
+    "text": "Cuti",
+    "font_sp": 9,
+    "lines": 1,
+    "cell": "Rect.fromLTRB(467.0, 285.0, 560.0, 394.0)",
+    "bounds": "Rect.fromLTRB(473.0, 317.0, 554.0, 338.0)",
+    "contained": true,
+    "text_overflow": false,
+    "paragraph_exceeds": false,
+    "height_overflow": false,
+    "layout_width": 81,
+    "layout_height": 21,
+    "line_left": [
+      24
+    ],
+    "line_right": [
+      57
+    ],
+    "overlap": false,
+    "readable": true
+  },
+  {
+    "day": 12,
+    "tag": "calendar-date-12",
+    "text": "12",
+    "font_sp": 12,
+    "lines": 1,
+    "cell": "Rect.fromLTRB(568.0, 285.0, 661.0, 394.0)",
+    "bounds": "Rect.fromLTRB(601.0, 289.0, 629.0, 317.0)",
+    "contained": true,
+    "text_overflow": false,
+    "paragraph_exceeds": false,
+    "height_overflow": false,
+    "layout_width": 28,
+    "layout_height": 28,
+    "line_left": [
+      0
+    ],
+    "line_right": [
+      28
+    ],
+    "overlap": false,
+    "readable": true
+  },
+  {
+    "day": 12,
+    "tag": "calendar-badge-12",
+    "text": "48.25 jam",
+    "font_sp": 9,
+    "lines": 1,
+    "cell": "Rect.fromLTRB(568.0, 285.0, 661.0, 394.0)",
+    "bounds": "Rect.fromLTRB(574.0, 317.0, 655.0, 338.0)",
+    "contained": true,
+    "text_overflow": false,
+    "paragraph_exceeds": false,
+    "height_overflow": false,
+    "layout_width": 81,
+    "layout_height": 21,
+    "line_left": [
+      0
+    ],
+    "line_right": [
+      81
+    ],
+    "overlap": false,
+    "readable": true
+  },
+  {
+    "day": 25,
+    "tag": "calendar-date-25",
+    "text": "25",
+    "font_sp": 12,
+    "lines": 1,
+    "cell": "Rect.fromLTRB(669.0, 285.0, 762.0, 394.0)",
+    "bounds": "Rect.fromLTRB(702.0, 289.0, 730.0, 317.0)",
+    "contained": true,
+    "text_overflow": false,
+    "paragraph_exceeds": false,
+    "height_overflow": false,
+    "layout_width": 28,
+    "layout_height": 28,
+    "line_left": [
+      0
+    ],
+    "line_right": [
+      28
+    ],
+    "overlap": false,
+    "readable": true
+  },
+  {
+    "day": 25,
+    "tag": "calendar-badge-25",
+    "text": "10.5 jam",
+    "font_sp": 9,
+    "lines": 1,
+    "cell": "Rect.fromLTRB(669.0, 285.0, 762.0, 394.0)",
+    "bounds": "Rect.fromLTRB(675.0, 317.0, 756.0, 338.0)",
+    "contained": true,
+    "text_overflow": false,
+    "paragraph_exceeds": false,
+    "height_overflow": false,
+    "layout_width": 81,
+    "layout_height": 21,
+    "line_left": [
+      5
+    ],
+    "line_right": [
+      76
+    ],
+    "overlap": false,
+    "readable": true
+  }
+]

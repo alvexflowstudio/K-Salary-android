@@ -1,0 +1,2 @@
+# Preserve byte-exact raw verification logs, including original tool whitespace.
+docs/verification/**/*.log -whitespace

@@ -1,0 +1,684 @@
+{
+  "screen_dp": [
+    320,
+    568
+  ],
+  "density_dpi": 320,
+  "font_scale": 1.0,
+  "device": "Pixel_8 Android 37.1 read-only disposable emulator",
+  "cases": [
+    {
+      "language": "RU",
+      "theme": "light",
+      "four_labels_present": true,
+      "warning_present": true,
+      "paid_holiday_label_present_in_footer": true,
+      "weekly_rest_label_present_in_footer": true,
+      "save_visible": true,
+      "cancel_visible": true,
+      "artifacts": {
+        "calendar": {
+          "png": "RU-light-calendar.png",
+          "xml": "RU-light-calendar.xml"
+        },
+        "dialog": {
+          "png": "RU-light-dialog.png",
+          "xml": "RU-light-dialog.xml"
+        },
+        "warning": {
+          "png": "RU-light-warning.png",
+          "xml": "RU-light-warning.xml"
+        },
+        "footer": {
+          "png": "RU-light-footer.png",
+          "xml": "RU-light-footer.xml"
+        }
+      }
+    },
+    {
+      "language": "RU",
+      "theme": "dark",
+      "four_labels_present": true,
+      "warning_present": true,
+      "paid_holiday_label_present_in_footer": true,
+      "weekly_rest_label_present_in_footer": true,
+      "save_visible": true,
+      "cancel_visible": true,
+      "artifacts": {
+        "calendar": {
+          "png": "RU-dark-calendar.png",
+          "xml": "RU-dark-calendar.xml"
+        },
+        "dialog": {
+          "png": "RU-dark-dialog.png",
+          "xml": "RU-dark-dialog.xml"
+        },
+        "warning": {
+          "png": "RU-dark-warning.png",
+          "xml": "RU-dark-warning.xml"
+        },
+        "footer": {
+          "png": "RU-dark-footer.png",
+          "xml": "RU-dark-footer.xml"
+        }
+      }
+    },
+    {
+      "language": "KO",
+      "theme": "light",
+      "four_labels_present": true,
+      "warning_present": true,
+      "paid_holiday_label_present_in_footer": true,
+      "weekly_rest_label_present_in_footer": true,
+      "save_visible": true,
+      "cancel_visible": true,
+      "artifacts": {
+        "calendar": {
+          "png": "KO-light-calendar.png",
+          "xml": "KO-light-calendar.xml"
+        },
+        "dialog": {
+          "png": "KO-light-dialog.png",
+          "xml": "KO-light-dialog.xml"
+        },
+        "warning": {
+          "png": "KO-light-warning.png",
+          "xml": "KO-light-warning.xml"
+        },
+        "footer": {
+          "png": "KO-light-footer.png",
+          "xml": "KO-light-footer.xml"
+        }
+      }
+    },
+    {
+      "language": "KO",
+      "theme": "dark",
+      "four_labels_present": true,
+      "warning_present": true,
+      "paid_holiday_label_present_in_footer": true,
+      "weekly_rest_label_present_in_footer": true,
+      "save_visible": true,
+      "cancel_visible": true,
+      "artifacts": {
+        "calendar": {
+          "png": "KO-dark-calendar.png",
+          "xml": "KO-dark-calendar.xml"
+        },
+        "dialog": {
+          "png": "KO-dark-dialog.png",
+          "xml": "KO-dark-dialog.xml"
+        },
+        "warning": {
+          "png": "KO-dark-warning.png",
+          "xml": "KO-dark-warning.xml"
+        },
+        "footer": {
+          "png": "KO-dark-footer.png",
+          "xml": "KO-dark-footer.xml"
+        }
+      }
+    },
+    {
+      "language": "EN",
+      "theme": "light",
+      "four_labels_present": true,
+      "warning_present": true,
+      "paid_holiday_label_present_in_footer": true,
+      "weekly_rest_label_present_in_footer": true,
+      "save_visible": true,
+      "cancel_visible": true,
+      "artifacts": {
+        "calendar": {
+          "png": "EN-light-calendar.png",
+          "xml": "EN-light-calendar.xml"
+        },
+        "dialog": {
+          "png": "EN-light-dialog.png",
+          "xml": "EN-light-dialog.xml"
+        },
+        "warning": {
+          "png": "EN-light-warning.png",
+          "xml": "EN-light-warning.xml"
+        },
+        "footer": {
+          "png": "EN-light-footer.png",
+          "xml": "EN-light-footer.xml"
+        }
+      }
+    },
+    {
+      "language": "EN",
+      "theme": "dark",
+      "four_labels_present": true,
+      "warning_present": true,
+      "paid_holiday_label_present_in_footer": true,
+      "weekly_rest_label_present_in_footer": true,
+      "save_visible": true,
+      "cancel_visible": true,
+      "artifacts": {
+        "calendar": {
+          "png": "EN-dark-calendar.png",
+          "xml": "EN-dark-calendar.xml"
+        },
+        "dialog": {
+          "png": "EN-dark-dialog.png",
+          "xml": "EN-dark-dialog.xml"
+        },
+        "warning": {
+          "png": "EN-dark-warning.png",
+          "xml": "EN-dark-warning.xml"
+        },
+        "footer": {
+          "png": "EN-dark-footer.png",
+          "xml": "EN-dark-footer.xml"
+        }
+      }
+    },
+    {
+      "language": "KY",
+      "theme": "light",
+      "four_labels_present": true,
+      "warning_present": true,
+      "paid_holiday_label_present_in_footer": true,
+      "weekly_rest_label_present_in_footer": true,
+      "save_visible": true,
+      "cancel_visible": true,
+      "artifacts": {
+        "calendar": {
+          "png": "KY-light-calendar.png",
+          "xml": "KY-light-calendar.xml"
+        },
+        "dialog": {
+          "png": "KY-light-dialog.png",
+          "xml": "KY-light-dialog.xml"
+        },
+        "warning": {
+          "png": "KY-light-warning.png",
+          "xml": "KY-light-warning.xml"
+        },
+        "footer": {
+          "png": "KY-light-footer.png",
+          "xml": "KY-light-footer.xml"
+        }
+      }
+    },
+    {
+      "language": "KY",
+      "theme": "dark",
+      "four_labels_present": true,
+      "warning_present": true,
+      "paid_holiday_label_present_in_footer": true,
+      "weekly_rest_label_present_in_footer": true,
+      "save_visible": true,
+      "cancel_visible": true,
+      "artifacts": {
+        "calendar": {
+          "png": "KY-dark-calendar.png",
+          "xml": "KY-dark-calendar.xml"
+        },
+        "dialog": {
+          "png": "KY-dark-dialog.png",
+          "xml": "KY-dark-dialog.xml"
+        },
+        "warning": {
+          "png": "KY-dark-warning.png",
+          "xml": "KY-dark-warning.xml"
+        },
+        "footer": {
+          "png": "KY-dark-footer.png",
+          "xml": "KY-dark-footer.xml"
+        }
+      }
+    },
+    {
+      "language": "UZ",
+      "theme": "light",
+      "four_labels_present": true,
+      "warning_present": true,
+      "paid_holiday_label_present_in_footer": true,
+      "weekly_rest_label_present_in_footer": true,
+      "save_visible": true,
+      "cancel_visible": true,
+      "artifacts": {
+        "calendar": {
+          "png": "UZ-light-calendar.png",
+          "xml": "UZ-light-calendar.xml"
+        },
+        "dialog": {
+          "png": "UZ-light-dialog.png",
+          "xml": "UZ-light-dialog.xml"
+        },
+        "warning": {
+          "png": "UZ-light-warning.png",
+          "xml": "UZ-light-warning.xml"
+        },
+        "footer": {
+          "png": "UZ-light-footer.png",
+          "xml": "UZ-light-footer.xml"
+        }
+      }
+    },
+    {
+      "language": "UZ",
+      "theme": "dark",
+      "four_labels_present": true,
+      "warning_present": true,
+      "paid_holiday_label_present_in_footer": true,
+      "weekly_rest_label_present_in_footer": true,
+      "save_visible": true,
+      "cancel_visible": true,
+      "artifacts": {
+        "calendar": {
+          "png": "UZ-dark-calendar.png",
+          "xml": "UZ-dark-calendar.xml"
+        },
+        "dialog": {
+          "png": "UZ-dark-dialog.png",
+          "xml": "UZ-dark-dialog.xml"
+        },
+        "warning": {
+          "png": "UZ-dark-warning.png",
+          "xml": "UZ-dark-warning.xml"
+        },
+        "footer": {
+          "png": "UZ-dark-footer.png",
+          "xml": "UZ-dark-footer.xml"
+        }
+      }
+    },
+    {
+      "language": "KK",
+      "theme": "light",
+      "four_labels_present": true,
+      "warning_present": true,
+      "paid_holiday_label_present_in_footer": true,
+      "weekly_rest_label_present_in_footer": true,
+      "save_visible": true,
+      "cancel_visible": true,
+      "artifacts": {
+        "calendar": {
+          "png": "KK-light-calendar.png",
+          "xml": "KK-light-calendar.xml"
+        },
+        "dialog": {
+          "png": "KK-light-dialog.png",
+          "xml": "KK-light-dialog.xml"
+        },
+        "warning": {
+          "png": "KK-light-warning.png",
+          "xml": "KK-light-warning.xml"
+        },
+        "footer": {
+          "png": "KK-light-footer.png",
+          "xml": "KK-light-footer.xml"
+        }
+      }
+    },
+    {
+      "language": "KK",
+      "theme": "dark",
+      "four_labels_present": true,
+      "warning_present": true,
+      "paid_holiday_label_present_in_footer": true,
+      "weekly_rest_label_present_in_footer": true,
+      "save_visible": true,
+      "cancel_visible": true,
+      "artifacts": {
+        "calendar": {
+          "png": "KK-dark-calendar.png",
+          "xml": "KK-dark-calendar.xml"
+        },
+        "dialog": {
+          "png": "KK-dark-dialog.png",
+          "xml": "KK-dark-dialog.xml"
+        },
+        "warning": {
+          "png": "KK-dark-warning.png",
+          "xml": "KK-dark-warning.xml"
+        },
+        "footer": {
+          "png": "KK-dark-footer.png",
+          "xml": "KK-dark-footer.xml"
+        }
+      }
+    },
+    {
+      "language": "VI",
+      "theme": "light",
+      "four_labels_present": true,
+      "warning_present": true,
+      "paid_holiday_label_present_in_footer": true,
+      "weekly_rest_label_present_in_footer": true,
+      "save_visible": true,
+      "cancel_visible": true,
+      "artifacts": {
+        "calendar": {
+          "png": "VI-light-calendar.png",
+          "xml": "VI-light-calendar.xml"
+        },
+        "dialog": {
+          "png": "VI-light-dialog.png",
+          "xml": "VI-light-dialog.xml"
+        },
+        "warning": {
+          "png": "VI-light-warning.png",
+          "xml": "VI-light-warning.xml"
+        },
+        "footer": {
+          "png": "VI-light-footer.png",
+          "xml": "VI-light-footer.xml"
+        }
+      }
+    },
+    {
+      "language": "VI",
+      "theme": "dark",
+      "four_labels_present": true,
+      "warning_present": true,
+      "paid_holiday_label_present_in_footer": true,
+      "weekly_rest_label_present_in_footer": true,
+      "save_visible": true,
+      "cancel_visible": true,
+      "artifacts": {
+        "calendar": {
+          "png": "VI-dark-calendar.png",
+          "xml": "VI-dark-calendar.xml"
+        },
+        "dialog": {
+          "png": "VI-dark-dialog.png",
+          "xml": "VI-dark-dialog.xml"
+        },
+        "warning": {
+          "png": "VI-dark-warning.png",
+          "xml": "VI-dark-warning.xml"
+        },
+        "footer": {
+          "png": "VI-dark-footer.png",
+          "xml": "VI-dark-footer.xml"
+        }
+      }
+    },
+    {
+      "language": "TH",
+      "theme": "light",
+      "four_labels_present": true,
+      "warning_present": true,
+      "paid_holiday_label_present_in_footer": true,
+      "weekly_rest_label_present_in_footer": true,
+      "save_visible": true,
+      "cancel_visible": true,
+      "artifacts": {
+        "calendar": {
+          "png": "TH-light-calendar.png",
+          "xml": "TH-light-calendar.xml"
+        },
+        "dialog": {
+          "png": "TH-light-dialog.png",
+          "xml": "TH-light-dialog.xml"
+        },
+        "warning": {
+          "png": "TH-light-warning.png",
+          "xml": "TH-light-warning.xml"
+        },
+        "footer": {
+          "png": "TH-light-footer.png",
+          "xml": "TH-light-footer.xml"
+        }
+      }
+    },
+    {
+      "language": "TH",
+      "theme": "dark",
+      "four_labels_present": true,
+      "warning_present": true,
+      "paid_holiday_label_present_in_footer": true,
+      "weekly_rest_label_present_in_footer": true,
+      "save_visible": true,
+      "cancel_visible": true,
+      "artifacts": {
+        "calendar": {
+          "png": "TH-dark-calendar.png",
+          "xml": "TH-dark-calendar.xml"
+        },
+        "dialog": {
+          "png": "TH-dark-dialog.png",
+          "xml": "TH-dark-dialog.xml"
+        },
+        "warning": {
+          "png": "TH-dark-warning.png",
+          "xml": "TH-dark-warning.xml"
+        },
+        "footer": {
+          "png": "TH-dark-footer.png",
+          "xml": "TH-dark-footer.xml"
+        }
+      }
+    },
+    {
+      "language": "FIL",
+      "theme": "light",
+      "four_labels_present": true,
+      "warning_present": true,
+      "paid_holiday_label_present_in_footer": true,
+      "weekly_rest_label_present_in_footer": true,
+      "save_visible": true,
+      "cancel_visible": true,
+      "artifacts": {
+        "calendar": {
+          "png": "FIL-light-calendar.png",
+          "xml": "FIL-light-calendar.xml"
+        },
+        "dialog": {
+          "png": "FIL-light-dialog.png",
+          "xml": "FIL-light-dialog.xml"
+        },
+        "warning": {
+          "png": "FIL-light-warning.png",
+          "xml": "FIL-light-warning.xml"
+        },
+        "footer": {
+          "png": "FIL-light-footer.png",
+          "xml": "FIL-light-footer.xml"
+        }
+      }
+    },
+    {
+      "language": "FIL",
+      "theme": "dark",
+      "four_labels_present": true,
+      "warning_present": true,
+      "paid_holiday_label_present_in_footer": true,
+      "weekly_rest_label_present_in_footer": true,
+      "save_visible": true,
+      "cancel_visible": true,
+      "artifacts": {
+        "calendar": {
+          "png": "FIL-dark-calendar.png",
+          "xml": "FIL-dark-calendar.xml"
+        },
+        "dialog": {
+          "png": "FIL-dark-dialog.png",
+          "xml": "FIL-dark-dialog.xml"
+        },
+        "warning": {
+          "png": "FIL-dark-warning.png",
+          "xml": "FIL-dark-warning.xml"
+        },
+        "footer": {
+          "png": "FIL-dark-footer.png",
+          "xml": "FIL-dark-footer.xml"
+        }
+      }
+    },
+    {
+      "language": "ID",
+      "theme": "light",
+      "four_labels_present": true,
+      "warning_present": true,
+      "paid_holiday_label_present_in_footer": true,
+      "weekly_rest_label_present_in_footer": true,
+      "save_visible": true,
+      "cancel_visible": true,
+      "artifacts": {
+        "calendar": {
+          "png": "ID-light-calendar.png",
+          "xml": "ID-light-calendar.xml"
+        },
+        "dialog": {
+          "png": "ID-light-dialog.png",
+          "xml": "ID-light-dialog.xml"
+        },
+        "warning": {
+          "png": "ID-light-warning.png",
+          "xml": "ID-light-warning.xml"
+        },
+        "footer": {
+          "png": "ID-light-footer.png",
+          "xml": "ID-light-footer.xml"
+        }
+      }
+    },
+    {
+      "language": "ID",
+      "theme": "dark",
+      "four_labels_present": true,
+      "warning_present": true,
+      "paid_holiday_label_present_in_footer": true,
+      "weekly_rest_label_present_in_footer": true,
+      "save_visible": true,
+      "cancel_visible": true,
+      "artifacts": {
+        "calendar": {
+          "png": "ID-dark-calendar.png",
+          "xml": "ID-dark-calendar.xml"
+        },
+        "dialog": {
+          "png": "ID-dark-dialog.png",
+          "xml": "ID-dark-dialog.xml"
+        },
+        "warning": {
+          "png": "ID-dark-warning.png",
+          "xml": "ID-dark-warning.xml"
+        },
+        "footer": {
+          "png": "ID-dark-footer.png",
+          "xml": "ID-dark-footer.xml"
+        }
+      }
+    },
+    {
+      "language": "MS",
+      "theme": "light",
+      "four_labels_present": true,
+      "warning_present": true,
+      "paid_holiday_label_present_in_footer": true,
+      "weekly_rest_label_present_in_footer": true,
+      "save_visible": true,
+      "cancel_visible": true,
+      "artifacts": {
+        "calendar": {
+          "png": "MS-light-calendar.png",
+          "xml": "MS-light-calendar.xml"
+        },
+        "dialog": {
+          "png": "MS-light-dialog.png",
+          "xml": "MS-light-dialog.xml"
+        },
+        "warning": {
+          "png": "MS-light-warning.png",
+          "xml": "MS-light-warning.xml"
+        },
+        "footer": {
+          "png": "MS-light-footer.png",
+          "xml": "MS-light-footer.xml"
+        }
+      }
+    },
+    {
+      "language": "MS",
+      "theme": "dark",
+      "four_labels_present": true,
+      "warning_present": true,
+      "paid_holiday_label_present_in_footer": true,
+      "weekly_rest_label_present_in_footer": true,
+      "save_visible": true,
+      "cancel_visible": true,
+      "artifacts": {
+        "calendar": {
+          "png": "MS-dark-calendar.png",
+          "xml": "MS-dark-calendar.xml"
+        },
+        "dialog": {
+          "png": "MS-dark-dialog.png",
+          "xml": "MS-dark-dialog.xml"
+        },
+        "warning": {
+          "png": "MS-dark-warning.png",
+          "xml": "MS-dark-warning.xml"
+        },
+        "footer": {
+          "png": "MS-dark-footer.png",
+          "xml": "MS-dark-footer.xml"
+        }
+      }
+    },
+    {
+      "language": "MY",
+      "theme": "light",
+      "four_labels_present": true,
+      "warning_present": true,
+      "paid_holiday_label_present_in_footer": true,
+      "weekly_rest_label_present_in_footer": true,
+      "save_visible": true,
+      "cancel_visible": true,
+      "artifacts": {
+        "calendar": {
+          "png": "MY-light-calendar.png",
+          "xml": "MY-light-calendar.xml"
+        },
+        "dialog": {
+          "png": "MY-light-dialog.png",
+          "xml": "MY-light-dialog.xml"
+        },
+        "warning": {
+          "png": "MY-light-warning.png",
+          "xml": "MY-light-warning.xml"
+        },
+        "footer": {
+          "png": "MY-light-footer.png",
+          "xml": "MY-light-footer.xml"
+        }
+      }
+    },
+    {
+      "language": "MY",
+      "theme": "dark",
+      "four_labels_present": true,
+      "warning_present": true,
+      "paid_holiday_label_present_in_footer": true,
+      "weekly_rest_label_present_in_footer": true,
+      "save_visible": true,
+      "cancel_visible": true,
+      "artifacts": {
+        "calendar": {
+          "png": "MY-dark-calendar.png",
+          "xml": "MY-dark-calendar.xml"
+        },
+        "dialog": {
+          "png": "MY-dark-dialog.png",
+          "xml": "MY-dark-dialog.xml"
+        },
+        "warning": {
+          "png": "MY-dark-warning.png",
+          "xml": "MY-dark-warning.xml"
+        },
+        "footer": {
+          "png": "MY-dark-footer.png",
+          "xml": "MY-dark-footer.xml"
+        }
+      }
+    }
+  ],
+  "scope": "Actual APK via native UI, new unsaved day dialog. No payroll records were saved; only emulator language/theme preferences changed. Existing-record footer and nonzero payroll summaries were not covered in this sweep."
+}

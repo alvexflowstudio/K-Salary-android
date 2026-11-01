@@ -1,0 +1,389 @@
+[
+  {
+    "text": "MY\/false",
+    "font_sp": 15,
+    "width_px": 120,
+    "height_px": 40,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "လစဉ်အလုပ်မှတ်တမ်းအကျဉ်း",
+    "font_sp": 16,
+    "width_px": 472,
+    "height_px": 70,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "အလုပ်လုပ်သောရက်များ:",
+    "font_sp": 12,
+    "width_px": 325,
+    "height_px": 54,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "0 ရက်",
+    "font_sp": 12,
+    "width_px": 187,
+    "height_px": 54,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "ပုံမှန်အလုပ်ချိန် (1.0×):",
+    "font_sp": 12,
+    "width_px": 325,
+    "height_px": 54,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "176 နာရီ",
+    "font_sp": 12,
+    "width_px": 187,
+    "height_px": 54,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "အပတ်စဉ် လစာရနားရက် (1 ရက်):",
+    "font_sp": 12,
+    "width_px": 325,
+    "height_px": 86,
+    "lines": 2,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "+32 နာရီ",
+    "font_sp": 12,
+    "width_px": 187,
+    "height_px": 54,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "လစာရပိတ်ရက်များ (1 ရက်):",
+    "font_sp": 12,
+    "width_px": 325,
+    "height_px": 54,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "+8 နာရီ",
+    "font_sp": 12,
+    "width_px": 187,
+    "height_px": 54,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "အချိန်ပို\/ပိတ်ရက် (1.5×):",
+    "font_sp": 12,
+    "width_px": 325,
+    "height_px": 54,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "+32.5 နာရီ",
+    "font_sp": 12,
+    "width_px": 187,
+    "height_px": 54,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "ညအလုပ်နာရီ (+0.5×):",
+    "font_sp": 12,
+    "width_px": 325,
+    "height_px": 54,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "+64 နာရီ",
+    "font_sp": 12,
+    "width_px": 187,
+    "height_px": 54,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "ပိတ်ရက်\/အပတ်ကုန်အလုပ် (1.5×\/2.0×):",
+    "font_sp": 12,
+    "width_px": 325,
+    "height_px": 86,
+    "lines": 2,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "+12 နာရီ",
+    "font_sp": 12,
+    "width_px": 187,
+    "height_px": 54,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "ထောက်ပံ့ကြေးနှင့် အပိုငွေ:",
+    "font_sp": 12,
+    "width_px": 325,
+    "height_px": 54,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "+1,234,567,890 ₩",
+    "font_sp": 11.997192,
+    "width_px": 187,
+    "height_px": 32,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "လက်ခံရရှိမည့် အသားတင်လစာ",
+    "font_sp": 16,
+    "width_px": 427,
+    "height_px": 70,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "2,305,843,007,979,126,061 ₩",
+    "font_sp": 19.99524,
+    "width_px": 496,
+    "height_px": 48,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "ဖြတ်တောက်ခြင်းမပြုမီ စုစုပေါင်းလစာ",
+    "font_sp": 7.4993896,
+    "width_px": 223,
+    "height_px": 32,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "2,305,843,009,213,693,951 ₩",
+    "font_sp": 8.499756,
+    "width_px": 212,
+    "height_px": 44,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "စုစုပေါင်းဖြတ်တောက်ငွေ",
+    "font_sp": 9.498413,
+    "width_px": 188,
+    "height_px": 40,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "-1,234,567,890 ₩",
+    "font_sp": 12.9991455,
+    "width_px": 194,
+    "height_px": 44,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "လစာတွက်ချက်မှုအသေးစိတ်",
+    "font_sp": 12,
+    "width_px": 456,
+    "height_px": 54,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "ပုံမှန်အလုပ်ချိန်လစာ (1.0×)",
+    "font_sp": 12,
+    "width_px": 289,
+    "height_px": 54,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "2,305,843,009,213,693,951 ₩",
+    "font_sp": 7.4993896,
+    "width_px": 199,
+    "height_px": 32,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "အပတ်စဉ်နားရက်လစာ (1.0×)",
+    "font_sp": 12,
+    "width_px": 289,
+    "height_px": 86,
+    "lines": 2,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "+1,234,567,890 ₩",
+    "font_sp": 12,
+    "width_px": 199,
+    "height_px": 32,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "လစာရပိတ်ရက်လစာ (1.0×)",
+    "font_sp": 12,
+    "width_px": 289,
+    "height_px": 54,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "+1,234,567,890 ₩",
+    "font_sp": 12,
+    "width_px": 199,
+    "height_px": 32,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "အချိန်ပို\/ပိတ်ရက် (1.5×)",
+    "font_sp": 12,
+    "width_px": 289,
+    "height_px": 54,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "+1,234,567,890 ₩",
+    "font_sp": 12,
+    "width_px": 199,
+    "height_px": 32,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "ညအလုပ်ထောက်ပံ့ကြေး (+0.5×)",
+    "font_sp": 12,
+    "width_px": 289,
+    "height_px": 86,
+    "lines": 2,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "+1,234,567,890 ₩",
+    "font_sp": 12,
+    "width_px": 199,
+    "height_px": 32,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "ပိတ်ရက်\/အပတ်ကုန်လစာ (1.5×\/2.0×)",
+    "font_sp": 12,
+    "width_px": 289,
+    "height_px": 86,
+    "lines": 2,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "+1,234,567,890 ₩",
+    "font_sp": 12,
+    "width_px": 199,
+    "height_px": 32,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "ထောက်ပံ့ကြေးနှင့် ဘောနပ်စ်",
+    "font_sp": 12,
+    "width_px": 289,
+    "height_px": 54,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "+1,234,567,890 ₩",
+    "font_sp": 12,
+    "width_px": 199,
+    "height_px": 32,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "အခြားဖြတ်တောက်မှုများ",
+    "font_sp": 12,
+    "width_px": 289,
+    "height_px": 54,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "-1,234,567,890 ₩",
+    "font_sp": 12,
+    "width_px": 199,
+    "height_px": 32,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "အခွန်စည်းကြပ်မည့်ပမာဏ",
+    "font_sp": 12,
+    "width_px": 289,
+    "height_px": 54,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "2,305,843,009,213,693,951 ₩",
+    "font_sp": 7.4993896,
+    "width_px": 199,
+    "height_px": 32,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  }
+]

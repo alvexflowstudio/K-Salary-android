@@ -1,0 +1,173 @@
+[
+  {
+    "text": "FIL\/true",
+    "font_sp": 15,
+    "width_px": 106,
+    "height_px": 40,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "Bersyon 1.0.4",
+    "font_sp": 15,
+    "width_px": 182,
+    "height_px": 40,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "Nobyembre 1, 2026",
+    "font_sp": 16,
+    "width_px": 279,
+    "height_px": 38,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "-1",
+    "font_sp": 15,
+    "width_px": 480,
+    "height_px": 40,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "Batayan (hanggang 8 h, 1.0×)",
+    "font_sp": 12,
+    "width_px": 306,
+    "height_px": 28,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "Maglagay ng batayang oras na bilang mula 0 hanggang 8.",
+    "font_sp": 12,
+    "width_px": 544,
+    "height_px": 60,
+    "lines": 2,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "2.5",
+    "font_sp": 15,
+    "width_px": 480,
+    "height_px": 40,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "OT\/pahinga\/holiday (1.5×)",
+    "font_sp": 12,
+    "width_px": 279,
+    "height_px": 28,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "4",
+    "font_sp": 15,
+    "width_px": 480,
+    "height_px": 40,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "Oras sa gabi (+0.5×)",
+    "font_sp": 12,
+    "width_px": 213,
+    "height_px": 28,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "2",
+    "font_sp": 15,
+    "width_px": 480,
+    "height_px": 40,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "Pahinga\/holiday >8 h (2.0×)",
+    "font_sp": 12,
+    "width_px": 291,
+    "height_px": 28,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "Bayad na holiday",
+    "font_sp": 12,
+    "width_px": 181,
+    "height_px": 28,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "Bayad na lingguhang pahinga",
+    "font_sp": 12,
+    "width_px": 310,
+    "height_px": 28,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "Audit shift",
+    "font_sp": 15,
+    "width_px": 480,
+    "height_px": 40,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "Tala",
+    "font_sp": 12,
+    "width_px": 45,
+    "height_px": 32,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "I-clear ang araw",
+    "font_sp": 14,
+    "width_px": 160,
+    "height_px": 72,
+    "lines": 2,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "Kanselahin",
+    "font_sp": 14,
+    "width_px": 139,
+    "height_px": 36,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "I-save",
+    "font_sp": 14,
+    "width_px": 76,
+    "height_px": 36,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  }
+]

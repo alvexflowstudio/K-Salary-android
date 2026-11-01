@@ -1,0 +1,86 @@
+WARNING: A restricted method in java.lang.System has been called
+WARNING: java.lang.System::loadLibrary has been called by org.conscrypt.NativeLibraryUtil in an unnamed module (file:/Users/wrt/Library/Android/sdk/build-tools/36.0.0/lib/apksigner.jar)
+WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+
+Signer #1 certificate DN: C=US, O=Android, CN=Android Debug
+Signer #1 certificate SHA-256 digest: 49800792c9b817ce87f43899affe286e83e5cad951600b107d6271d0655532cd
+Signer #1 certificate SHA-1 digest: 422cb11e5ccc86e35d5eef6db910cb02284828eb
+Signer #1 certificate MD5 digest: 599ada2feaba1dc5fdc0421b804cd86a
+package: name='com.koreasalary.calculator' versionCode='3' versionName='1.0.2' platformBuildVersionName='17' platformBuildVersionCode='37' compileSdkVersion='37' compileSdkVersionCodename='17'
+WARNING: A restricted method in java.lang.System has been called
+WARNING: java.lang.System::loadLibrary has been called by org.conscrypt.NativeLibraryUtil in an unnamed module (file:/Users/wrt/Library/Android/sdk/build-tools/36.0.0/lib/apksigner.jar)
+WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+
+Signer #1 certificate DN: C=US, O=Android, CN=Android Debug
+Signer #1 certificate SHA-256 digest: 49800792c9b817ce87f43899affe286e83e5cad951600b107d6271d0655532cd
+Signer #1 certificate SHA-1 digest: 422cb11e5ccc86e35d5eef6db910cb02284828eb
+Signer #1 certificate MD5 digest: 599ada2feaba1dc5fdc0421b804cd86a
+package: name='com.koreasalary.calculator' versionCode='4' versionName='1.0.3' platformBuildVersionName='17' platformBuildVersionCode='37' compileSdkVersion='37' compileSdkVersionCodename='17'
+WARNING: A restricted method in java.lang.System has been called
+WARNING: java.lang.System::loadLibrary has been called by org.conscrypt.NativeLibraryUtil in an unnamed module (file:/Users/wrt/Library/Android/sdk/build-tools/36.0.0/lib/apksigner.jar)
+WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+
+WARNING: A restricted method in java.lang.System has been called
+WARNING: java.lang.System::loadLibrary has been called by org.conscrypt.NativeLibraryUtil in an unnamed module (file:/Users/wrt/Library/Android/sdk/build-tools/36.0.0/lib/apksigner.jar)
+WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+
+Performing Streamed Install
+Success
+Performing Streamed Install
+Success
+INSTRUMENTATION_STATUS: class=com.koreasalary.calculator.ApkUpgradeProbe
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+com.koreasalary.calculator.ApkUpgradeProbe:
+INSTRUMENTATION_STATUS: test=persistedStateAcrossPackageReplacement
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: class=com.koreasalary.calculator.ApkUpgradeProbe
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: test=persistedStateAcrossPackageReplacement
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_RESULT: stream=
+
+Time: 0.51
+
+OK (1 test)
+
+
+INSTRUMENTATION_CODE: -1
+    versionCode=3 minSdk=26 targetSdk=35
+    versionName=1.0.2
+Performing Streamed Install
+Success
+    versionCode=4 minSdk=26 targetSdk=35
+    versionName=1.0.3
+INSTRUMENTATION_STATUS: class=com.koreasalary.calculator.ApkUpgradeProbe
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+com.koreasalary.calculator.ApkUpgradeProbe:
+INSTRUMENTATION_STATUS: test=persistedStateAcrossPackageReplacement
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: class=com.koreasalary.calculator.ApkUpgradeProbe
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: test=persistedStateAcrossPackageReplacement
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_RESULT: stream=
+
+Time: 0.195
+
+OK (1 test)
+
+
+INSTRUMENTATION_CODE: -1

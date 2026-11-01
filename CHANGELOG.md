@@ -6,8 +6,23 @@ The project follows Semantic Versioning where practical.
 
 ## [Unreleased]
 
+## [1.0.5] - 2026-11-01
+
 ### Added
-- Ongoing development and preparation for the first public release.
+- Shared four-category calendar and shift-template editor with validation, decimal commas, keyboard navigation and scrolling actions.
+- Versioned legacy work-hours decoding, additive Room 5→6 migration and backup format 4 with imports from formats 1–3.
+- Payroll, localization, layout, storage and update regression tests with verification reports and screenshots.
+
+### Changed
+- Base work remains available on any scheduled weekday, including Sunday; paid-day flags preserve manual work categories.
+- Paid holiday/weekly rest pays a separate fixed eight-hour allowance; overlapping flags on one date pay once. Historical recalculated totals can change under these corrected allowance rules.
+- Calendar badges prioritize physical worked hours, excluding night premiums and paid allowances. Populated cells use red/blue outer borders, no inner date frame, and fixed 9 sp two-line labels; empty cells have no border or automatic status.
+- Updated all 12 interface languages, localized date headers, fitted pay summaries and installed-version display.
+
+### Release scope
+- **1.0.5 / versionCode 6**, personally tested and approved by the user on Samsung.
+- Source and documentation release only: the exact tested APK is debug-signed and is not published as a production build.
+- See [release notes](docs/releases/v1.0.5.md) for verification, artifact identity and data-compatibility limits.
 
 ## [1.0.0] - 2026-09-06
 

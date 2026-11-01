@@ -1,0 +1,128 @@
+[
+  {
+    "text": "KO\/false",
+    "font_sp": 15,
+    "width_px": 152,
+    "height_px": 53,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "5",
+    "font_sp": 12,
+    "width_px": 18,
+    "height_px": 37,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "유급",
+    "font_sp": 9,
+    "width_px": 42,
+    "height_px": 34,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "9",
+    "font_sp": 12,
+    "width_px": 18,
+    "height_px": 37,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "유급",
+    "font_sp": 9,
+    "width_px": 42,
+    "height_px": 34,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "11",
+    "font_sp": 12,
+    "width_px": 36,
+    "height_px": 37,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "휴무",
+    "font_sp": 9,
+    "width_px": 42,
+    "height_px": 34,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "25",
+    "font_sp": 12,
+    "width_px": 36,
+    "height_px": 37,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "10.5 시간",
+    "font_sp": 9,
+    "width_px": 94,
+    "height_px": 34,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "6",
+    "font_sp": 12,
+    "width_px": 18,
+    "height_px": 37,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "8 시간",
+    "font_sp": 9,
+    "width_px": 61,
+    "height_px": 34,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "10",
+    "font_sp": 12,
+    "width_px": 36,
+    "height_px": 37,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "8 시간",
+    "font_sp": 9,
+    "width_px": 61,
+    "height_px": 34,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "18",
+    "font_sp": 12,
+    "width_px": 36,
+    "height_px": 53,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  }
+]

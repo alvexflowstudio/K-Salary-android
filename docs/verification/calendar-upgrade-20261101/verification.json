@@ -1,0 +1,49 @@
+{
+  "date": "2026-11-01",
+  "branch": "codex/calendar-editor-payroll",
+  "application_id": "com.koreasalary.calculator",
+  "old_version_code": 1,
+  "new_version_code": 2,
+  "new_version_name": "1.0.1",
+  "room_version": 6,
+  "signer_sha256": "49800792c9b817ce87f43899affe286e83e5cad951600b107d6271d0655532cd",
+  "signer_type": "Android Debug; existing local signing configuration",
+  "old_apk_sha256": "dfada807ce1280c875613c61da0015a60ba0c08093772c962c4fe3f83afe6c41",
+  "new_apk_sha256": "74a0e834e57fd79e18484783feb6f550bdf849b45a707999c72803d1a7fc0cc4",
+  "unit_tests": {
+    "passed": 45,
+    "failed": 0
+  },
+  "instrumentation_tests": {
+    "passed": 8,
+    "failed": 0
+  },
+  "upgrade_probes": {
+    "seed_under_v1": "PASS",
+    "verify_after_install_r_v2": "PASS",
+    "retained": [
+      "day record including note and template reference",
+      "shift template",
+      "monthly snapshot and payroll history",
+      "language",
+      "theme",
+      "gross salary 217500 KRW"
+    ]
+  },
+  "device": "Read-only Pixel_8 Android 37.1 emulator; UI at 320x568 dp, font scale 1.0",
+  "samsung": {
+    "touched": false,
+    "original_installer_failure": "UNKNOWN",
+    "old_installed_certificate": "UNKNOWN",
+    "compatibility_claim": "Verified only against retained October 31 local v1 APK; no physical-device compatibility claim"
+  },
+  "source_sha256": {
+    "app/build.gradle.kts": "bd33de36455b26a3887c7fe74a0a93bbe151ecaa1aa2e88eb2e1f37763841639",
+    "app/src/main/java/com/koreasalary/calculator/presentation/screens/calculator/CalculatorScreen.kt": "fc1f0d1cafb5108d3f00a90c7c7449b8a31ff88b45063fb065e32579061cd8ed",
+    "app/src/test/java/com/koreasalary/calculator/presentation/screens/calculator/CalendarIndicatorTest.kt": "f1aea2b471b28aa85e4003c869a4a89a67bc284b1cf7a967bd0447f02837377a",
+    "app/src/androidTest/java/com/koreasalary/calculator/DayEditDialogTest.kt": "36076b7a6da636f347ce63d9c05aa15501aa0c86b43de2013c7286e19465857a",
+    "app/src/androidTest/java/com/koreasalary/calculator/ApkUpgradeProbe.kt": "29ab21ba3ef9d4479ac944b89379e5b56f7483dd954baf669f35fb6206f7df4d",
+    "scripts/verify-calendar-editor.sh": "77d7d3d5cd1657db7964aafc189c5fcc93f80383a2851665d7f2b5252ef7a2c4",
+    "scripts/verify-apk-upgrade.sh": "a6795afa8351d2844e4110346bce5b48acf5d0d1d3c3ee9913508a75ebaf87fd"
+  }
+}
