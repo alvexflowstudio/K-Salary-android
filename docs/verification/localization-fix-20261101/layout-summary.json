@@ -1,0 +1,30 @@
+{
+  "calendar": {
+    "cases": 24,
+    "text_layouts": 336,
+    "overflow": 0,
+    "wrapped_money": 0,
+    "minimum_font_sp": 8.379517
+  },
+  "salary": {
+    "cases": 24,
+    "text_layouts": 1032,
+    "overflow": 0,
+    "wrapped_money": 0,
+    "minimum_font_sp": 7.4993896
+  },
+  "validation": {
+    "cases": 24,
+    "text_layouts": 456,
+    "overflow": 0,
+    "wrapped_money": 0,
+    "minimum_font_sp": 12
+  },
+  "existing-dialog": {
+    "cases": 24,
+    "text_layouts": 456,
+    "overflow": 0,
+    "wrapped_money": 0,
+    "minimum_font_sp": 12
+  }
+}

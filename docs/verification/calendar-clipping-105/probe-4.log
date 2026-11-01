@@ -1,0 +1,41 @@
+INSTRUMENTATION_STATUS: class=com.koreasalary.calculator.DayEditDialogTest
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+com.koreasalary.calculator.DayEditDialogTest:
+INSTRUMENTATION_STATUS: test=calendarContentStaysInsideCellsAtReadableSize
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: class=com.koreasalary.calculator.DayEditDialogTest
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stack=java.lang.AssertionError: Calendar cell clipping/readability: KO/false/2: contained=true overflow=true readable=true overlap=false; KO/false/4: contained=true overflow=true readable=true overlap=false; KO/true/2: contained=true overflow=true readable=true overlap=false; KO/true/4: contained=true overflow=true readable=true overlap=false
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at com.koreasalary.calculator.DayEditDialogTest.calendarContentStaysInsideCellsAtReadableSize(DayEditDialogTest.kt:580)
+
+INSTRUMENTATION_STATUS: stream=
+Error in calendarContentStaysInsideCellsAtReadableSize(com.koreasalary.calculator.DayEditDialogTest):
+java.lang.AssertionError: Calendar cell clipping/readability: KO/false/2: contained=true overflow=true readable=true overlap=false; KO/false/4: contained=true overflow=true readable=true overlap=false; KO/true/2: contained=true overflow=true readable=true overlap=false; KO/true/4: contained=true overflow=true readable=true overlap=false
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at com.koreasalary.calculator.DayEditDialogTest.calendarContentStaysInsideCellsAtReadableSize(DayEditDialogTest.kt:580)
+
+INSTRUMENTATION_STATUS: test=calendarContentStaysInsideCellsAtReadableSize
+INSTRUMENTATION_STATUS_CODE: -2
+INSTRUMENTATION_RESULT: stream=
+
+Time: 2.555
+There was 1 failure:
+1) calendarContentStaysInsideCellsAtReadableSize(com.koreasalary.calculator.DayEditDialogTest)
+java.lang.AssertionError: Calendar cell clipping/readability: KO/false/2: contained=true overflow=true readable=true overlap=false; KO/false/4: contained=true overflow=true readable=true overlap=false; KO/true/2: contained=true overflow=true readable=true overlap=false; KO/true/4: contained=true overflow=true readable=true overlap=false
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at com.koreasalary.calculator.DayEditDialogTest.calendarContentStaysInsideCellsAtReadableSize(DayEditDialogTest.kt:580)
+
+FAILURES!!!
+Tests run: 1,  Failures: 1
+
+
+INSTRUMENTATION_CODE: -1

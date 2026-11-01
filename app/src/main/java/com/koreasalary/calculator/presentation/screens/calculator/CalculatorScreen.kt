@@ -14,8 +14,11 @@ import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.platform.testTag
+import com.koreasalary.calculator.data.model.WorkHours
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.style.LineBreak
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
@@ -26,8 +29,10 @@ import com.koreasalary.calculator.data.model.DeductionSettings
 import com.koreasalary.calculator.data.model.SalaryInputState
 import com.koreasalary.calculator.data.model.SalaryResult
 import com.koreasalary.calculator.domain.i18n.AppStrings
+import com.koreasalary.calculator.domain.i18n.formatMonthHeading
 import com.koreasalary.calculator.presentation.components.*
 import com.koreasalary.calculator.presentation.theme.LocalAppPalette
+import com.koreasalary.calculator.presentation.theme.LightAppPalette
 import com.koreasalary.calculator.presentation.viewmodel.SalaryViewModel
 import java.time.DayOfWeek
 import java.time.YearMonth
@@ -278,9 +283,8 @@ fun CalculatorScreen(
                             Icon(imageVector = Icons.Default.ChevronLeft, contentDescription = strings.ui.previousMonthDescription)
                         }
 
-                        val monthName = strings.ui.monthNames[currentYearMonth.monthValue - 1]
                         Text(
-                            text = "$monthName ${currentYearMonth.year}",
+                            text = formatMonthHeading(currentYearMonth, strings),
                             style = MaterialTheme.typography.titleMedium,
                             fontWeight = FontWeight.Bold
                         )
@@ -370,7 +374,7 @@ fun CalculatorScreen(
 }
 
 @Composable
-private fun CalendarCell(
+internal fun CalendarCell(
     dayNumber: Int,
     dayRecord: DayRecordEntity?,
     dayOfWeek: DayOfWeek,
@@ -390,18 +394,7 @@ private fun CalendarCell(
             dayRecord.note.isNotBlank()
     )
 
-    val badgeLabel = when {
-        dayRecord == null -> ""
-        dayRecord.isPaidHoliday -> strings.calendarPaidHolidayBadge
-        dayRecord.isSundayPay -> strings.calendarSundayPayBadge
-        dayRecord.holidayHours > 0 || dayRecord.holidayOvertimeHours > 0 -> strings.calendarHolidayBadge
-        dayRecord.regularHours == 8.0 && dayRecord.overtimeHours == 4.0 && dayRecord.nightHours > 0 -> strings.calendarNightShiftBadge
-        dayRecord.regularHours == 8.0 && dayRecord.overtimeHours == 4.0 -> strings.calendarDayShiftBadge
-        dayRecord.regularHours == 8.0 -> strings.calendarEightHourBadge
-        dayRecord.regularHours > 0 -> "${formatCalendarHours(dayRecord.regularHours)}${strings.hoursUnit}"
-        dayRecord.note.isNotBlank() -> dayRecord.note.take(4)
-        else -> ""
-    }
+    val badgeLabel = calendarBadgeLabel(dayRecord, strings)
     val badgeColor = when {
         dayRecord?.isPaidHoliday == true || dayRecord?.isSundayPay == true -> palette.success
         (dayRecord?.holidayHours ?: 0.0) > 0 || (dayRecord?.holidayOvertimeHours ?: 0.0) > 0 -> palette.danger
@@ -409,6 +402,10 @@ private fun CalendarCell(
         (dayRecord?.overtimeHours ?: 0.0) > 0 -> palette.warning
         else -> palette.success
     }
+
+    val badgeTextColor = if (calendarWorkedHours(dayRecord) == 0.0 &&
+        (dayRecord?.isPaidHoliday == true || dayRecord?.isSundayPay == true)
+    ) palette.danger else badgeColor
 
     Box(
         modifier = modifier
@@ -418,27 +415,35 @@ private fun CalendarCell(
                 if (hasShift) MaterialTheme.colorScheme.primary.copy(alpha = 0.12f)
                 else MaterialTheme.colorScheme.surface
             )
-            .border(
-                width = if (hasShift) 1.5.dp else 0.5.dp,
-                color = if (hasShift) MaterialTheme.colorScheme.primary else MaterialTheme.colorScheme.outline.copy(alpha = 0.3f),
-                shape = RoundedCornerShape(8.dp)
+            .then(
+                if (hasShift) Modifier.border(
+                    width = 1.5.dp,
+                    color = if (calendarHasRedDateBorder(dayOfWeek, dayRecord)) palette.danger
+                        else LightAppPalette.accent,
+                    shape = RoundedCornerShape(8.dp)
+                ) else Modifier
             )
             .clickable(onClick = onClick)
             .padding(2.dp),
         contentAlignment = Alignment.Center
     ) {
+        // Keep the grid geometry; use the former date-frame space for two readable badge lines.
         Column(
             horizontalAlignment = Alignment.CenterHorizontally,
-            verticalArrangement = Arrangement.SpaceBetween,
-            modifier = Modifier.fillMaxSize().padding(vertical = 2.dp)
+            verticalArrangement = if (hasShift) Arrangement.Top else Arrangement.SpaceBetween,
+            modifier = Modifier.fillMaxSize().padding(vertical = if (hasShift) 0.dp else 2.dp)
         ) {
             Text(
                 text = dayNumber.toString(),
+                modifier = Modifier
+                    .testTag("calendar-date-$dayNumber")
+                    .then(if (hasShift) Modifier else Modifier.padding(horizontal = 4.dp, vertical = 1.dp)),
                 fontSize = 12.sp,
+                lineHeight = if (hasShift) 14.sp else LocalTextStyle.current.lineHeight,
                 fontWeight = if (hasShift) FontWeight.ExtraBold else FontWeight.Medium,
-                color = when (dayOfWeek) {
-                    DayOfWeek.SATURDAY -> palette.accent
-                    DayOfWeek.SUNDAY -> palette.danger
+                color = when {
+                    calendarHasRedDateBorder(dayOfWeek, dayRecord) -> palette.danger
+                    dayOfWeek == DayOfWeek.SATURDAY -> if (hasShift) palette.accent else LightAppPalette.accent
                     else -> MaterialTheme.colorScheme.onSurface
                 }
             )
@@ -448,15 +453,23 @@ private fun CalendarCell(
                     modifier = Modifier
                         .clip(RoundedCornerShape(4.dp))
                         .background(badgeColor.copy(alpha = 0.16f))
-                        .padding(horizontal = 3.dp, vertical = 1.dp)
+                        .padding(horizontal = 1.dp)
                 ) {
                     Text(
                         text = badgeLabel,
+                        // Center against the same width used by the paragraph measurer. A wrap-content
+                        // Text can otherwise paint its final glyph beyond the clipped badge.
+                        modifier = Modifier.fillMaxWidth().testTag("calendar-badge-$dayNumber"),
+                        style = LocalTextStyle.current.copy(
+                            lineHeight = 10.sp,
+                            lineBreak = LineBreak.Heading
+                        ),
+                        textAlign = TextAlign.Center,
                         fontSize = 9.sp,
                         fontWeight = FontWeight.Bold,
-                        color = badgeColor,
-                        maxLines = 1,
-                        softWrap = false
+                        color = badgeTextColor,
+                        maxLines = 2,
+                        softWrap = true
                     )
                 }
             } else {
@@ -471,4 +484,24 @@ private fun formatCalendarHours(value: Double): String {
     return String.format(Locale.US, "%.2f", value)
         .trimEnd('0')
         .trimEnd('.')
+}
+
+/** Holiday styling is independent of work categories and paid-rest allowances. */
+internal fun calendarHasRedDateBorder(dayOfWeek: DayOfWeek, record: DayRecordEntity?): Boolean =
+    dayOfWeek == DayOfWeek.SUNDAY || record?.isPaidHoliday == true
+
+internal fun calendarWorkedHours(record: DayRecordEntity?): Double {
+    val hours = record?.let(WorkHours::from) ?: return 0.0
+    return hours.regular + hours.overtime + hours.holiday + hours.holidayOvertime
+}
+
+internal fun calendarBadgeLabel(dayRecord: DayRecordEntity?, strings: AppStrings): String {
+    val worked = calendarWorkedHours(dayRecord)
+    return when {
+        worked > 0.0 -> "${formatCalendarHours(worked)} ${strings.hoursUnit}"
+        dayRecord?.isPaidHoliday == true -> strings.calendarPaidHolidayBadge
+        dayRecord?.isSundayPay == true -> strings.calendarSundayPayBadge
+        dayRecord != null && dayRecord.note.isNotBlank() -> dayRecord.note.take(4)
+        else -> ""
+    }
 }

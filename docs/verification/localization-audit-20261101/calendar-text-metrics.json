@@ -1,0 +1,5 @@
+{
+  "status": "UNAVAILABLE",
+  "exit_code": 137,
+  "detail": "Standalone read-only Android Paint metrics process terminated with Killed; no measurements obtained. Cause not determined. No retry performed."
+}

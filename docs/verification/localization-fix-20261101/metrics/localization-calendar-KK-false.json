@@ -1,0 +1,128 @@
+[
+  {
+    "text": "KK\/false",
+    "font_sp": 15,
+    "width_px": 149,
+    "height_px": 53,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "5",
+    "font_sp": 12,
+    "width_px": 18,
+    "height_px": 37,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "Мереке",
+    "font_sp": 9,
+    "width_px": 82,
+    "height_px": 32,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "9",
+    "font_sp": 12,
+    "width_px": 18,
+    "height_px": 37,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "Мереке",
+    "font_sp": 9,
+    "width_px": 82,
+    "height_px": 32,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "11",
+    "font_sp": 12,
+    "width_px": 36,
+    "height_px": 37,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "Демалыс",
+    "font_sp": 8.379517,
+    "width_px": 94,
+    "height_px": 30,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "25",
+    "font_sp": 12,
+    "width_px": 36,
+    "height_px": 37,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "10.5 сағ",
+    "font_sp": 9,
+    "width_px": 86,
+    "height_px": 32,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "6",
+    "font_sp": 12,
+    "width_px": 18,
+    "height_px": 37,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "8 сағ",
+    "font_sp": 9,
+    "width_px": 53,
+    "height_px": 32,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "10",
+    "font_sp": 12,
+    "width_px": 36,
+    "height_px": 37,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "8 сағ",
+    "font_sp": 9,
+    "width_px": 53,
+    "height_px": 32,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "18",
+    "font_sp": 12,
+    "width_px": 36,
+    "height_px": 53,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  }
+]

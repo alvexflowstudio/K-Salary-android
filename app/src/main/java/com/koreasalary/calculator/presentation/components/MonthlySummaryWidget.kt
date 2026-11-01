@@ -12,7 +12,6 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
-import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import com.koreasalary.calculator.data.local.entity.DayRecordEntity
 import com.koreasalary.calculator.data.model.SalaryInputState
@@ -31,7 +30,7 @@ fun MonthlySummaryWidget(
     // Отметки оплачиваемого праздника и еженедельного отдыха начисляют
     // отдельные часы, но сами по себе не означают фактическую работу в этот день.
     val totalWorkDays = countActualWorkDays(records.values)
-    val totalSundaysPaid = records.values.count { it.isSundayPay }
+    val totalSundaysPaid = records.values.count { it.isSundayPay && !it.isPaidHoliday }
     val totalPaidHolidays = records.values.count { it.isPaidHoliday }
 
     Card(
@@ -55,8 +54,10 @@ fun MonthlySummaryWidget(
                     tint = MaterialTheme.colorScheme.primary,
                     modifier = Modifier.size(20.dp)
                 )
-                Text(
+                FittingText(
                     text = strings.ui.monthlySummaryTitle,
+                    modifier = Modifier.weight(1f),
+                    maxLines = 2,
                     style = MaterialTheme.typography.titleMedium,
                     fontWeight = FontWeight.Bold
                 )
@@ -152,25 +153,23 @@ private fun StatRow(
         horizontalArrangement = Arrangement.SpaceBetween,
         verticalAlignment = Alignment.CenterVertically
     ) {
-        Text(
+        FittingText(
             text = title,
             style = MaterialTheme.typography.bodySmall,
             color = MaterialTheme.colorScheme.onSurfaceVariant,
             modifier = Modifier
                 .weight(1f)
                 .padding(end = 8.dp),
-            maxLines = 2,
-            overflow = TextOverflow.Ellipsis
+            maxLines = 2
         )
-        Text(
+        FittingText(
             text = value,
             style = MaterialTheme.typography.bodySmall,
             fontWeight = FontWeight.Bold,
             color = highlightColor ?: MaterialTheme.colorScheme.onSurface,
             modifier = Modifier.weight(0.55f),
             textAlign = TextAlign.End,
-            maxLines = 2,
-            overflow = TextOverflow.Ellipsis
+            maxLines = 1
         )
     }
 }

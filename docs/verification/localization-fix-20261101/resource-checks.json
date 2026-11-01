@@ -1,0 +1,258 @@
+{
+  "user_facing_leaf_strings_per_locale": 252,
+  "locale_metadata_fields": 1,
+  "languages": {
+    "RU": {
+      "leaf_count": 253,
+      "no_empty": true,
+      "keys_aligned": true,
+      "factor_tokens_correct": true,
+      "validation_range_0_8": true,
+      "single_string_argument_formats": {
+        "appVersion": [
+          "%s"
+        ],
+        "ui.selectedTemplateBannerFormat": [
+          "%s"
+        ],
+        "ui.deleteTemplateMessage": [
+          "%s"
+        ],
+        "ui.versionLabel": [
+          "%s"
+        ]
+      }
+    },
+    "KO": {
+      "leaf_count": 253,
+      "no_empty": true,
+      "keys_aligned": true,
+      "factor_tokens_correct": true,
+      "validation_range_0_8": true,
+      "single_string_argument_formats": {
+        "appVersion": [
+          "%s"
+        ],
+        "ui.selectedTemplateBannerFormat": [
+          "%s"
+        ],
+        "ui.deleteTemplateMessage": [
+          "%s"
+        ],
+        "ui.versionLabel": [
+          "%s"
+        ]
+      }
+    },
+    "EN": {
+      "leaf_count": 253,
+      "no_empty": true,
+      "keys_aligned": true,
+      "factor_tokens_correct": true,
+      "validation_range_0_8": true,
+      "single_string_argument_formats": {
+        "appVersion": [
+          "%s"
+        ],
+        "ui.selectedTemplateBannerFormat": [
+          "%s"
+        ],
+        "ui.deleteTemplateMessage": [
+          "%s"
+        ],
+        "ui.versionLabel": [
+          "%s"
+        ]
+      }
+    },
+    "KY": {
+      "leaf_count": 253,
+      "no_empty": true,
+      "keys_aligned": true,
+      "factor_tokens_correct": true,
+      "validation_range_0_8": true,
+      "single_string_argument_formats": {
+        "appVersion": [
+          "%s"
+        ],
+        "ui.selectedTemplateBannerFormat": [
+          "%s"
+        ],
+        "ui.deleteTemplateMessage": [
+          "%s"
+        ],
+        "ui.versionLabel": [
+          "%s"
+        ]
+      }
+    },
+    "UZ": {
+      "leaf_count": 253,
+      "no_empty": true,
+      "keys_aligned": true,
+      "factor_tokens_correct": true,
+      "validation_range_0_8": true,
+      "single_string_argument_formats": {
+        "appVersion": [
+          "%s"
+        ],
+        "ui.selectedTemplateBannerFormat": [
+          "%s"
+        ],
+        "ui.deleteTemplateMessage": [
+          "%s"
+        ],
+        "ui.versionLabel": [
+          "%s"
+        ]
+      }
+    },
+    "KK": {
+      "leaf_count": 253,
+      "no_empty": true,
+      "keys_aligned": true,
+      "factor_tokens_correct": true,
+      "validation_range_0_8": true,
+      "single_string_argument_formats": {
+        "appVersion": [
+          "%s"
+        ],
+        "ui.selectedTemplateBannerFormat": [
+          "%s"
+        ],
+        "ui.deleteTemplateMessage": [
+          "%s"
+        ],
+        "ui.versionLabel": [
+          "%s"
+        ]
+      }
+    },
+    "VI": {
+      "leaf_count": 253,
+      "no_empty": true,
+      "keys_aligned": true,
+      "factor_tokens_correct": true,
+      "validation_range_0_8": true,
+      "single_string_argument_formats": {
+        "appVersion": [
+          "%s"
+        ],
+        "ui.selectedTemplateBannerFormat": [
+          "%s"
+        ],
+        "ui.deleteTemplateMessage": [
+          "%s"
+        ],
+        "ui.versionLabel": [
+          "%s"
+        ]
+      }
+    },
+    "TH": {
+      "leaf_count": 253,
+      "no_empty": true,
+      "keys_aligned": true,
+      "factor_tokens_correct": true,
+      "validation_range_0_8": true,
+      "single_string_argument_formats": {
+        "appVersion": [
+          "%s"
+        ],
+        "ui.selectedTemplateBannerFormat": [
+          "%s"
+        ],
+        "ui.deleteTemplateMessage": [
+          "%s"
+        ],
+        "ui.versionLabel": [
+          "%s"
+        ]
+      }
+    },
+    "FIL": {
+      "leaf_count": 253,
+      "no_empty": true,
+      "keys_aligned": true,
+      "factor_tokens_correct": true,
+      "validation_range_0_8": true,
+      "single_string_argument_formats": {
+        "appVersion": [
+          "%s"
+        ],
+        "ui.selectedTemplateBannerFormat": [
+          "%s"
+        ],
+        "ui.deleteTemplateMessage": [
+          "%s"
+        ],
+        "ui.versionLabel": [
+          "%s"
+        ]
+      }
+    },
+    "ID": {
+      "leaf_count": 253,
+      "no_empty": true,
+      "keys_aligned": true,
+      "factor_tokens_correct": true,
+      "validation_range_0_8": true,
+      "single_string_argument_formats": {
+        "appVersion": [
+          "%s"
+        ],
+        "ui.selectedTemplateBannerFormat": [
+          "%s"
+        ],
+        "ui.deleteTemplateMessage": [
+          "%s"
+        ],
+        "ui.versionLabel": [
+          "%s"
+        ]
+      }
+    },
+    "MS": {
+      "leaf_count": 253,
+      "no_empty": true,
+      "keys_aligned": true,
+      "factor_tokens_correct": true,
+      "validation_range_0_8": true,
+      "single_string_argument_formats": {
+        "appVersion": [
+          "%s"
+        ],
+        "ui.selectedTemplateBannerFormat": [
+          "%s"
+        ],
+        "ui.deleteTemplateMessage": [
+          "%s"
+        ],
+        "ui.versionLabel": [
+          "%s"
+        ]
+      }
+    },
+    "MY": {
+      "leaf_count": 253,
+      "no_empty": true,
+      "keys_aligned": true,
+      "factor_tokens_correct": true,
+      "validation_range_0_8": true,
+      "single_string_argument_formats": {
+        "appVersion": [
+          "%s"
+        ],
+        "ui.selectedTemplateBannerFormat": [
+          "%s"
+        ],
+        "ui.deleteTemplateMessage": [
+          "%s"
+        ],
+        "ui.versionLabel": [
+          "%s"
+        ]
+      }
+    }
+  }
+}

@@ -29,8 +29,8 @@ import com.koreasalary.calculator.data.local.entity.ShiftTemplateEntity
 import com.koreasalary.calculator.domain.i18n.AppStrings
 import com.koreasalary.calculator.presentation.theme.LightAppPalette
 import com.koreasalary.calculator.presentation.theme.LocalAppPalette
-import kotlin.math.max
-import kotlin.math.min
+import com.koreasalary.calculator.data.model.WorkHours
+import androidx.compose.runtime.saveable.rememberSaveable
 
 @OptIn(ExperimentalLayoutApi::class, ExperimentalFoundationApi::class)
 @Composable
@@ -76,6 +76,7 @@ fun ShiftTemplateSection(
                         // его без переименования, он остаётся локализуемым встроенным.
                         title = if (keepBuiltInTemplate) template.title else title,
                         colorHex = colorHex,
+                        workHoursVersion = 2,
                         regularHours = reg,
                         scheduledBaseHours = scheduledBaseHours,
                         overtimeHours = ot,
@@ -287,63 +288,10 @@ fun ShiftTemplateEditDialog(
     val titleStateKey = template?.displayTitle(strings) ?: "new-template"
     var title by remember(template?.id, titleStateKey) { mutableStateOf(initialTitle) }
     var colorHex by remember { mutableStateOf(template?.colorHex ?: "#5C875D") }
-    val initialIsSpecialDay = template?.let { it.isPaidHoliday || it.isSundayPay } == true
-    val initialRegularHours = template?.regularHours?.coerceAtLeast(0.0) ?: 0.0
-    val initialStoredScheduledBaseHours = template?.scheduledBaseHours?.coerceAtLeast(0.0) ?: 0.0
-    val initialScheduledBaseHours = if (initialStoredScheduledBaseHours > 0.0) {
-        initialStoredScheduledBaseHours
-    } else {
-        initialRegularHours
-    }
-    val initialRawHolidayHours = template?.holidayHours?.coerceAtLeast(0.0) ?: 0.0
-    val initialHolidayHours = if (initialIsSpecialDay) {
-        min(8.0, initialRawHolidayHours + initialRegularHours)
-    } else {
-        template?.holidayHours?.coerceAtLeast(0.0) ?: 0.0
-    }
-    val initialHolidayOvertimeHours = if (initialIsSpecialDay) {
-        (template?.holidayOvertimeHours?.coerceAtLeast(0.0) ?: 0.0) +
-            max(0.0, initialRawHolidayHours + initialRegularHours - 8.0)
-    } else {
-        template?.holidayOvertimeHours?.coerceAtLeast(0.0) ?: 0.0
-    }
-    var regText by remember { mutableStateOf(if (initialIsSpecialDay) "0" else formatTemplateHours(initialRegularHours)) }
-    var otText by remember { mutableStateOf(template?.overtimeHours?.let { if (it % 1.0 == 0.0) it.toInt().toString() else it.toString() } ?: "0") }
-    var nightText by remember { mutableStateOf(template?.nightHours?.let { if (it % 1.0 == 0.0) it.toInt().toString() else it.toString() } ?: "0") }
-    var holText by remember { mutableStateOf(formatTemplateHours(initialHolidayHours)) }
-    var holOtText by remember { mutableStateOf(formatTemplateHours(initialHolidayOvertimeHours)) }
-    var isPaidHoliday by remember { mutableStateOf(template?.isPaidHoliday ?: false) }
-    var isSundayPay by remember { mutableStateOf(template?.isSundayPay ?: false) }
-    var scheduledBaseHours by remember { mutableStateOf(initialScheduledBaseHours) }
-
-    val regVal = regText.toDoubleOrNull() ?: 0.0
-    val otVal = otText.toDoubleOrNull() ?: 0.0
-    val nightVal = nightText.toDoubleOrNull() ?: 0.0
-    val holVal = holText.toDoubleOrNull() ?: 0.0
-    val holOtVal = holOtText.toDoubleOrNull() ?: 0.0
-    val isSpecialDay = isPaidHoliday || isSundayPay
-    val isRegInvalid = !isSpecialDay && (!regText.isValidHoursInput() || regVal > 8.0)
-    val hasInvalidAdditionalHours =
-        !otText.isValidHoursInput() ||
-            !nightText.isValidHoursInput() ||
-            !holText.isValidHoursInput() ||
-            holVal > 8.0 ||
-            !holOtText.isValidHoursInput()
-    val isAnyHoursInvalid = isRegInvalid || hasInvalidAdditionalHours
-
-    fun moveRegularHoursToHolidayFields() {
-        val regular = regText.toDoubleOrNull()?.coerceAtLeast(0.0) ?: 0.0
-        if (regular > 0.0) {
-            scheduledBaseHours = regular
-        }
-        if (regular > 0.0) {
-            val holidayRoom = (8.0 - holVal.coerceAtMost(8.0)).coerceAtLeast(0.0)
-            val normalHolidayHours = min(regular, holidayRoom)
-            holText = formatTemplateHours(holVal + normalHolidayHours)
-            holOtText = formatTemplateHours(holOtVal + (regular - normalHolidayHours))
-        }
-        regText = "0"
-    }
+    val initial = template?.let(WorkHours::from) ?: WorkHours()
+    val hours = rememberHourEntryState(initial)
+    var isPaidHoliday by rememberSaveable { mutableStateOf(template?.isPaidHoliday ?: false) }
+    var isSundayPay by rememberSaveable { mutableStateOf(template?.isSundayPay ?: false) }
 
     val availableColors = listOf(
         "#5C875D", // Green
@@ -354,210 +302,128 @@ fun ShiftTemplateEditDialog(
         "#6E7278"  // Gray
     )
 
-    Dialog(onDismissRequest = onDismiss) {
-        Surface(
-            shape = RoundedCornerShape(18.dp),
-            color = MaterialTheme.colorScheme.surface,
-            modifier = Modifier
-                .fillMaxWidth()
-                .padding(6.dp)
+    HourEditorDialog(onDismiss) {
+        Text(
+            text = if (template == null) strings.ui.newTemplateTitle else strings.ui.editTemplateTitle,
+            style = MaterialTheme.typography.titleMedium,
+            fontWeight = FontWeight.Bold
+        )
+
+        // Название шаблона
+        AppInputField(
+            value = title,
+            onValueChange = { title = it },
+            label = "${strings.ui.templateNameLabel} (${strings.ui.templateNameHint})",
+            keyboardType = KeyboardType.Text
+        )
+
+        // Выбор цвета
+        Text(text = strings.ui.markerColorLabel, style = MaterialTheme.typography.bodySmall, fontWeight = FontWeight.SemiBold)
+        Row(
+            modifier = Modifier.fillMaxWidth(),
+            horizontalArrangement = Arrangement.spacedBy(8.dp)
         ) {
-            Column(
-                modifier = Modifier
-                    .padding(18.dp)
-                    .verticalScroll(rememberScrollState()),
-                verticalArrangement = Arrangement.spacedBy(12.dp)
+            availableColors.forEach { hex ->
+                val isSelected = canonicalTemplateColor(colorHex) == hex
+                Box(
+                    modifier = Modifier
+                        .size(28.dp)
+                        .clip(CircleShape)
+                        .background(resolveTemplateColor(hex))
+                        .border(
+                            width = if (isSelected) 2.5.dp else 0.dp,
+                            color = if (isSelected) MaterialTheme.colorScheme.primary else Color.Transparent,
+                            shape = CircleShape
+                        )
+                        .clickable { colorHex = hex }
+                )
+            }
+        }
+
+        HourEntryForm(hours, strings)
+
+        // Чекбоксы
+        Row(
+            verticalAlignment = Alignment.CenterVertically,
+            modifier = Modifier.fillMaxWidth()
+        ) {
+            Checkbox(
+                checked = isPaidHoliday,
+                onCheckedChange = {
+                    isPaidHoliday = it
+                }
+            )
+            Spacer(modifier = Modifier.width(6.dp))
+            Text(
+                text = strings.ui.paidHolidayCheckboxLabel,
+                style = MaterialTheme.typography.bodySmall,
+                modifier = Modifier.weight(1f)
+            )
+        }
+
+        Row(
+            verticalAlignment = Alignment.CenterVertically,
+            modifier = Modifier.fillMaxWidth()
+        ) {
+            Checkbox(
+                checked = isSundayPay,
+                onCheckedChange = {
+                    isSundayPay = it
+                }
+            )
+            Spacer(modifier = Modifier.width(6.dp))
+            Text(
+                text = strings.ui.weeklyHolidayCheckboxLabel,
+                style = MaterialTheme.typography.bodySmall,
+                modifier = Modifier.weight(1f)
+            )
+        }
+
+        // Кнопки действий
+        Row(
+            modifier = Modifier.fillMaxWidth(),
+            horizontalArrangement = Arrangement.spacedBy(4.dp),
+            verticalAlignment = Alignment.CenterVertically
+        ) {
+            if (onDelete != null) {
+                TextButton(
+                    onClick = onDelete,
+                    modifier = Modifier.weight(1f),
+                    contentPadding = PaddingValues(horizontal = 4.dp),
+                    colors = ButtonDefaults.textButtonColors(contentColor = MaterialTheme.colorScheme.error)
+                ) {
+                    Text(strings.ui.deleteAction, maxLines = 2, textAlign = androidx.compose.ui.text.style.TextAlign.Center)
+                }
+            }
+
+            TextButton(
+                onClick = onDismiss,
+                modifier = Modifier.weight(1f),
+                contentPadding = PaddingValues(horizontal = 4.dp)
             ) {
-                Text(
-                    text = if (template == null) strings.ui.newTemplateTitle else strings.ui.editTemplateTitle,
-                    style = MaterialTheme.typography.titleMedium,
-                    fontWeight = FontWeight.Bold
-                )
-
-                // Название шаблона
-                AppInputField(
-                    value = title,
-                    onValueChange = { title = it },
-                    label = "${strings.ui.templateNameLabel} (${strings.ui.templateNameHint})",
-                    keyboardType = KeyboardType.Text
-                )
-
-                // Выбор цвета
-                Text(text = strings.ui.markerColorLabel, style = MaterialTheme.typography.bodySmall, fontWeight = FontWeight.SemiBold)
-                Row(
-                    modifier = Modifier.fillMaxWidth(),
-                    horizontalArrangement = Arrangement.spacedBy(8.dp)
-                ) {
-                    availableColors.forEach { hex ->
-                        val isSelected = canonicalTemplateColor(colorHex) == hex
-                        Box(
-                            modifier = Modifier
-                                .size(28.dp)
-                                .clip(CircleShape)
-                                .background(resolveTemplateColor(hex))
-                                .border(
-                                    width = if (isSelected) 2.5.dp else 0.dp,
-                                    color = if (isSelected) MaterialTheme.colorScheme.primary else Color.Transparent,
-                                    shape = CircleShape
-                                )
-                                .clickable { colorHex = hex }
-                        )
-                    }
-                }
-
-                // Базовые часы (макс 8) с валидацией
-                Column {
-                    AppInputField(
-                        value = regText,
-                        onValueChange = {
-                            if (!isSpecialDay) {
-                                regText = it
-                                it.toDoubleOrNull()?.let { value ->
-                                    scheduledBaseHours = value.coerceAtLeast(0.0)
-                                }
-                            }
-                        },
-                        label = strings.ui.templateBaseHoursLabel,
-                        suffixText = strings.hoursUnit,
-                        readOnly = isSpecialDay,
-                        isError = isSpecialDay,
-                        helperText = if (isSpecialDay) strings.ui.specialDayBaseHoursHelper else null
+                Text(strings.ui.cancelAction, maxLines = 2, textAlign = androidx.compose.ui.text.style.TextAlign.Center)
+            }
+            Button(
+                enabled = title.isNotBlank() && hours.valid,
+                onClick = {
+                    val value = hours.hours()
+                    onSave(
+                        title,
+                        colorHex,
+                        value.regular,
+                        value.overtime,
+                        value.night,
+                        value.holiday,
+                        value.holidayOvertime,
+                        template?.scheduledBaseHours ?: value.regular,
+                        isPaidHoliday,
+                        isSundayPay
                     )
-                    if (isRegInvalid) {
-                        Spacer(modifier = Modifier.height(2.dp))
-                        Text(
-                            text = if (regVal > 8.0) strings.ui.baseHoursValidation else strings.ui.hoursValidation,
-                            style = MaterialTheme.typography.bodySmall,
-                            color = MaterialTheme.colorScheme.error
-                        )
-                    }
-                }
-
-                AppInputField(
-                    value = otText,
-                    onValueChange = { otText = it },
-                    label = strings.ui.templateOvertimeLabel,
-                    suffixText = strings.hoursUnit,
-                    isError = otText.isNotBlank() && !otText.isValidHoursInput()
-                )
-
-                AppInputField(
-                    value = nightText,
-                    onValueChange = { nightText = it },
-                    label = strings.ui.templateNightLabel,
-                    suffixText = strings.hoursUnit,
-                    isError = nightText.isNotBlank() && !nightText.isValidHoursInput()
-                )
-
-                AppInputField(
-                    value = holText,
-                    onValueChange = { holText = it },
-                    label = strings.ui.templateHolidayLabel,
-                    suffixText = strings.hoursUnit,
-                    isError = holText.isNotBlank() && (!holText.isValidHoursInput() || holVal > 8.0)
-                )
-
-                AppInputField(
-                    value = holOtText,
-                    onValueChange = { holOtText = it },
-                    label = strings.ui.templateHolidayOvertimeLabel,
-                    suffixText = strings.hoursUnit,
-                    isError = holOtText.isNotBlank() && !holOtText.isValidHoursInput()
-                )
-
-                if (hasInvalidAdditionalHours) {
-                    Text(
-                        text = strings.ui.hoursValidation,
-                        style = MaterialTheme.typography.bodySmall,
-                        color = MaterialTheme.colorScheme.error
-                    )
-                }
-
-                // Чекбоксы
-                Row(
-                    verticalAlignment = Alignment.CenterVertically,
-                    modifier = Modifier.fillMaxWidth()
-                ) {
-                    Checkbox(
-                        checked = isPaidHoliday,
-                        onCheckedChange = {
-                            if (it) moveRegularHoursToHolidayFields()
-                            isPaidHoliday = it
-                        }
-                    )
-                    Spacer(modifier = Modifier.width(6.dp))
-                    Text(
-                        text = strings.ui.paidHolidayCheckboxLabel,
-                        style = MaterialTheme.typography.bodySmall,
-                        modifier = Modifier.weight(1f)
-                    )
-                }
-
-                Row(
-                    verticalAlignment = Alignment.CenterVertically,
-                    modifier = Modifier.fillMaxWidth()
-                ) {
-                    Checkbox(
-                        checked = isSundayPay,
-                        onCheckedChange = {
-                            if (it) moveRegularHoursToHolidayFields()
-                            isSundayPay = it
-                        }
-                    )
-                    Spacer(modifier = Modifier.width(6.dp))
-                    Text(
-                        text = strings.ui.weeklyHolidayCheckboxLabel,
-                        style = MaterialTheme.typography.bodySmall,
-                        modifier = Modifier.weight(1f)
-                    )
-                }
-
-                // Кнопки действий
-                Row(
-                    modifier = Modifier.fillMaxWidth(),
-                    horizontalArrangement = Arrangement.spacedBy(4.dp),
-                    verticalAlignment = Alignment.CenterVertically
-                ) {
-                    if (onDelete != null) {
-                        TextButton(
-                            onClick = onDelete,
-                            modifier = Modifier.weight(1f),
-                            contentPadding = PaddingValues(horizontal = 4.dp),
-                            colors = ButtonDefaults.textButtonColors(contentColor = MaterialTheme.colorScheme.error)
-                        ) {
-                            Text(strings.ui.deleteAction, maxLines = 2, textAlign = androidx.compose.ui.text.style.TextAlign.Center)
-                        }
-                    }
-
-                    TextButton(
-                        onClick = onDismiss,
-                        modifier = Modifier.weight(1f),
-                        contentPadding = PaddingValues(horizontal = 4.dp)
-                    ) {
-                        Text(strings.ui.cancelAction, maxLines = 2, textAlign = androidx.compose.ui.text.style.TextAlign.Center)
-                    }
-                    Button(
-                        enabled = title.isNotBlank() && !isAnyHoursInvalid,
-                        onClick = {
-                            onSave(
-                                title,
-                                colorHex,
-                                if (isSpecialDay) 0.0 else regVal,
-                                otVal,
-                                nightVal,
-                                holVal,
-                                holOtVal,
-                                scheduledBaseHours,
-                                isPaidHoliday,
-                                isSundayPay
-                            )
-                        },
-                        modifier = Modifier.weight(1f),
-                        contentPadding = PaddingValues(horizontal = 4.dp)
-                    ) {
-                        Text(strings.ui.saveAction, maxLines = 2, textAlign = androidx.compose.ui.text.style.TextAlign.Center)
-                    }
-                }
+                },
+                modifier = Modifier.weight(1f),
+                contentPadding = PaddingValues(horizontal = 4.dp)
+            ) {
+                Text(strings.ui.saveAction, maxLines = 2, textAlign = androidx.compose.ui.text.style.TextAlign.Center)
             }
         }
     }
@@ -663,12 +529,4 @@ private fun ShiftTemplateEntity.displayTitle(strings: AppStrings): String {
     } else {
         strings.ui.defaultDayShiftTemplateName
     }
-}
-
-private fun String.isValidHoursInput(): Boolean {
-    return toDoubleOrNull()?.let { it.isFinite() && it >= 0.0 } == true
-}
-
-private fun formatTemplateHours(value: Double): String {
-    return if (value % 1.0 == 0.0) value.toInt().toString() else value.toString()
 }

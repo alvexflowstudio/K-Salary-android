@@ -334,7 +334,7 @@ fun SettingsScreen(
                     verticalArrangement = Arrangement.spacedBy(8.dp)
                 ) {
                     Text(
-                        text = strings.ui.versionLabel,
+                        text = installedVersionLabel(context, strings),
                         style = MaterialTheme.typography.titleSmall,
                         fontWeight = FontWeight.Bold
                     )
@@ -404,4 +404,10 @@ private fun ThemeOptionRow(
             }
         }
     }
+}
+
+/** Read the installed package, not a translated version constant. */
+internal fun installedVersionLabel(context: Context, strings: AppStrings): String {
+    val version = context.packageManager.getPackageInfo(context.packageName, 0).versionName.orEmpty()
+    return String.format(java.util.Locale.ROOT, strings.ui.versionLabel, version)
 }

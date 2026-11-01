@@ -13,8 +13,6 @@ import kotlinx.coroutines.flow.*
 import kotlinx.coroutines.launch
 import java.time.YearMonth
 import java.util.Locale
-import kotlin.math.max
-import kotlin.math.min
 
 @OptIn(kotlinx.coroutines.ExperimentalCoroutinesApi::class)
 class SalaryViewModel(application: Application) : AndroidViewModel(application) {
@@ -76,56 +74,7 @@ class SalaryViewModel(application: Application) : AndroidViewModel(application) 
             combine(monthDayRecords, _inputState) { records, input ->
                 Pair(records, input.allowances)
             }.collect { (recordsMap, allowances) ->
-                val records = recordsMap.values
-                val normalizedRecords = records.map { record ->
-                    normalizeWorkHours(
-                        regularHours = record.regularHours,
-                        overtimeHours = record.overtimeHours,
-                        nightHours = record.nightHours,
-                        holidayHours = record.holidayHours,
-                        holidayOvertimeHours = record.holidayOvertimeHours,
-                        isSpecialDay = record.isPaidHoliday || record.isSundayPay
-                    )
-                }
-                val regularHours = normalizedRecords.sumOf { it.regularHours }
-                val overtimeHours = normalizedRecords.sumOf { it.overtimeHours }
-                val nightHours = normalizedRecords.sumOf { it.nightHours }
-                val holidayHours = normalizedRecords.sumOf { it.holidayHours }
-                val holidayOvertimeHours = normalizedRecords.sumOf { it.holidayOvertimeHours }
-
-                // Для оплачиваемого праздника и еженедельного отдыха берём
-                // обычную базовую смену месяца. Если в месяце ещё нет смен,
-                // используем стандартные 8 часов, которые видит пользователь.
-                val averageScheduledDayHours = records
-                    .filter { record -> !record.isPaidHoliday && !record.isSundayPay }
-                    .map { scheduledBaseHours(it) }
-                    .filter { it > 0.0 }
-                    .let { hours -> if (hours.isEmpty()) 8.0 else hours.average() }
-                val paidHolidayHours = records
-                    .filter { it.isPaidHoliday }
-                    .sumOf {
-                        scheduledBaseHours(it)
-                            .takeIf { hours -> hours > 0.0 } ?: averageScheduledDayHours
-                    }
-                val sundayPayHours = records
-                    .filter { it.isSundayPay }
-                    .sumOf {
-                        scheduledBaseHours(it)
-                            .takeIf { hours -> hours > 0.0 } ?: averageScheduledDayHours
-                    }
-
-                _inputState.update {
-                    it.copy(
-                        regularHours = regularHours,
-                        overtimeHours = overtimeHours,
-                        nightHours = nightHours,
-                        holidayHours = holidayHours,
-                        holidayOvertimeHours = holidayOvertimeHours,
-                        paidHolidayHours = paidHolidayHours,
-                        sundayPayHours = sundayPayHours,
-                        allowances = allowances
-                    )
-                }
+                _inputState.update { it.withCalendarRecords(recordsMap.values).copy(allowances = allowances) }
             }
         }
 
@@ -195,36 +144,7 @@ class SalaryViewModel(application: Application) : AndroidViewModel(application) 
         day: Int,
         template: ShiftTemplateEntity
     ): DayRecordEntity {
-        val ymString = String.format(Locale.ROOT, "%04d-%02d", ym.year, ym.monthValue)
-        val dateStr = String.format(Locale.ROOT, "%04d-%02d-%02d", ym.year, ym.monthValue, day)
-        val hours = normalizeWorkHours(
-            regularHours = template.regularHours,
-            overtimeHours = template.overtimeHours,
-            nightHours = template.nightHours,
-            holidayHours = template.holidayHours,
-            holidayOvertimeHours = template.holidayOvertimeHours,
-            isSpecialDay = template.isPaidHoliday || template.isSundayPay
-        )
-        val scheduledBaseHours = normalizedHours(
-            template.scheduledBaseHours.takeIf { it > 0.0 } ?: template.regularHours,
-            8.0
-        )
-        return DayRecordEntity(
-            date = dateStr,
-            yearMonth = ymString,
-            regularHours = hours.regularHours,
-            scheduledBaseHours = scheduledBaseHours,
-            overtimeHours = hours.overtimeHours,
-            nightHours = hours.nightHours,
-            holidayHours = hours.holidayHours,
-            holidayOvertimeHours = hours.holidayOvertimeHours,
-            isPaidHoliday = template.isPaidHoliday,
-            isSundayPay = template.isSundayPay,
-            templateId = template.id,
-            // Встроенное имя локализуется на экране через templateId и не должно
-            // попадать в пользовательскую заметку в виде русского текста.
-            note = if (template.isDefault) "" else template.title
-        )
+        return template.recordFor(ym.atDay(day))
     }
 
     // --- Ручной ввод дня ---
@@ -244,23 +164,15 @@ class SalaryViewModel(application: Application) : AndroidViewModel(application) 
         val ymString = String.format(Locale.ROOT, "%04d-%02d", ym.year, ym.monthValue)
         val dateStr = String.format(Locale.ROOT, "%04d-%02d-%02d", ym.year, ym.monthValue, day)
 
-        val hours = normalizeWorkHours(
+        val record = DayRecordEntity(
+            date = dateStr,
+            yearMonth = ymString,
             regularHours = regularHours,
+            scheduledBaseHours = normalizedHours(scheduledBaseHours, 8.0),
             overtimeHours = overtimeHours,
             nightHours = nightHours,
             holidayHours = holidayHours,
             holidayOvertimeHours = holidayOvertimeHours,
-            isSpecialDay = isPaidHoliday || isSundayPay
-        )
-        val record = DayRecordEntity(
-            date = dateStr,
-            yearMonth = ymString,
-            regularHours = hours.regularHours,
-            scheduledBaseHours = normalizedHours(scheduledBaseHours, 8.0),
-            overtimeHours = hours.overtimeHours,
-            nightHours = hours.nightHours,
-            holidayHours = hours.holidayHours,
-            holidayOvertimeHours = hours.holidayOvertimeHours,
             isPaidHoliday = isPaidHoliday,
             isSundayPay = isSundayPay,
             templateId = null,
@@ -294,23 +206,15 @@ class SalaryViewModel(application: Application) : AndroidViewModel(application) 
         isSundayPay: Boolean,
         scheduledBaseHours: Double = regularHours
     ) {
-        val hours = normalizeWorkHours(
+        val template = ShiftTemplateEntity(
+            title = title.trim(),
+            colorHex = colorHex,
             regularHours = regularHours,
+            scheduledBaseHours = normalizedHours(scheduledBaseHours, 8.0),
             overtimeHours = overtimeHours,
             nightHours = nightHours,
             holidayHours = holidayHours,
             holidayOvertimeHours = holidayOvertimeHours,
-            isSpecialDay = isPaidHoliday || isSundayPay
-        )
-        val template = ShiftTemplateEntity(
-            title = title.trim(),
-            colorHex = colorHex,
-            regularHours = hours.regularHours,
-            scheduledBaseHours = normalizedHours(scheduledBaseHours, 8.0),
-            overtimeHours = hours.overtimeHours,
-            nightHours = hours.nightHours,
-            holidayHours = hours.holidayHours,
-            holidayOvertimeHours = hours.holidayOvertimeHours,
             isPaidHoliday = isPaidHoliday,
             isSundayPay = isSundayPay,
             isDefault = false
@@ -321,29 +225,7 @@ class SalaryViewModel(application: Application) : AndroidViewModel(application) 
     }
 
     fun updateShiftTemplate(template: ShiftTemplateEntity) {
-        viewModelScope.launch {
-            val hours = normalizeWorkHours(
-                regularHours = template.regularHours,
-                overtimeHours = template.overtimeHours,
-                nightHours = template.nightHours,
-                holidayHours = template.holidayHours,
-                holidayOvertimeHours = template.holidayOvertimeHours,
-                isSpecialDay = template.isPaidHoliday || template.isSundayPay
-            )
-            repository.saveShiftTemplate(
-                template.copy(
-                    regularHours = hours.regularHours,
-                    scheduledBaseHours = normalizedHours(
-                        template.scheduledBaseHours.takeIf { it > 0.0 } ?: template.regularHours,
-                        8.0
-                    ),
-                    overtimeHours = hours.overtimeHours,
-                    nightHours = hours.nightHours,
-                    holidayHours = hours.holidayHours,
-                    holidayOvertimeHours = hours.holidayOvertimeHours
-                )
-            )
-        }
+        viewModelScope.launch { repository.saveShiftTemplate(template) }
     }
 
     fun deleteShiftTemplate(templateId: Long) {
@@ -496,60 +378,6 @@ class SalaryViewModel(application: Application) : AndroidViewModel(application) 
         if (!value.isFinite()) return 0.0
         val nonNegative = value.coerceAtLeast(0.0)
         return maximum?.let { nonNegative.coerceAtMost(it) } ?: nonNegative
-    }
-
-    private fun scheduledBaseHours(record: DayRecordEntity): Double {
-        return normalizedHours(
-            record.scheduledBaseHours.takeIf { it > 0.0 } ?: record.regularHours,
-            8.0
-        )
-    }
-
-    private data class NormalizedWorkHours(
-        val regularHours: Double,
-        val overtimeHours: Double,
-        val nightHours: Double,
-        val holidayHours: Double,
-        val holidayOvertimeHours: Double
-    )
-
-    /**
-     * Праздничная или еженедельная работа не может одновременно оставаться
-     * базовыми часами. При включённой отметке переносим введённые базовые часы
-     * в праздничные поля, чтобы одна и та же работа не считалась дважды.
-     */
-    private fun normalizeWorkHours(
-        regularHours: Double,
-        overtimeHours: Double,
-        nightHours: Double,
-        holidayHours: Double,
-        holidayOvertimeHours: Double,
-        isSpecialDay: Boolean
-    ): NormalizedWorkHours {
-        val regular = normalizedHours(regularHours, 8.0)
-        val rawHoliday = normalizedHours(holidayHours)
-        val holiday = rawHoliday.coerceAtMost(8.0)
-        val holidayOvertime = normalizedHours(holidayOvertimeHours) + max(0.0, rawHoliday - holiday)
-        if (!isSpecialDay) {
-            return NormalizedWorkHours(
-                regularHours = regular,
-                overtimeHours = normalizedHours(overtimeHours),
-                nightHours = normalizedHours(nightHours),
-                holidayHours = holiday,
-                holidayOvertimeHours = holidayOvertime
-            )
-        }
-
-        val holidayCapacity = (8.0 - holiday).coerceAtLeast(0.0)
-        val movedToHoliday = min(regular, holidayCapacity)
-        val movedToHolidayOvertime = max(0.0, regular - movedToHoliday)
-        return NormalizedWorkHours(
-            regularHours = 0.0,
-            overtimeHours = normalizedHours(overtimeHours),
-            nightHours = normalizedHours(nightHours),
-            holidayHours = holiday + movedToHoliday,
-            holidayOvertimeHours = holidayOvertime + movedToHolidayOvertime
-        )
     }
 
     private fun saveCurrentMonthSnapshot() {

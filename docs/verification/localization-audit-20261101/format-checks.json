@@ -1,0 +1,50 @@
+{
+  "RU": {
+    "selectedTemplateBannerFormat": "Выбран шаблон: 'Audit % ' title'. Нажимайте на дни в календаре.",
+    "deleteTemplateMessage": "Вы действительно хотите удалить шаблон 'Audit % ' title'?"
+  },
+  "KO": {
+    "selectedTemplateBannerFormat": "선택한 템플릿: 'Audit % ' title'. 달력에서 날짜를 누르세요.",
+    "deleteTemplateMessage": "'Audit % ' title' 템플릿을 삭제하시겠습니까?"
+  },
+  "EN": {
+    "selectedTemplateBannerFormat": "Selected template: 'Audit % ' title'. Tap days in the calendar.",
+    "deleteTemplateMessage": "Do you really want to delete the 'Audit % ' title' template?"
+  },
+  "KY": {
+    "selectedTemplateBannerFormat": "Тандалган шаблон: 'Audit % ' title'. Календардагы күндү басыңыз.",
+    "deleteTemplateMessage": "'Audit % ' title' шаблонун өчүрүүнү каалайсызбы?"
+  },
+  "UZ": {
+    "selectedTemplateBannerFormat": "Tanlangan shablon: 'Audit % ' title'. Taqvimdagi kunni bosing.",
+    "deleteTemplateMessage": "'Audit % ' title' shablonini o'chirmoqchimisiz?"
+  },
+  "KK": {
+    "selectedTemplateBannerFormat": "Таңдалған үлгі: 'Audit % ' title'. Күнтізбедегі күнді басыңыз.",
+    "deleteTemplateMessage": "'Audit % ' title' үлгісін өшіру керек пе?"
+  },
+  "VI": {
+    "selectedTemplateBannerFormat": "Mẫu đã chọn: 'Audit % ' title'. Hãy chạm vào ngày trên lịch.",
+    "deleteTemplateMessage": "Bạn có chắc muốn xóa mẫu 'Audit % ' title' không?"
+  },
+  "TH": {
+    "selectedTemplateBannerFormat": "เลือกแม่แบบ: 'Audit % ' title' แตะวันที่ในปฏิทินเพื่อใช้แม่แบบ",
+    "deleteTemplateMessage": "ต้องการลบแม่แบบ 'Audit % ' title' ใช่หรือไม่"
+  },
+  "FIL": {
+    "selectedTemplateBannerFormat": "Napiling template: 'Audit % ' title'. Pindutin ang mga araw sa kalendaryo.",
+    "deleteTemplateMessage": "Sigurado ka bang gusto mong i-delete ang template na 'Audit % ' title'?"
+  },
+  "ID": {
+    "selectedTemplateBannerFormat": "Templat terpilih: 'Audit % ' title'. Ketuk hari di kalender.",
+    "deleteTemplateMessage": "Hapus templat 'Audit % ' title'?"
+  },
+  "MS": {
+    "selectedTemplateBannerFormat": "Templat dipilih: 'Audit % ' title'. Ketik hari pada kalendar.",
+    "deleteTemplateMessage": "Padam templat 'Audit % ' title'?"
+  },
+  "MY": {
+    "selectedTemplateBannerFormat": "ရွေးထားသောပုံစံ: 'Audit % ' title'။ ပြက္ခဒိန်ရှိရက်ကိုနှိပ်ပါ။",
+    "deleteTemplateMessage": "'Audit % ' title' ပုံစံကို ဖျက်လိုပါသလား?"
+  }
+}

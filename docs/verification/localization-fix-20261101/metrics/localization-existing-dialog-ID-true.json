@@ -1,0 +1,173 @@
+[
+  {
+    "text": "ID\/true",
+    "font_sp": 15,
+    "width_px": 93,
+    "height_px": 40,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "Versi 1.0.4",
+    "font_sp": 15,
+    "width_px": 141,
+    "height_px": 40,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "1 November 2026",
+    "font_sp": 16,
+    "width_px": 254,
+    "height_px": 38,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "8",
+    "font_sp": 15,
+    "width_px": 480,
+    "height_px": 40,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "Dasar (maks. 8 jam, 1.0×)",
+    "font_sp": 12,
+    "width_px": 269,
+    "height_px": 28,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "Jika ini hari istirahat atau libur, gunakan 1.5× (maks. 8 jam) dan 2.0× (lebih dari 8 jam).",
+    "font_sp": 12,
+    "width_px": 544,
+    "height_px": 60,
+    "lines": 2,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "2.5",
+    "font_sp": 15,
+    "width_px": 480,
+    "height_px": 40,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "Lembur\/istirahat\/libur (1.5×)",
+    "font_sp": 12,
+    "width_px": 301,
+    "height_px": 28,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "4",
+    "font_sp": 15,
+    "width_px": 480,
+    "height_px": 40,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "Jam kerja malam (+0.5×)",
+    "font_sp": 12,
+    "width_px": 266,
+    "height_px": 28,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "2",
+    "font_sp": 15,
+    "width_px": 480,
+    "height_px": 40,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "Istirahat\/libur >8 j (2.0×)",
+    "font_sp": 12,
+    "width_px": 255,
+    "height_px": 28,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "Hari libur berbayar",
+    "font_sp": 12,
+    "width_px": 194,
+    "height_px": 28,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "Istirahat mingguan berbayar",
+    "font_sp": 12,
+    "width_px": 297,
+    "height_px": 28,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "Audit shift",
+    "font_sp": 15,
+    "width_px": 480,
+    "height_px": 40,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "Catatan",
+    "font_sp": 12,
+    "width_px": 84,
+    "height_px": 32,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "Hapus catatan hari ini",
+    "font_sp": 12.998047,
+    "width_px": 160,
+    "height_px": 72,
+    "lines": 2,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "Batal",
+    "font_sp": 14,
+    "width_px": 64,
+    "height_px": 36,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "Simpan",
+    "font_sp": 14,
+    "width_px": 95,
+    "height_px": 36,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  }
+]

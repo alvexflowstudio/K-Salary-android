@@ -1,0 +1,173 @@
+[
+  {
+    "text": "MS\/false",
+    "font_sp": 15,
+    "width_px": 120,
+    "height_px": 40,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "Versi 1.0.4",
+    "font_sp": 15,
+    "width_px": 141,
+    "height_px": 40,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "1 November 2026",
+    "font_sp": 16,
+    "width_px": 254,
+    "height_px": 38,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "-1",
+    "font_sp": 15,
+    "width_px": 480,
+    "height_px": 40,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "Asas (maks. 8 jam, 1.0×)",
+    "font_sp": 12,
+    "width_px": 260,
+    "height_px": 28,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "Masukkan jam asas sebagai nombor dari 0 hingga 8.",
+    "font_sp": 12,
+    "width_px": 544,
+    "height_px": 60,
+    "lines": 2,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "2.5",
+    "font_sp": 15,
+    "width_px": 480,
+    "height_px": 40,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "Lebih masa\/rehat\/cuti (1.5×)",
+    "font_sp": 12,
+    "width_px": 305,
+    "height_px": 28,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "4",
+    "font_sp": 15,
+    "width_px": 480,
+    "height_px": 40,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "Jam kerja malam (+0.5×)",
+    "font_sp": 12,
+    "width_px": 266,
+    "height_px": 28,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "2",
+    "font_sp": 15,
+    "width_px": 480,
+    "height_px": 40,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "Rehat\/cuti >8 jam (2.0×)",
+    "font_sp": 12,
+    "width_px": 257,
+    "height_px": 28,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "Cuti berbayar",
+    "font_sp": 12,
+    "width_px": 141,
+    "height_px": 28,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "Rehat mingguan berbayar",
+    "font_sp": 12,
+    "width_px": 271,
+    "height_px": 28,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "Audit shift",
+    "font_sp": 15,
+    "width_px": 480,
+    "height_px": 40,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "Nota",
+    "font_sp": 12,
+    "width_px": 52,
+    "height_px": 32,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "Kosongkan hari",
+    "font_sp": 14,
+    "width_px": 160,
+    "height_px": 72,
+    "lines": 2,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "Batal",
+    "font_sp": 14,
+    "width_px": 64,
+    "height_px": 36,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "Simpan",
+    "font_sp": 14,
+    "width_px": 95,
+    "height_px": 36,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  }
+]

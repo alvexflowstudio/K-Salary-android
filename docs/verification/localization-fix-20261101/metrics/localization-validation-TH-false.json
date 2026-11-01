@@ -1,0 +1,173 @@
+[
+  {
+    "text": "TH\/false",
+    "font_sp": 15,
+    "width_px": 115,
+    "height_px": 40,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "เวอร์ชัน 1.0.4",
+    "font_sp": 15,
+    "width_px": 170,
+    "height_px": 41,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "1 พฤศจิกายน ค.ศ. 2026",
+    "font_sp": 16,
+    "width_px": 333,
+    "height_px": 44,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "-1",
+    "font_sp": 15,
+    "width_px": 480,
+    "height_px": 40,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "พื้นฐาน (ไม่เกิน 8 ชม., 1.0×)",
+    "font_sp": 12,
+    "width_px": 274,
+    "height_px": 33,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "กรอกชั่วโมงพื้นฐานเป็นตัวเลขตั้งแต่ 0 ถึง 8",
+    "font_sp": 12,
+    "width_px": 419,
+    "height_px": 33,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "2.5",
+    "font_sp": 15,
+    "width_px": 480,
+    "height_px": 40,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "ล่วงเวลา\/วันหยุด (1.5×)",
+    "font_sp": 12,
+    "width_px": 233,
+    "height_px": 33,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "4",
+    "font_sp": 15,
+    "width_px": 480,
+    "height_px": 40,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "กลางคืน (+0.5×)",
+    "font_sp": 12,
+    "width_px": 164,
+    "height_px": 33,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "2",
+    "font_sp": 15,
+    "width_px": 480,
+    "height_px": 40,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "วันหยุดเกิน 8 ชม. (2.0×)",
+    "font_sp": 12,
+    "width_px": 237,
+    "height_px": 33,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "วันหยุดที่ได้รับค่าจ้าง",
+    "font_sp": 12,
+    "width_px": 207,
+    "height_px": 33,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "วันหยุดประจำสัปดาห์ที่ได้รับค่าจ้าง",
+    "font_sp": 12,
+    "width_px": 344,
+    "height_px": 33,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "Audit shift",
+    "font_sp": 15,
+    "width_px": 480,
+    "height_px": 40,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "หมายเหตุ",
+    "font_sp": 12,
+    "width_px": 93,
+    "height_px": 33,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "ล้างข้อมูลวันนี้",
+    "font_sp": 14,
+    "width_px": 160,
+    "height_px": 74,
+    "lines": 2,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "ยกเลิก",
+    "font_sp": 14,
+    "width_px": 81,
+    "height_px": 38,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "บันทึก",
+    "font_sp": 14,
+    "width_px": 75,
+    "height_px": 38,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  }
+]

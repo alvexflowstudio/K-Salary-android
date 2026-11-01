@@ -1,0 +1,389 @@
+[
+  {
+    "text": "KY\/true",
+    "font_sp": 15,
+    "width_px": 102,
+    "height_px": 40,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "Айлык иш жазууларынын жыйынтыгы",
+    "font_sp": 16,
+    "width_px": 472,
+    "height_px": 88,
+    "lines": 2,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "Иштеген күндөр:",
+    "font_sp": 12,
+    "width_px": 325,
+    "height_px": 32,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "0 күн",
+    "font_sp": 12,
+    "width_px": 187,
+    "height_px": 32,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "Негизги сааттар (1.0×):",
+    "font_sp": 12,
+    "width_px": 325,
+    "height_px": 32,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "176 саат",
+    "font_sp": 12,
+    "width_px": 187,
+    "height_px": 32,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "Төлөнүүчү жумалык эс алуу (1 күн):",
+    "font_sp": 12,
+    "width_px": 325,
+    "height_px": 64,
+    "lines": 2,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "+32 саат",
+    "font_sp": 12,
+    "width_px": 187,
+    "height_px": 32,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "Төлөнүүчү майрамдар (1 күн):",
+    "font_sp": 12,
+    "width_px": 325,
+    "height_px": 64,
+    "lines": 2,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "+8 саат",
+    "font_sp": 12,
+    "width_px": 187,
+    "height_px": 32,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "Ашыкча\/эс алуу\/майрам (1.5×):",
+    "font_sp": 12,
+    "width_px": 325,
+    "height_px": 64,
+    "lines": 2,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "+32.5 саат",
+    "font_sp": 12,
+    "width_px": 187,
+    "height_px": 32,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "Түнкү иш сааттары (+0.5×):",
+    "font_sp": 12,
+    "width_px": 325,
+    "height_px": 32,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "+64 саат",
+    "font_sp": 12,
+    "width_px": 187,
+    "height_px": 32,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "Майрам\/дем алыш иши (1.5×\/2.0×):",
+    "font_sp": 12,
+    "width_px": 325,
+    "height_px": 64,
+    "lines": 2,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "+12 саат",
+    "font_sp": 12,
+    "width_px": 187,
+    "height_px": 32,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "Үстөктөр жана кошумчалар:",
+    "font_sp": 12,
+    "width_px": 325,
+    "height_px": 32,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "+1,234,567,890 ₩",
+    "font_sp": 11.997192,
+    "width_px": 187,
+    "height_px": 32,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "Колго тийүүчү акча",
+    "font_sp": 16,
+    "width_px": 292,
+    "height_px": 38,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "2,305,843,007,979,126,061 ₩",
+    "font_sp": 19.99524,
+    "width_px": 496,
+    "height_px": 48,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "Чегерилген жалпы айлык",
+    "font_sp": 9.498413,
+    "width_px": 218,
+    "height_px": 32,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "2,305,843,009,213,693,951 ₩",
+    "font_sp": 8.499756,
+    "width_px": 212,
+    "height_px": 44,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "Жалпы кармап калуулар",
+    "font_sp": 8.998657,
+    "width_px": 198,
+    "height_px": 32,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "-1,234,567,890 ₩",
+    "font_sp": 12.9991455,
+    "width_px": 194,
+    "height_px": 44,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "Эсептөөнүн түзүмү",
+    "font_sp": 12,
+    "width_px": 456,
+    "height_px": 32,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "Негизги сааттардын акысы (1.0×)",
+    "font_sp": 12,
+    "width_px": 289,
+    "height_px": 64,
+    "lines": 2,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "2,305,843,009,213,693,951 ₩",
+    "font_sp": 7.4993896,
+    "width_px": 199,
+    "height_px": 32,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "Жумалык эс алуу акысы (1.0×)",
+    "font_sp": 12,
+    "width_px": 289,
+    "height_px": 64,
+    "lines": 2,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "+1,234,567,890 ₩",
+    "font_sp": 12,
+    "width_px": 199,
+    "height_px": 32,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "Төлөнүүчү майрам акысы (1.0×)",
+    "font_sp": 12,
+    "width_px": 289,
+    "height_px": 64,
+    "lines": 2,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "+1,234,567,890 ₩",
+    "font_sp": 12,
+    "width_px": 199,
+    "height_px": 32,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "Ашыкча\/эс алуу\/майрам (1.5×)",
+    "font_sp": 12,
+    "width_px": 289,
+    "height_px": 64,
+    "lines": 2,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "+1,234,567,890 ₩",
+    "font_sp": 12,
+    "width_px": 199,
+    "height_px": 32,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "Түнкү үстөк (+0.5×)",
+    "font_sp": 12,
+    "width_px": 289,
+    "height_px": 32,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "+1,234,567,890 ₩",
+    "font_sp": 12,
+    "width_px": 199,
+    "height_px": 32,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "Майрам\/дем алыш акысы (1.5×\/2.0×)",
+    "font_sp": 12,
+    "width_px": 289,
+    "height_px": 64,
+    "lines": 2,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "+1,234,567,890 ₩",
+    "font_sp": 12,
+    "width_px": 199,
+    "height_px": 32,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "Үстөк жана бонустар",
+    "font_sp": 12,
+    "width_px": 289,
+    "height_px": 32,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "+1,234,567,890 ₩",
+    "font_sp": 12,
+    "width_px": 199,
+    "height_px": 32,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "Башка кармоолор",
+    "font_sp": 12,
+    "width_px": 289,
+    "height_px": 32,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "-1,234,567,890 ₩",
+    "font_sp": 12,
+    "width_px": 199,
+    "height_px": 32,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "Салык салынуучу база",
+    "font_sp": 12,
+    "width_px": 289,
+    "height_px": 32,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "2,305,843,009,213,693,951 ₩",
+    "font_sp": 7.4993896,
+    "width_px": 199,
+    "height_px": 32,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  }
+]

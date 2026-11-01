@@ -22,7 +22,7 @@ import kotlinx.coroutines.launch
         DayRecordEntity::class,
         MonthlySnapshotEntity::class
     ],
-    version = 5,
+    version = 6,
     exportSchema = false
 )
 abstract class AppDatabase : RoomDatabase() {
@@ -84,6 +84,14 @@ abstract class AppDatabase : RoomDatabase() {
             }
         }
 
+        internal val MIGRATION_5_6 = object : Migration(5, 6) {
+            override fun migrate(db: SupportSQLiteDatabase) {
+                // Preserve the original columns and decode their legacy meaning on read.
+                db.execSQL("ALTER TABLE day_records ADD COLUMN workHoursVersion INTEGER NOT NULL DEFAULT 1")
+                db.execSQL("ALTER TABLE shift_templates ADD COLUMN workHoursVersion INTEGER NOT NULL DEFAULT 1")
+            }
+        }
+
         @Volatile
         private var INSTANCE: AppDatabase? = null
 
@@ -99,6 +107,7 @@ abstract class AppDatabase : RoomDatabase() {
                     .addMigrations(MIGRATION_2_3)
                     .addMigrations(MIGRATION_3_4)
                     .addMigrations(MIGRATION_4_5)
+                    .addMigrations(MIGRATION_5_6)
                     .fallbackToDestructiveMigration(dropAllTables = true)
                     .build()
                 INSTANCE = instance

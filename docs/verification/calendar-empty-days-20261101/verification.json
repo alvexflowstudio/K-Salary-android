@@ -1,0 +1,58 @@
+{
+  "date": "2026-11-01",
+  "status": "VERIFIED",
+  "branch": "codex/calendar-editor-payroll",
+  "application_id": "com.koreasalary.calculator",
+  "version_code": 4,
+  "version_name": "1.0.3",
+  "apk_sha256": "c9ec6ed9ab0037cdd207f5ff49dabb7a0b2d18c2ede14422f01d6b46f1749c09",
+  "unit_tests": {
+    "passed": 46,
+    "failed": 0
+  },
+  "android_tests": {
+    "passed": 10,
+    "failed": 0
+  },
+  "themes": [
+    "LIGHT",
+    "DARK"
+  ],
+  "october_empty_cases": [
+    7,
+    17,
+    18,
+    19
+  ],
+  "october_populated_cases": [
+    6,
+    11,
+    9
+  ],
+  "all_twelve_language_regression": "PASS",
+  "device": "Read-only Pixel_8 Android 37.1, 320x568 dp, font scale 1.0",
+  "upgrade": {
+    "from": 3,
+    "to": 4,
+    "old_apk_sha256": "6e89eb653295750888330638caeec3a1df46f5ce5c852b24f57bfa90fc04ad5e",
+    "seed_under_v3": "PASS",
+    "verify_after_install_r_v4": "PASS",
+    "matching_signer_sha256": "49800792c9b817ce87f43899affe286e83e5cad951600b107d6271d0655532cd"
+  },
+  "changed_source_sha256": {
+    "app/build.gradle.kts": "5ea216eec9dc21d14ca4bbe0423fd0bcd54cb36fcb78bcb20c84fe98babe8667",
+    "app/src/main/java/com/koreasalary/calculator/presentation/screens/calculator/CalculatorScreen.kt": "3142d993ebdcefe11cd3ae47bd5abef373942e0a89079d6a3f61b3a323747f49",
+    "app/src/androidTest/java/com/koreasalary/calculator/DayEditDialogTest.kt": "7fcf185893403be17953854f1c6834661f6d92186b1c5ad0c9a12a3498648b47"
+  },
+  "all_other_source_files_unchanged": true,
+  "unchanged_source_file_count": 85,
+  "evidence_sha256": {
+    "empty-dark.png": "fd33a4ce22d2027a740899e1939abc026e4fb1ba31395183867adbe12e61c7cd",
+    "empty-light.png": "825d0959651a34c202c607fb6217f543fe086c40a7b6561764173c1afaffef67",
+    "instrumentation.log": "3986a1404caf68cb40eba5297ddcc8bf056bc3d6182f64d1cd2e8e97948e3ea9",
+    "regression-before-ui.log": "362439413554a02243ba808c17af09290a79448028722afb3047a4eb22eb5d34",
+    "ui-before-fixture-fix.log": "fae2659e808ac09173f0405682b11dd3cbc3d23e1e11364d114db3f3b1f67666",
+    "upgrade-v3-v4.log": "742477f7449c421cc103ab6c7656c8b81a14ab805bfb9a632fffbda63abe7048"
+  },
+  "limitation": "Emulator verification only; Samsung not connected or modified"
+}

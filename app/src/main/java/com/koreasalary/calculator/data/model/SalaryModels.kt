@@ -51,7 +51,7 @@ data class CustomDeductionItem(
 data class SalaryInputState(
     val hourlyRate: Double = 0.0, // Новому пользователю нужно ввести свою ставку вручную
     val regularHours: Double = 0.0,    // Отработанные базовые часы (до 8ч в день, 1.0x)
-    val overtimeHours: Double = 0.0,   // Сверхурочные часы (будни свыше 8ч, 1.5x)
+    val overtimeHours: Double = 0.0,   // Combined 1.5x work; retains legacy overtime storage
     val nightHours: Double = 0.0,      // Ночные часы (22:00 - 06:00, доплата +0.5x)
     val holidayHours: Double = 0.0,    // Праздничные/выходные до 8ч (1.5x)
     val holidayOvertimeHours: Double = 0.0, // Праздничные свыше 8ч (Чоп, 2.0x)
@@ -129,7 +129,7 @@ data class SalaryResult(
  * Структура резервной копии данных для Экспорта/Импорта JSON
  */
 data class BackupPayload(
-    val version: Int = 3,
+    val version: Int = 4,
     val timestamp: Long = System.currentTimeMillis(),
     val templates: List<ShiftTemplateEntity> = emptyList(),
     val dayRecords: List<DayRecordEntity> = emptyList(),

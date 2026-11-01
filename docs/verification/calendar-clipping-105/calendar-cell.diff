@@ -1,0 +1,76 @@
+--- task-start/CalculatorScreen.kt
++++ final/CalculatorScreen.kt
+@@ -18,6 +18,7 @@
+ import com.koreasalary.calculator.data.model.WorkHours
+ import androidx.compose.ui.draw.clip
+ import androidx.compose.ui.text.font.FontWeight
++import androidx.compose.ui.text.style.LineBreak
+ import androidx.compose.ui.text.style.TextAlign
+ import androidx.compose.ui.text.style.TextOverflow
+ import androidx.compose.ui.unit.dp
+@@ -418,7 +419,7 @@
+                 if (hasShift) Modifier.border(
+                     width = 1.5.dp,
+                     color = if (calendarHasRedDateBorder(dayOfWeek, dayRecord)) palette.danger
+-                        else MaterialTheme.colorScheme.primary,
++                        else LightAppPalette.accent,
+                     shape = RoundedCornerShape(8.dp)
+                 ) else Modifier
+             )
+@@ -426,21 +427,17 @@
+             .padding(2.dp),
+         contentAlignment = Alignment.Center
+     ) {
++        // Keep the grid geometry; use the former date-frame space for two readable badge lines.
+         Column(
+             horizontalAlignment = Alignment.CenterHorizontally,
+-            verticalArrangement = Arrangement.SpaceBetween,
+-            modifier = Modifier.fillMaxSize().padding(vertical = 2.dp)
++            verticalArrangement = if (hasShift) Arrangement.Top else Arrangement.SpaceBetween,
++            modifier = Modifier.fillMaxSize().padding(vertical = if (hasShift) 0.dp else 2.dp)
+         ) {
+             Text(
+                 text = dayNumber.toString(),
+                 modifier = Modifier
+                     .testTag("calendar-date-$dayNumber")
+-                    .then(
+-                        if (hasShift) Modifier.border(1.dp,
+-                            if (calendarHasRedDateBorder(dayOfWeek, dayRecord)) palette.danger else palette.accent,
+-                            RoundedCornerShape(4.dp)) else Modifier
+-                    )
+-                    .padding(horizontal = 4.dp, vertical = 1.dp),
++                    .then(if (hasShift) Modifier else Modifier.padding(horizontal = 4.dp, vertical = 1.dp)),
+                 fontSize = 12.sp,
+                 lineHeight = if (hasShift) 14.sp else LocalTextStyle.current.lineHeight,
+                 fontWeight = if (hasShift) FontWeight.ExtraBold else FontWeight.Medium,
+@@ -456,18 +453,23 @@
+                     modifier = Modifier
+                         .clip(RoundedCornerShape(4.dp))
+                         .background(badgeColor.copy(alpha = 0.16f))
+-                        .padding(horizontal = 3.dp, vertical = 1.dp)
++                        .padding(horizontal = 1.dp)
+                 ) {
+-                    FittingText(
++                    Text(
+                         text = badgeLabel,
+-                        textModifier = Modifier.testTag("calendar-badge-$dayNumber"),
+-                        style = LocalTextStyle.current.copy(lineHeight = 12.sp),
+-                        scaleLineHeight = true,
++                        // Center against the same width used by the paragraph measurer. A wrap-content
++                        // Text can otherwise paint its final glyph beyond the clipped badge.
++                        modifier = Modifier.fillMaxWidth().testTag("calendar-badge-$dayNumber"),
++                        style = LocalTextStyle.current.copy(
++                            lineHeight = 10.sp,
++                            lineBreak = LineBreak.Heading
++                        ),
++                        textAlign = TextAlign.Center,
+                         fontSize = 9.sp,
+                         fontWeight = FontWeight.Bold,
+                         color = badgeTextColor,
+-                        maxLines = 1,
+-                        softWrap = false
++                        maxLines = 2,
++                        softWrap = true
+                     )
+                 }
+             } else {

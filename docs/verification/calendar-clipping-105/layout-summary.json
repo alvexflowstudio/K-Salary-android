@@ -1,0 +1,389 @@
+{
+  "cases": 72,
+  "languages": 12,
+  "themes": [
+    "LIGHT",
+    "DARK"
+  ],
+  "screens_dp": [
+    "320x568",
+    "360x800",
+    "411x891"
+  ],
+  "font_scale": 1.0,
+  "density": 320,
+  "text_layouts": 1800,
+  "min_badge_font_sp": 9,
+  "clipping_overlap_unreadable_failures": 0,
+  "all_baseline_cell_rectangles_identical": true,
+  "geometry_compared_cases": [
+    "calendar-before-EN-false-320dp.json",
+    "calendar-before-EN-true-320dp.json",
+    "calendar-before-KO-false-320dp.json",
+    "calendar-before-KO-true-320dp.json",
+    "calendar-before-TH-false-320dp.json",
+    "calendar-before-TH-true-320dp.json"
+  ],
+  "measurements": [
+    {
+      "file": "calendar-after-EN-false-320dp.json",
+      "text_layouts": 25,
+      "minimum_font_sp": 9
+    },
+    {
+      "file": "calendar-after-EN-false-360dp.json",
+      "text_layouts": 25,
+      "minimum_font_sp": 9
+    },
+    {
+      "file": "calendar-after-EN-false-411dp.json",
+      "text_layouts": 25,
+      "minimum_font_sp": 9
+    },
+    {
+      "file": "calendar-after-EN-true-320dp.json",
+      "text_layouts": 25,
+      "minimum_font_sp": 9
+    },
+    {
+      "file": "calendar-after-EN-true-360dp.json",
+      "text_layouts": 25,
+      "minimum_font_sp": 9
+    },
+    {
+      "file": "calendar-after-EN-true-411dp.json",
+      "text_layouts": 25,
+      "minimum_font_sp": 9
+    },
+    {
+      "file": "calendar-after-FIL-false-320dp.json",
+      "text_layouts": 25,
+      "minimum_font_sp": 9
+    },
+    {
+      "file": "calendar-after-FIL-false-360dp.json",
+      "text_layouts": 25,
+      "minimum_font_sp": 9
+    },
+    {
+      "file": "calendar-after-FIL-false-411dp.json",
+      "text_layouts": 25,
+      "minimum_font_sp": 9
+    },
+    {
+      "file": "calendar-after-FIL-true-320dp.json",
+      "text_layouts": 25,
+      "minimum_font_sp": 9
+    },
+    {
+      "file": "calendar-after-FIL-true-360dp.json",
+      "text_layouts": 25,
+      "minimum_font_sp": 9
+    },
+    {
+      "file": "calendar-after-FIL-true-411dp.json",
+      "text_layouts": 25,
+      "minimum_font_sp": 9
+    },
+    {
+      "file": "calendar-after-ID-false-320dp.json",
+      "text_layouts": 25,
+      "minimum_font_sp": 9
+    },
+    {
+      "file": "calendar-after-ID-false-360dp.json",
+      "text_layouts": 25,
+      "minimum_font_sp": 9
+    },
+    {
+      "file": "calendar-after-ID-false-411dp.json",
+      "text_layouts": 25,
+      "minimum_font_sp": 9
+    },
+    {
+      "file": "calendar-after-ID-true-320dp.json",
+      "text_layouts": 25,
+      "minimum_font_sp": 9
+    },
+    {
+      "file": "calendar-after-ID-true-360dp.json",
+      "text_layouts": 25,
+      "minimum_font_sp": 9
+    },
+    {
+      "file": "calendar-after-ID-true-411dp.json",
+      "text_layouts": 25,
+      "minimum_font_sp": 9
+    },
+    {
+      "file": "calendar-after-KK-false-320dp.json",
+      "text_layouts": 25,
+      "minimum_font_sp": 9
+    },
+    {
+      "file": "calendar-after-KK-false-360dp.json",
+      "text_layouts": 25,
+      "minimum_font_sp": 9
+    },
+    {
+      "file": "calendar-after-KK-false-411dp.json",
+      "text_layouts": 25,
+      "minimum_font_sp": 9
+    },
+    {
+      "file": "calendar-after-KK-true-320dp.json",
+      "text_layouts": 25,
+      "minimum_font_sp": 9
+    },
+    {
+      "file": "calendar-after-KK-true-360dp.json",
+      "text_layouts": 25,
+      "minimum_font_sp": 9
+    },
+    {
+      "file": "calendar-after-KK-true-411dp.json",
+      "text_layouts": 25,
+      "minimum_font_sp": 9
+    },
+    {
+      "file": "calendar-after-KO-false-320dp.json",
+      "text_layouts": 25,
+      "minimum_font_sp": 9
+    },
+    {
+      "file": "calendar-after-KO-false-360dp.json",
+      "text_layouts": 25,
+      "minimum_font_sp": 9
+    },
+    {
+      "file": "calendar-after-KO-false-411dp.json",
+      "text_layouts": 25,
+      "minimum_font_sp": 9
+    },
+    {
+      "file": "calendar-after-KO-true-320dp.json",
+      "text_layouts": 25,
+      "minimum_font_sp": 9
+    },
+    {
+      "file": "calendar-after-KO-true-360dp.json",
+      "text_layouts": 25,
+      "minimum_font_sp": 9
+    },
+    {
+      "file": "calendar-after-KO-true-411dp.json",
+      "text_layouts": 25,
+      "minimum_font_sp": 9
+    },
+    {
+      "file": "calendar-after-KY-false-320dp.json",
+      "text_layouts": 25,
+      "minimum_font_sp": 9
+    },
+    {
+      "file": "calendar-after-KY-false-360dp.json",
+      "text_layouts": 25,
+      "minimum_font_sp": 9
+    },
+    {
+      "file": "calendar-after-KY-false-411dp.json",
+      "text_layouts": 25,
+      "minimum_font_sp": 9
+    },
+    {
+      "file": "calendar-after-KY-true-320dp.json",
+      "text_layouts": 25,
+      "minimum_font_sp": 9
+    },
+    {
+      "file": "calendar-after-KY-true-360dp.json",
+      "text_layouts": 25,
+      "minimum_font_sp": 9
+    },
+    {
+      "file": "calendar-after-KY-true-411dp.json",
+      "text_layouts": 25,
+      "minimum_font_sp": 9
+    },
+    {
+      "file": "calendar-after-MS-false-320dp.json",
+      "text_layouts": 25,
+      "minimum_font_sp": 9
+    },
+    {
+      "file": "calendar-after-MS-false-360dp.json",
+      "text_layouts": 25,
+      "minimum_font_sp": 9
+    },
+    {
+      "file": "calendar-after-MS-false-411dp.json",
+      "text_layouts": 25,
+      "minimum_font_sp": 9
+    },
+    {
+      "file": "calendar-after-MS-true-320dp.json",
+      "text_layouts": 25,
+      "minimum_font_sp": 9
+    },
+    {
+      "file": "calendar-after-MS-true-360dp.json",
+      "text_layouts": 25,
+      "minimum_font_sp": 9
+    },
+    {
+      "file": "calendar-after-MS-true-411dp.json",
+      "text_layouts": 25,
+      "minimum_font_sp": 9
+    },
+    {
+      "file": "calendar-after-MY-false-320dp.json",
+      "text_layouts": 25,
+      "minimum_font_sp": 9
+    },
+    {
+      "file": "calendar-after-MY-false-360dp.json",
+      "text_layouts": 25,
+      "minimum_font_sp": 9
+    },
+    {
+      "file": "calendar-after-MY-false-411dp.json",
+      "text_layouts": 25,
+      "minimum_font_sp": 9
+    },
+    {
+      "file": "calendar-after-MY-true-320dp.json",
+      "text_layouts": 25,
+      "minimum_font_sp": 9
+    },
+    {
+      "file": "calendar-after-MY-true-360dp.json",
+      "text_layouts": 25,
+      "minimum_font_sp": 9
+    },
+    {
+      "file": "calendar-after-MY-true-411dp.json",
+      "text_layouts": 25,
+      "minimum_font_sp": 9
+    },
+    {
+      "file": "calendar-after-RU-false-320dp.json",
+      "text_layouts": 25,
+      "minimum_font_sp": 9
+    },
+    {
+      "file": "calendar-after-RU-false-360dp.json",
+      "text_layouts": 25,
+      "minimum_font_sp": 9
+    },
+    {
+      "file": "calendar-after-RU-false-411dp.json",
+      "text_layouts": 25,
+      "minimum_font_sp": 9
+    },
+    {
+      "file": "calendar-after-RU-true-320dp.json",
+      "text_layouts": 25,
+      "minimum_font_sp": 9
+    },
+    {
+      "file": "calendar-after-RU-true-360dp.json",
+      "text_layouts": 25,
+      "minimum_font_sp": 9
+    },
+    {
+      "file": "calendar-after-RU-true-411dp.json",
+      "text_layouts": 25,
+      "minimum_font_sp": 9
+    },
+    {
+      "file": "calendar-after-TH-false-320dp.json",
+      "text_layouts": 25,
+      "minimum_font_sp": 9
+    },
+    {
+      "file": "calendar-after-TH-false-360dp.json",
+      "text_layouts": 25,
+      "minimum_font_sp": 9
+    },
+    {
+      "file": "calendar-after-TH-false-411dp.json",
+      "text_layouts": 25,
+      "minimum_font_sp": 9
+    },
+    {
+      "file": "calendar-after-TH-true-320dp.json",
+      "text_layouts": 25,
+      "minimum_font_sp": 9
+    },
+    {
+      "file": "calendar-after-TH-true-360dp.json",
+      "text_layouts": 25,
+      "minimum_font_sp": 9
+    },
+    {
+      "file": "calendar-after-TH-true-411dp.json",
+      "text_layouts": 25,
+      "minimum_font_sp": 9
+    },
+    {
+      "file": "calendar-after-UZ-false-320dp.json",
+      "text_layouts": 25,
+      "minimum_font_sp": 9
+    },
+    {
+      "file": "calendar-after-UZ-false-360dp.json",
+      "text_layouts": 25,
+      "minimum_font_sp": 9
+    },
+    {
+      "file": "calendar-after-UZ-false-411dp.json",
+      "text_layouts": 25,
+      "minimum_font_sp": 9
+    },
+    {
+      "file": "calendar-after-UZ-true-320dp.json",
+      "text_layouts": 25,
+      "minimum_font_sp": 9
+    },
+    {
+      "file": "calendar-after-UZ-true-360dp.json",
+      "text_layouts": 25,
+      "minimum_font_sp": 9
+    },
+    {
+      "file": "calendar-after-UZ-true-411dp.json",
+      "text_layouts": 25,
+      "minimum_font_sp": 9
+    },
+    {
+      "file": "calendar-after-VI-false-320dp.json",
+      "text_layouts": 25,
+      "minimum_font_sp": 9
+    },
+    {
+      "file": "calendar-after-VI-false-360dp.json",
+      "text_layouts": 25,
+      "minimum_font_sp": 9
+    },
+    {
+      "file": "calendar-after-VI-false-411dp.json",
+      "text_layouts": 25,
+      "minimum_font_sp": 9
+    },
+    {
+      "file": "calendar-after-VI-true-320dp.json",
+      "text_layouts": 25,
+      "minimum_font_sp": 9
+    },
+    {
+      "file": "calendar-after-VI-true-360dp.json",
+      "text_layouts": 25,
+      "minimum_font_sp": 9
+    },
+    {
+      "file": "calendar-after-VI-true-411dp.json",
+      "text_layouts": 25,
+      "minimum_font_sp": 9
+    }
+  ]
+}

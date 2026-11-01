@@ -1,0 +1,173 @@
+[
+  {
+    "text": "MY\/false",
+    "font_sp": 15,
+    "width_px": 120,
+    "height_px": 40,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "ဗားရှင်း 1.0.4",
+    "font_sp": 15,
+    "width_px": 168,
+    "height_px": 66,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "2026 နိုဝင်ဘာ 1",
+    "font_sp": 16,
+    "width_px": 219,
+    "height_px": 70,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "-1",
+    "font_sp": 15,
+    "width_px": 480,
+    "height_px": 40,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "အခြေခံ (၈ နာရီအထိ၊ 1.0×)",
+    "font_sp": 12,
+    "width_px": 275,
+    "height_px": 53,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "အခြေခံနာရီကို ၀ မှ ၈ အထိ ဂဏန်းဖြင့် ထည့်ပါ။",
+    "font_sp": 12,
+    "width_px": 478,
+    "height_px": 53,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "2.5",
+    "font_sp": 15,
+    "width_px": 480,
+    "height_px": 40,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "အချိန်ပို\/ပိတ်ရက် (1.5×)",
+    "font_sp": 12,
+    "width_px": 242,
+    "height_px": 53,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "4",
+    "font_sp": 15,
+    "width_px": 480,
+    "height_px": 40,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "ညအလုပ် (+0.5×)",
+    "font_sp": 12,
+    "width_px": 177,
+    "height_px": 53,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "2",
+    "font_sp": 15,
+    "width_px": 480,
+    "height_px": 40,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "ပိတ်ရက် ၈ နာရီကျော် (2.0×)",
+    "font_sp": 12,
+    "width_px": 283,
+    "height_px": 53,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "လစာရပိတ်ရက်",
+    "font_sp": 12,
+    "width_px": 158,
+    "height_px": 53,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "အပတ်စဉ် လစာရနားရက်",
+    "font_sp": 12,
+    "width_px": 255,
+    "height_px": 53,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "Audit shift",
+    "font_sp": 15,
+    "width_px": 480,
+    "height_px": 40,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "မှတ်ချက်",
+    "font_sp": 12,
+    "width_px": 92,
+    "height_px": 54,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "ထိုနေ့မှတ်တမ်းဖျက်ရန်",
+    "font_sp": 12.998047,
+    "width_px": 160,
+    "height_px": 92,
+    "lines": 2,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "ပယ်ဖျက်ရန်",
+    "font_sp": 14,
+    "width_px": 143,
+    "height_px": 62,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "သိမ်းရန်",
+    "font_sp": 14,
+    "width_px": 95,
+    "height_px": 62,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  }
+]

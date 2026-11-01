@@ -21,7 +21,7 @@ class SalaryRepository(
     private val database: AppDatabase
 ) {
     companion object {
-        private const val CURRENT_BACKUP_VERSION = 3
+        private const val CURRENT_BACKUP_VERSION = 4
     }
 
     private val gson: Gson = GsonBuilder().setPrettyPrinting().create()

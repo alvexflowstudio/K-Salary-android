@@ -1,5 +1,6 @@
 package com.koreasalary.calculator.data.local.entity
 
+import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 
@@ -11,14 +12,16 @@ data class DayRecordEntity(
     @PrimaryKey
     val date: String, // Формат: "YYYY-MM-DD"
     val yearMonth: String, // Формат: "YYYY-MM"
+    @ColumnInfo(defaultValue = "1")
+    val workHoursVersion: Int = 2, // 1: legacy special-day conversion; 2: explicit categories
     val regularHours: Double = 0.0, // Базовые часы (до 8ч, 1.0x)
-    val scheduledBaseHours: Double = 0.0, // Плановые базовые часы для 유급휴일/주휴일
-    val overtimeHours: Double = 0.0, // Сверхурочные часы (свыше 8ч, 1.5x)
+    val scheduledBaseHours: Double = 0.0, // Legacy schedule metadata; not a paid-day allowance
+    val overtimeHours: Double = 0.0, // Combined 1.5x work; legacy holidayHours remains separate
     val nightHours: Double = 0.0, // Ночные часы (22:00-06:00, +0.5x)
     val holidayHours: Double = 0.0, // Праздничные/выходные до 8ч (1.5x)
     val holidayOvertimeHours: Double = 0.0, // Праздничные свыше 8ч (2.0x Чоп)
-    val isPaidHoliday: Boolean = false, // Оплачиваемый праздник: плановые базовые часы 1.0x
-    val isSundayPay: Boolean = false, // Еженедельный оплачиваемый отдых: базовые часы 1.0x
+    val isPaidHoliday: Boolean = false, // Paid holiday: separate fixed 8-hour allowance
+    val isSundayPay: Boolean = false, // Weekly paid rest: separate fixed 8-hour allowance
     val templateId: Long? = null,
     val note: String = ""
 )

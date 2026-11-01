@@ -1,0 +1,389 @@
+[
+  {
+    "text": "KO\/true",
+    "font_sp": 15,
+    "width_px": 105,
+    "height_px": 40,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "월별 근무기록 요약",
+    "font_sp": 16,
+    "width_px": 472,
+    "height_px": 46,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "근무일수:",
+    "font_sp": 12,
+    "width_px": 325,
+    "height_px": 36,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "0 일",
+    "font_sp": 12,
+    "width_px": 187,
+    "height_px": 36,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "기본 근로시간 (1.0배):",
+    "font_sp": 12,
+    "width_px": 325,
+    "height_px": 36,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "176 시간",
+    "font_sp": 12,
+    "width_px": 187,
+    "height_px": 36,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "주휴수당 (1 일):",
+    "font_sp": 12,
+    "width_px": 325,
+    "height_px": 36,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "+32 시간",
+    "font_sp": 12,
+    "width_px": 187,
+    "height_px": 36,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "유급휴일 (1 일):",
+    "font_sp": 12,
+    "width_px": 325,
+    "height_px": 36,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "+8 시간",
+    "font_sp": 12,
+    "width_px": 187,
+    "height_px": 36,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "연장·휴일 근로 (1.5×):",
+    "font_sp": 12,
+    "width_px": 325,
+    "height_px": 36,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "+32.5 시간",
+    "font_sp": 12,
+    "width_px": 187,
+    "height_px": 36,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "야간근로시간 (+0.5배):",
+    "font_sp": 12,
+    "width_px": 325,
+    "height_px": 36,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "+64 시간",
+    "font_sp": 12,
+    "width_px": 187,
+    "height_px": 36,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "휴일근로 (1.5배\/2.0배):",
+    "font_sp": 12,
+    "width_px": 325,
+    "height_px": 36,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "+12 시간",
+    "font_sp": 12,
+    "width_px": 187,
+    "height_px": 36,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "수당 및 추가 지급:",
+    "font_sp": 12,
+    "width_px": 325,
+    "height_px": 36,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "+1,234,567,890 원",
+    "font_sp": 11.497437,
+    "width_px": 187,
+    "height_px": 32,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "예상 실수령액 (세후)",
+    "font_sp": 16,
+    "width_px": 270,
+    "height_px": 46,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "2,305,843,007,979,126,061 원",
+    "font_sp": 19.99524,
+    "width_px": 500,
+    "height_px": 56,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "총 지급액 (세전 월급)",
+    "font_sp": 12,
+    "width_px": 210,
+    "height_px": 36,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "2,305,843,009,213,693,951 원",
+    "font_sp": 8.499756,
+    "width_px": 214,
+    "height_px": 44,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "총 공제액 (세금+보험)",
+    "font_sp": 11.497437,
+    "width_px": 198,
+    "height_px": 32,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "-1,234,567,890 원",
+    "font_sp": 12.9991455,
+    "width_px": 197,
+    "height_px": 44,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "급여 및 수당 산출 내역",
+    "font_sp": 12,
+    "width_px": 456,
+    "height_px": 36,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "기본 근로수당 (1.0배)",
+    "font_sp": 12,
+    "width_px": 289,
+    "height_px": 36,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "2,305,843,009,213,693,951 원",
+    "font_sp": 7.4993896,
+    "width_px": 199,
+    "height_px": 32,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "주휴수당 (1.0배)",
+    "font_sp": 12,
+    "width_px": 289,
+    "height_px": 36,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "+1,234,567,890 원",
+    "font_sp": 12,
+    "width_px": 199,
+    "height_px": 36,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "유급휴일 수당 (1.0배)",
+    "font_sp": 12,
+    "width_px": 289,
+    "height_px": 36,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "+1,234,567,890 원",
+    "font_sp": 12,
+    "width_px": 199,
+    "height_px": 36,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "연장·휴일 근로 (1.5×)",
+    "font_sp": 12,
+    "width_px": 289,
+    "height_px": 36,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "+1,234,567,890 원",
+    "font_sp": 12,
+    "width_px": 199,
+    "height_px": 36,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "야간근로 가산수당 (+0.5배)",
+    "font_sp": 12,
+    "width_px": 289,
+    "height_px": 36,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "+1,234,567,890 원",
+    "font_sp": 12,
+    "width_px": 199,
+    "height_px": 36,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "휴일근로수당 (1.5배\/2.0배)",
+    "font_sp": 12,
+    "width_px": 289,
+    "height_px": 36,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "+1,234,567,890 원",
+    "font_sp": 12,
+    "width_px": 199,
+    "height_px": 36,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "수당 및 보너스",
+    "font_sp": 12,
+    "width_px": 289,
+    "height_px": 36,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "+1,234,567,890 원",
+    "font_sp": 12,
+    "width_px": 199,
+    "height_px": 36,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "기타 공제",
+    "font_sp": 12,
+    "width_px": 289,
+    "height_px": 36,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "-1,234,567,890 원",
+    "font_sp": 12,
+    "width_px": 199,
+    "height_px": 36,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "과세대상 급여액",
+    "font_sp": 12,
+    "width_px": 289,
+    "height_px": 36,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "2,305,843,009,213,693,951 원",
+    "font_sp": 7.4993896,
+    "width_px": 199,
+    "height_px": 32,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  }
+]

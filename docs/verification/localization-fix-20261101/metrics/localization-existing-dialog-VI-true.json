@@ -1,0 +1,173 @@
+[
+  {
+    "text": "VI\/true",
+    "font_sp": 15,
+    "width_px": 92,
+    "height_px": 40,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "Phiên bản 1.0.4",
+    "font_sp": 15,
+    "width_px": 207,
+    "height_px": 40,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "1 tháng 11, 2026",
+    "font_sp": 16,
+    "width_px": 239,
+    "height_px": 38,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "8",
+    "font_sp": 15,
+    "width_px": 480,
+    "height_px": 40,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "Cơ bản (tối đa 8 giờ, 1.0×)",
+    "font_sp": 12,
+    "width_px": 272,
+    "height_px": 28,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "Nếu là ngày nghỉ hoặc lễ, dùng ô 1.5× (tối đa 8 giờ) và 2.0× (trên 8 giờ).",
+    "font_sp": 12,
+    "width_px": 544,
+    "height_px": 60,
+    "lines": 2,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "2.5",
+    "font_sp": 15,
+    "width_px": 480,
+    "height_px": 40,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "Tăng ca\/nghỉ\/lễ (1.5×)",
+    "font_sp": 12,
+    "width_px": 235,
+    "height_px": 28,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "4",
+    "font_sp": 15,
+    "width_px": 480,
+    "height_px": 40,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "Giờ đêm (+0.5×)",
+    "font_sp": 12,
+    "width_px": 171,
+    "height_px": 28,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "2",
+    "font_sp": 15,
+    "width_px": 480,
+    "height_px": 40,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "Nghỉ\/lễ trên 8 giờ (2.0×)",
+    "font_sp": 12,
+    "width_px": 251,
+    "height_px": 28,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "Ngày lễ có lương",
+    "font_sp": 12,
+    "width_px": 179,
+    "height_px": 28,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "Ngày nghỉ tuần có lương",
+    "font_sp": 12,
+    "width_px": 258,
+    "height_px": 28,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "Audit shift",
+    "font_sp": 15,
+    "width_px": 480,
+    "height_px": 40,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "Ghi chú",
+    "font_sp": 12,
+    "width_px": 80,
+    "height_px": 32,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "Xóa ngày",
+    "font_sp": 14,
+    "width_px": 117,
+    "height_px": 36,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "Hủy",
+    "font_sp": 14,
+    "width_px": 50,
+    "height_px": 36,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "Lưu",
+    "font_sp": 14,
+    "width_px": 48,
+    "height_px": 36,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  }
+]

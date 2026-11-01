@@ -1,0 +1,114 @@
+[
+  {
+    "text": "RU\/false",
+    "font_sp": 15,
+    "width_px": 113,
+    "height_px": 40,
+    "lines": 1,
+    "overflow": false
+  },
+  {
+    "text": "5",
+    "font_sp": 12,
+    "width_px": 14,
+    "height_px": 40,
+    "lines": 1,
+    "overflow": false
+  },
+  {
+    "text": "Празд",
+    "font_sp": 9,
+    "width_px": 48,
+    "height_px": 16,
+    "lines": 1,
+    "overflow": true
+  },
+  {
+    "text": "9",
+    "font_sp": 12,
+    "width_px": 14,
+    "height_px": 40,
+    "lines": 1,
+    "overflow": false
+  },
+  {
+    "text": "Празд",
+    "font_sp": 9,
+    "width_px": 48,
+    "height_px": 16,
+    "lines": 1,
+    "overflow": true
+  },
+  {
+    "text": "11",
+    "font_sp": 12,
+    "width_px": 28,
+    "height_px": 40,
+    "lines": 1,
+    "overflow": false
+  },
+  {
+    "text": "Вых",
+    "font_sp": 9,
+    "width_px": 35,
+    "height_px": 16,
+    "lines": 1,
+    "overflow": true
+  },
+  {
+    "text": "25",
+    "font_sp": 12,
+    "width_px": 28,
+    "height_px": 40,
+    "lines": 1,
+    "overflow": false
+  },
+  {
+    "text": "10.5 ч",
+    "font_sp": 9,
+    "width_px": 47,
+    "height_px": 15,
+    "lines": 1,
+    "overflow": true
+  },
+  {
+    "text": "6",
+    "font_sp": 12,
+    "width_px": 14,
+    "height_px": 40,
+    "lines": 1,
+    "overflow": false
+  },
+  {
+    "text": "8 ч",
+    "font_sp": 9,
+    "width_px": 24,
+    "height_px": 15,
+    "lines": 1,
+    "overflow": true
+  },
+  {
+    "text": "10",
+    "font_sp": 12,
+    "width_px": 28,
+    "height_px": 40,
+    "lines": 1,
+    "overflow": false
+  },
+  {
+    "text": "8 ч",
+    "font_sp": 9,
+    "width_px": 24,
+    "height_px": 15,
+    "lines": 1,
+    "overflow": true
+  },
+  {
+    "text": "18",
+    "font_sp": 12,
+    "width_px": 28,
+    "height_px": 40,
+    "lines": 1,
+    "overflow": false
+  }
+]

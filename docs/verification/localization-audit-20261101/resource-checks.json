@@ -1,0 +1,443 @@
+{
+  "languages": [
+    "RU",
+    "KO",
+    "EN",
+    "KY",
+    "UZ",
+    "KK",
+    "VI",
+    "TH",
+    "FIL",
+    "ID",
+    "MS",
+    "MY"
+  ],
+  "top_level_app_fields_excluding_ui": 91,
+  "ui_fields": 120,
+  "leaf_strings_per_language": 252,
+  "keys_identical": true,
+  "null_or_empty": {
+    "RU": [],
+    "KO": [],
+    "EN": [],
+    "KY": [],
+    "UZ": [],
+    "KK": [],
+    "VI": [],
+    "TH": [],
+    "FIL": [],
+    "ID": [],
+    "MS": [],
+    "MY": []
+  },
+  "list_counts": {
+    "RU": {
+      "monthNames": 12,
+      "weekdaysShort": 7,
+      "shiftRules": 6,
+      "hourlyRateHelpItems": 7
+    },
+    "KO": {
+      "monthNames": 12,
+      "weekdaysShort": 7,
+      "shiftRules": 6,
+      "hourlyRateHelpItems": 7
+    },
+    "EN": {
+      "monthNames": 12,
+      "weekdaysShort": 7,
+      "shiftRules": 6,
+      "hourlyRateHelpItems": 7
+    },
+    "KY": {
+      "monthNames": 12,
+      "weekdaysShort": 7,
+      "shiftRules": 6,
+      "hourlyRateHelpItems": 7
+    },
+    "UZ": {
+      "monthNames": 12,
+      "weekdaysShort": 7,
+      "shiftRules": 6,
+      "hourlyRateHelpItems": 7
+    },
+    "KK": {
+      "monthNames": 12,
+      "weekdaysShort": 7,
+      "shiftRules": 6,
+      "hourlyRateHelpItems": 7
+    },
+    "VI": {
+      "monthNames": 12,
+      "weekdaysShort": 7,
+      "shiftRules": 6,
+      "hourlyRateHelpItems": 7
+    },
+    "TH": {
+      "monthNames": 12,
+      "weekdaysShort": 7,
+      "shiftRules": 6,
+      "hourlyRateHelpItems": 7
+    },
+    "FIL": {
+      "monthNames": 12,
+      "weekdaysShort": 7,
+      "shiftRules": 6,
+      "hourlyRateHelpItems": 7
+    },
+    "ID": {
+      "monthNames": 12,
+      "weekdaysShort": 7,
+      "shiftRules": 6,
+      "hourlyRateHelpItems": 7
+    },
+    "MS": {
+      "monthNames": 12,
+      "weekdaysShort": 7,
+      "shiftRules": 6,
+      "hourlyRateHelpItems": 7
+    },
+    "MY": {
+      "monthNames": 12,
+      "weekdaysShort": 7,
+      "shiftRules": 6,
+      "hourlyRateHelpItems": 7
+    }
+  },
+  "coefficient_checks": {
+    "RU": {
+      "dayBaseHoursLabel": true,
+      "dayOvertimeHoursLabel": true,
+      "dayNightHoursLabel": true,
+      "dayHolidayOvertimeHoursLabel": true
+    },
+    "KO": {
+      "dayBaseHoursLabel": true,
+      "dayOvertimeHoursLabel": true,
+      "dayNightHoursLabel": true,
+      "dayHolidayOvertimeHoursLabel": true
+    },
+    "EN": {
+      "dayBaseHoursLabel": true,
+      "dayOvertimeHoursLabel": true,
+      "dayNightHoursLabel": true,
+      "dayHolidayOvertimeHoursLabel": true
+    },
+    "KY": {
+      "dayBaseHoursLabel": true,
+      "dayOvertimeHoursLabel": true,
+      "dayNightHoursLabel": true,
+      "dayHolidayOvertimeHoursLabel": true
+    },
+    "UZ": {
+      "dayBaseHoursLabel": true,
+      "dayOvertimeHoursLabel": true,
+      "dayNightHoursLabel": true,
+      "dayHolidayOvertimeHoursLabel": true
+    },
+    "KK": {
+      "dayBaseHoursLabel": true,
+      "dayOvertimeHoursLabel": true,
+      "dayNightHoursLabel": true,
+      "dayHolidayOvertimeHoursLabel": true
+    },
+    "VI": {
+      "dayBaseHoursLabel": true,
+      "dayOvertimeHoursLabel": true,
+      "dayNightHoursLabel": true,
+      "dayHolidayOvertimeHoursLabel": true
+    },
+    "TH": {
+      "dayBaseHoursLabel": true,
+      "dayOvertimeHoursLabel": true,
+      "dayNightHoursLabel": true,
+      "dayHolidayOvertimeHoursLabel": true
+    },
+    "FIL": {
+      "dayBaseHoursLabel": true,
+      "dayOvertimeHoursLabel": true,
+      "dayNightHoursLabel": true,
+      "dayHolidayOvertimeHoursLabel": true
+    },
+    "ID": {
+      "dayBaseHoursLabel": true,
+      "dayOvertimeHoursLabel": true,
+      "dayNightHoursLabel": true,
+      "dayHolidayOvertimeHoursLabel": true
+    },
+    "MS": {
+      "dayBaseHoursLabel": true,
+      "dayOvertimeHoursLabel": true,
+      "dayNightHoursLabel": true,
+      "dayHolidayOvertimeHoursLabel": true
+    },
+    "MY": {
+      "dayBaseHoursLabel": true,
+      "dayOvertimeHoursLabel": true,
+      "dayNightHoursLabel": true,
+      "dayHolidayOvertimeHoursLabel": true
+    }
+  },
+  "format_arguments": {
+    "RU": {
+      "selectedTemplateBannerFormat": [
+        "%s"
+      ],
+      "deleteTemplateMessage": [
+        "%s"
+      ]
+    },
+    "KO": {
+      "selectedTemplateBannerFormat": [
+        "%s"
+      ],
+      "deleteTemplateMessage": [
+        "%s"
+      ]
+    },
+    "EN": {
+      "selectedTemplateBannerFormat": [
+        "%s"
+      ],
+      "deleteTemplateMessage": [
+        "%s"
+      ]
+    },
+    "KY": {
+      "selectedTemplateBannerFormat": [
+        "%s"
+      ],
+      "deleteTemplateMessage": [
+        "%s"
+      ]
+    },
+    "UZ": {
+      "selectedTemplateBannerFormat": [
+        "%s"
+      ],
+      "deleteTemplateMessage": [
+        "%s"
+      ]
+    },
+    "KK": {
+      "selectedTemplateBannerFormat": [
+        "%s"
+      ],
+      "deleteTemplateMessage": [
+        "%s"
+      ]
+    },
+    "VI": {
+      "selectedTemplateBannerFormat": [
+        "%s"
+      ],
+      "deleteTemplateMessage": [
+        "%s"
+      ]
+    },
+    "TH": {
+      "selectedTemplateBannerFormat": [
+        "%s"
+      ],
+      "deleteTemplateMessage": [
+        "%s"
+      ]
+    },
+    "FIL": {
+      "selectedTemplateBannerFormat": [
+        "%s"
+      ],
+      "deleteTemplateMessage": [
+        "%s"
+      ]
+    },
+    "ID": {
+      "selectedTemplateBannerFormat": [
+        "%s"
+      ],
+      "deleteTemplateMessage": [
+        "%s"
+      ]
+    },
+    "MS": {
+      "selectedTemplateBannerFormat": [
+        "%s"
+      ],
+      "deleteTemplateMessage": [
+        "%s"
+      ]
+    },
+    "MY": {
+      "selectedTemplateBannerFormat": [
+        "%s"
+      ],
+      "deleteTemplateMessage": [
+        "%s"
+      ]
+    }
+  },
+  "ru_identical_candidates": {
+    "RU": [],
+    "KO": [],
+    "EN": [],
+    "KY": [
+      "versionLabel"
+    ],
+    "UZ": [],
+    "KK": [],
+    "VI": [],
+    "TH": [],
+    "FIL": [],
+    "ID": [],
+    "MS": [],
+    "MY": []
+  },
+  "live_focus_keys": {
+    "ui": [
+      "addTemplateDescription",
+      "allowancesSummaryTitle",
+      "baseHoursSummaryTitle",
+      "baseHoursValidation",
+      "calculatorTopBarTitle",
+      "cancelAction",
+      "clearDayAction",
+      "dayBaseHoursLabel",
+      "dayHolidayOvertimeHoursLabel",
+      "dayNightHoursLabel",
+      "dayOvertimeHoursLabel",
+      "defaultDayShiftTemplateName",
+      "defaultNightShiftTemplateName",
+      "deleteAction",
+      "deleteTemplateMessage",
+      "deleteTemplateTitle",
+      "detailAllowancesPayTitle",
+      "detailHolidayPayTitle",
+      "detailNightPayTitle",
+      "detailOvertimePayTitle",
+      "detailPaidHolidayPayTitle",
+      "detailRegularPayTitle",
+      "detailSundayPayTitle",
+      "editTemplateTitle",
+      "holidaySummaryTitle",
+      "hourlyRateHelpItems",
+      "hourlyRateHelpTitle",
+      "hourlyRateInputLabel",
+      "hourlyRateSectionTitle",
+      "hoursValidation",
+      "markerColorLabel",
+      "monthNames",
+      "monthlySummaryTitle",
+      "newTemplateTitle",
+      "nextMonthDescription",
+      "nightSummaryTitle",
+      "noteLabel",
+      "otherDeductionsSectionTitle",
+      "overtimeSummaryTitle",
+      "paidHolidayCheckboxLabel",
+      "paidHolidaySummaryTitle",
+      "previousMonthDescription",
+      "rulesDialogTitle",
+      "saveAction",
+      "selectedTemplateBannerFormat",
+      "shiftRules",
+      "shiftRulesDescription",
+      "shiftTemplatesTitle",
+      "sundayBaseHoursWarning",
+      "templateHint",
+      "templateNameHint",
+      "templateNameLabel",
+      "understoodAction",
+      "weekdaysShort",
+      "weeklyHolidayCheckboxLabel",
+      "weeklyHolidaySummaryTitle",
+      "workedDaysSummaryTitle"
+    ],
+    "app": [
+      "breakdownTitle",
+      "calendarPaidHolidayBadge",
+      "calendarSundayPayBadge",
+      "close",
+      "currencyWon",
+      "daysUnit",
+      "foreignWorkerNotice",
+      "grossSalaryLabel",
+      "hoursUnit",
+      "netSalaryLabel",
+      "taxableAmountLabel",
+      "totalDeductionsLabel"
+    ]
+  },
+  "missing_focus_keys": {
+    "RU": {
+      "ui": [],
+      "app": []
+    },
+    "KO": {
+      "ui": [],
+      "app": []
+    },
+    "EN": {
+      "ui": [],
+      "app": []
+    },
+    "KY": {
+      "ui": [],
+      "app": []
+    },
+    "UZ": {
+      "ui": [],
+      "app": []
+    },
+    "KK": {
+      "ui": [],
+      "app": []
+    },
+    "VI": {
+      "ui": [],
+      "app": []
+    },
+    "TH": {
+      "ui": [],
+      "app": []
+    },
+    "FIL": {
+      "ui": [],
+      "app": []
+    },
+    "ID": {
+      "ui": [],
+      "app": []
+    },
+    "MS": {
+      "ui": [],
+      "app": []
+    },
+    "MY": {
+      "ui": [],
+      "app": []
+    }
+  },
+  "android_plural_resources": [],
+  "source_sha256": {
+    "app/src/main/java/com/koreasalary/calculator/domain/i18n/AppStrings.kt": "c2c15131d379bf8293e07a13e3a8745a0d550a86fff23afa99393f2a042c0a19",
+    "app/src/main/java/com/koreasalary/calculator/domain/i18n/LanguageManager.kt": "05e0951c9b15b3663faa05eb46db460f0f87c33c4a0367d6e2e28e54480e2c65",
+    "app/src/main/java/com/koreasalary/calculator/domain/i18n/UiTranslations.kt": "b89fa87ac93cddced6ffecfa64b49002285beea56b9e097677333dab21dc3c07",
+    "app/src/main/java/com/koreasalary/calculator/domain/i18n/translations/MsStrings.kt": "6c98f097e749fbdbac7e04a23c6144c5d62a38288418c822b62d318461c5af65",
+    "app/src/main/java/com/koreasalary/calculator/domain/i18n/translations/IdStrings.kt": "fb16b7d9fc545ea6b514b1165f3b0716c0a7d7dc3ec739036b5a27406ae5b5a9",
+    "app/src/main/java/com/koreasalary/calculator/domain/i18n/translations/FilStrings.kt": "5b290e920a27eb730723b1a020c2475d5148c52a9c4b52ce84b98eb7fa647294",
+    "app/src/main/java/com/koreasalary/calculator/domain/i18n/translations/UzStrings.kt": "a68a7b6045c945b70da9a0bf5ed787969acc1953709c76e64c1ebc83b2389c08",
+    "app/src/main/java/com/koreasalary/calculator/domain/i18n/translations/KoStrings.kt": "fd157e31879627d053db09a05bf1a347605d41302781bceda7e2ee1c168bf61b",
+    "app/src/main/java/com/koreasalary/calculator/domain/i18n/translations/MyStrings.kt": "7d76c0a0acffc96c9620a48e4730ab16320ac8bb406d518e39c77939f2b511d2",
+    "app/src/main/java/com/koreasalary/calculator/domain/i18n/translations/RuStrings.kt": "6c44d057d8242f5666f2cb28cbb5ec3d5d85e0691ec28528bc07841be690244d",
+    "app/src/main/java/com/koreasalary/calculator/domain/i18n/translations/KyStrings.kt": "13345b59936601ef0e54cccd00a988fa5155429c761f961f88880c7b5a25df4a",
+    "app/src/main/java/com/koreasalary/calculator/domain/i18n/translations/ThStrings.kt": "0a0e35949a22f8dae882632d8c0bb1f1bf4d942f158e1602ec81525f75befd83",
+    "app/src/main/java/com/koreasalary/calculator/domain/i18n/translations/ViStrings.kt": "c33224c176d6c7d491b50c89cbf633741005318c71482a46391a265ef457da89",
+    "app/src/main/java/com/koreasalary/calculator/domain/i18n/translations/KkStrings.kt": "4c79323f2371847e030a826db48951ce777b2b929f756a5fda311aa7616c5187",
+    "app/src/main/java/com/koreasalary/calculator/domain/i18n/translations/EnStrings.kt": "4ef7f9517932cbcc450cd6377d59a25a1ae032a6ae0d6591ed45135f8155b61f"
+  },
+  "apk_sha256": "c9ec6ed9ab0037cdd207f5ff49dabb7a0b2d18c2ede14422f01d6b46f1749c09",
+  "classes_jar_sha256": "613f989445c5d0d46f85d6c4afcd88b0232aa0c732c33f01bb0e4ddf0de01c5d",
+  "class_jar_newer_than_i18n_sources": true,
+  "baseline_source_matches_last_verified_build": true
+}

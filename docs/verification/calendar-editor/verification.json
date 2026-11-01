@@ -1,0 +1,63 @@
+{
+  "date": "2026-10-31",
+  "status": "VERIFIED",
+  "branch": "codex/calendar-editor-payroll",
+  "baseline_head": "0b643a1395a928db833980ce1611a8a3b9a89d92",
+  "unit_tests": {
+    "tests": 39,
+    "failures": 0,
+    "errors": 0
+  },
+  "android_tests": {
+    "tests": 7,
+    "failures": 0
+  },
+  "build_tasks": [
+    "testDebugUnitTest",
+    "assembleDebug",
+    "assembleDebugAndroidTest"
+  ],
+  "runner": "scripts/verify-calendar-editor.sh emulator-5554",
+  "runner_exit_code": 0,
+  "device": {
+    "avd": "Pixel_8",
+    "android": "37.1",
+    "pixels": "640x1136",
+    "density_dpi": 320,
+    "dp": "320x568",
+    "font_scale": 1.0
+  },
+  "source_sha256": {
+    "app/src/androidTest/java/com/koreasalary/calculator/CalendarStorageTest.kt": "c45aa0bb11cac3691bbf0fb9664ab8248473e2835542be1c7c83207ba339be1b",
+    "app/src/androidTest/java/com/koreasalary/calculator/DayEditDialogTest.kt": "46b86bada973f360218d86b250be2ecac7fb55bb00d659f71ae50bc185cdc188",
+    "app/src/main/java/com/koreasalary/calculator/data/local/AppDatabase.kt": "6fbc085c119df91d025545de7ac1ab94cba74bcd1ba74966f273147685931627",
+    "app/src/main/java/com/koreasalary/calculator/data/local/entity/DayRecordEntity.kt": "31b7ab151ffbc61dc7e05ce63927f6c70c2f00cd37461d1496dd221a58fe335f",
+    "app/src/main/java/com/koreasalary/calculator/data/local/entity/ShiftTemplateEntity.kt": "6a29c4f7e8d191543b66451cde7cb7d6bb7c8211eeec7db20cc2b73c440ac52f",
+    "app/src/main/java/com/koreasalary/calculator/data/model/CalendarHours.kt": "742c4cc78f73ce1825580e006c8583bcd5b594b984ef51f4725985891ff365b3",
+    "app/src/main/java/com/koreasalary/calculator/data/model/SalaryModels.kt": "8d91fc9f93c6a4b6f91dbecfca4e92c8b5a261ba1890792ffc23af34dd0bfb58",
+    "app/src/main/java/com/koreasalary/calculator/data/repository/SalaryRepository.kt": "378cd74c85348392d85bbcf133af43a4260da3c91399cd92e0294fcc2f2c40df",
+    "app/src/main/java/com/koreasalary/calculator/domain/i18n/AppStrings.kt": "c2c15131d379bf8293e07a13e3a8745a0d550a86fff23afa99393f2a042c0a19",
+    "app/src/main/java/com/koreasalary/calculator/domain/i18n/UiTranslations.kt": "b89fa87ac93cddced6ffecfa64b49002285beea56b9e097677333dab21dc3c07",
+    "app/src/main/java/com/koreasalary/calculator/presentation/components/CommonComponents.kt": "d8006305f9638fe36e3fc6d4bfcfd96af6c6f69e3b621bc2de807d24b80fffb5",
+    "app/src/main/java/com/koreasalary/calculator/presentation/components/DayEditDialog.kt": "eaf124845f154200dd206b5dc5889166af64db5e90a48bad0099d79c4250d7eb",
+    "app/src/main/java/com/koreasalary/calculator/presentation/components/HourEntryForm.kt": "dd9c1182110aec9d8df3501ea8b75b8beb68e3ca74270160b303f95fe3f5f401",
+    "app/src/main/java/com/koreasalary/calculator/presentation/components/MonthlySummaryWidget.kt": "499e967d00b97c4575f139b442fe267e5c377d334885bf1d5cf40ab19e06961f",
+    "app/src/main/java/com/koreasalary/calculator/presentation/components/ShiftTemplateSection.kt": "32a5b49321aa9c63b3565e3441821f315d469225742e88aa8eb3393e6f1512c0",
+    "app/src/main/java/com/koreasalary/calculator/presentation/viewmodel/SalaryViewModel.kt": "068291ca8652372980cd80109e3e1f86c3918d73e2612ef2d0ce2d17760841de",
+    "app/src/test/java/com/koreasalary/calculator/data/repository/CalendarPayrollTest.kt": "5c85f01a5cb450a50c43e2099466e5c8cb488e6bb1e2de247ab20ac96500ad91",
+    "app/src/test/java/com/koreasalary/calculator/presentation/components/HourEntryStateTest.kt": "9a280b08bb88966cf4079759e7aa11c16823ff34856314fba1d936aa2010c861",
+    "scripts/verify-calendar-editor.sh": "e9e657ad70153380a4309c4f76b8656fe16d7f87dedac7242679a70d518e705e"
+  },
+  "artifact_sha256": {
+    "app/build/outputs/apk/debug/app-debug.apk": "dfada807ce1280c875613c61da0015a60ba0c08093772c962c4fe3f83afe6c41",
+    "app/build/outputs/apk/androidTest/debug/app-debug-androidTest.apk": "fd68cd6fe7d569910095e4e73c3b915fff380b207eb7bbdf259aa528f8d9ea7c",
+    "app/build/reports/calendar-editor/build.log": "5da108bf2cc6571a0c36dc288934cc2e03bc2f8e69756679230ce08c37780b1d",
+    "app/build/reports/calendar-editor/instrumentation.log": "0903f406efccca92ae826ffaf185e96d5bad30521a88c03f948a254e1867c5cc",
+    "docs/verification/calendar-editor/actions-keyboard.png": "9517cafcf37f5cbff168e216fff036bd0533fdb4a48600bda77511ff66419aea",
+    "docs/verification/calendar-editor/sunday-base-keyboard.png": "d70468077e0ea9870ea5f63d2559ec45e182a4be151514479e8673d25fb10744"
+  },
+  "limitations": [
+    "No physical device or other Android-version run",
+    "Offline Gradle UTP runner unavailable; direct AndroidJUnitRunner completed successfully"
+  ]
+}

@@ -1,0 +1,173 @@
+[
+  {
+    "text": "RU\/true",
+    "font_sp": 15,
+    "width_px": 102,
+    "height_px": 40,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "Версия 1.0.4",
+    "font_sp": 15,
+    "width_px": 175,
+    "height_px": 40,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "1 ноября 2026 г.",
+    "font_sp": 16,
+    "width_px": 244,
+    "height_px": 38,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "-1",
+    "font_sp": 15,
+    "width_px": 480,
+    "height_px": 40,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "Базовые часы (до 8 ч, 1.0×)",
+    "font_sp": 12,
+    "width_px": 308,
+    "height_px": 28,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "Введите базовые часы числом от 0 до 8.",
+    "font_sp": 12,
+    "width_px": 464,
+    "height_px": 28,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "2.5",
+    "font_sp": 15,
+    "width_px": 480,
+    "height_px": 40,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "Сверхур.\/вых.\/празд. (1.5×)",
+    "font_sp": 12,
+    "width_px": 308,
+    "height_px": 28,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "4",
+    "font_sp": 15,
+    "width_px": 480,
+    "height_px": 40,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "Ночные часы (+0.5×)",
+    "font_sp": 12,
+    "width_px": 235,
+    "height_px": 28,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "2",
+    "font_sp": 15,
+    "width_px": 480,
+    "height_px": 40,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "Вых.\/празд. свыше 8 ч (2.0×)",
+    "font_sp": 12,
+    "width_px": 323,
+    "height_px": 28,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "Оплачиваемый праздничный день",
+    "font_sp": 12,
+    "width_px": 396,
+    "height_px": 28,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "Еженедельный оплачиваемый отдых",
+    "font_sp": 12,
+    "width_px": 428,
+    "height_px": 28,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "Audit shift",
+    "font_sp": 15,
+    "width_px": 480,
+    "height_px": 40,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "Заметка",
+    "font_sp": 12,
+    "width_px": 96,
+    "height_px": 32,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "Очистить день",
+    "font_sp": 14,
+    "width_px": 160,
+    "height_px": 72,
+    "lines": 2,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "Отмена",
+    "font_sp": 14,
+    "width_px": 100,
+    "height_px": 36,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "Сохранить",
+    "font_sp": 14,
+    "width_px": 141,
+    "height_px": 36,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  }
+]

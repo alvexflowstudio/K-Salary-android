@@ -1,0 +1,62 @@
+{
+  "date": "2026-11-01",
+  "status": "VERIFIED",
+  "branch": "codex/calendar-editor-payroll",
+  "application_id": "com.koreasalary.calculator",
+  "version_code": 3,
+  "version_name": "1.0.2",
+  "unit_tests": {
+    "passed": 46,
+    "failed": 0
+  },
+  "android_tests": {
+    "passed": 9,
+    "failed": 0
+  },
+  "final_october_regression": "PASS after test-scene-only background refinement",
+  "themes": [
+    "LIGHT",
+    "DARK"
+  ],
+  "languages_checked": 12,
+  "october_dates_checked": [
+    5,
+    9,
+    11,
+    25,
+    6,
+    10,
+    18
+  ],
+  "upgrade": {
+    "from": 2,
+    "to": 3,
+    "method": "adb install -r; seed under v2, verify in a new process under v3",
+    "seed": "PASS",
+    "verify": "PASS",
+    "previous_apk_sha256": "74a0e834e57fd79e18484783feb6f550bdf849b45a707999c72803d1a7fc0cc4",
+    "matching_signer_sha256": "49800792c9b817ce87f43899affe286e83e5cad951600b107d6271d0655532cd"
+  },
+  "apk_sha256": "6e89eb653295750888330638caeec3a1df46f5ce5c852b24f57bfa90fc04ad5e",
+  "changed_source_sha256": {
+    "app/build.gradle.kts": "c27767704027aae26cb117ce4f06924cedc37242cf6a12a3417f48d7be9be677",
+    "app/src/main/java/com/koreasalary/calculator/presentation/screens/calculator/CalculatorScreen.kt": "183623ed022e06a87894a9426eae4eb3787a8ee819dc277866d1055dcf7e07fc",
+    "app/src/test/java/com/koreasalary/calculator/presentation/screens/calculator/CalendarIndicatorTest.kt": "065e11083478b81040313a5856ec39bd3825792d1bf180d8afaefd90c800425d",
+    "app/src/androidTest/java/com/koreasalary/calculator/DayEditDialogTest.kt": "6e9d747d163d1d8716e0f07af14ae42afd37ddf42f64630a08bac27ede591273"
+  },
+  "all_other_source_files_unchanged": true,
+  "unchanged_source_file_count": 84,
+  "evidence_sha256": {
+    "final-october-ui.log": "c491742e291f004cf6a503bb17e9b8a1b96248dc735023590fcd0382f91cb96f",
+    "instrumentation.log": "131179b43448969ee304a4a2105cae405e109404e26aba2bbf54ef96ccef21db",
+    "october-dark.png": "d37244a104cdeb5d3085fee14aa5aa4525219114427832592a112b970ebe1696",
+    "october-light.png": "e5ee6f0a87fc21a4edd57f93ec3148c1807fad7b7290a293cf1abda2c3a0dd87",
+    "regression-before-ui.log": "f023390a578b76397dc794b5bdb2f85da9269f87aac20ae6be42afd90f6bb205",
+    "regression-before-unit.log": "193ad840937b795c1e7bc1c96fe383e4c023032d3db84c0d5e2b2aaa05390979",
+    "upgrade-v2-v3.log": "4bf192511edb1ca9ae6d893c184f1ca9eebd61a1d8217261e5ed020b59e0da74"
+  },
+  "limitations": [
+    "Emulator Android 37.1 only; no physical-device run",
+    "Existing local debug signer; Samsung not connected or modified"
+  ]
+}

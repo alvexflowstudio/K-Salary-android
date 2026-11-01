@@ -1,0 +1,173 @@
+[
+  {
+    "text": "KK\/true",
+    "font_sp": 15,
+    "width_px": 103,
+    "height_px": 40,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "Нұсқа 1.0.4",
+    "font_sp": 15,
+    "width_px": 160,
+    "height_px": 40,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "2026 ж. 1 қараша",
+    "font_sp": 16,
+    "width_px": 264,
+    "height_px": 38,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "-1",
+    "font_sp": 15,
+    "width_px": 480,
+    "height_px": 40,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "Негізгі (8 сағатқа дейін, 1.0×)",
+    "font_sp": 12,
+    "width_px": 326,
+    "height_px": 28,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "Негізгі сағаттарды 0-ден 8-ге дейінгі санмен енгізіңіз.",
+    "font_sp": 12,
+    "width_px": 544,
+    "height_px": 60,
+    "lines": 2,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "2.5",
+    "font_sp": 15,
+    "width_px": 480,
+    "height_px": 40,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "Үстеме\/демалыс\/мереке (1.5×)",
+    "font_sp": 12,
+    "width_px": 356,
+    "height_px": 28,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "4",
+    "font_sp": 15,
+    "width_px": 480,
+    "height_px": 40,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "Түнгі сағаттар (+0.5×)",
+    "font_sp": 12,
+    "width_px": 241,
+    "height_px": 28,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "2",
+    "font_sp": 15,
+    "width_px": 480,
+    "height_px": 40,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "Демалыс\/мереке >8 сағ (2.0×)",
+    "font_sp": 12,
+    "width_px": 342,
+    "height_px": 28,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "Ақылы мереке күні",
+    "font_sp": 12,
+    "width_px": 222,
+    "height_px": 28,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "Апталық ақылы демалыс",
+    "font_sp": 12,
+    "width_px": 297,
+    "height_px": 28,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "Audit shift",
+    "font_sp": 15,
+    "width_px": 480,
+    "height_px": 40,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "Ескертпе",
+    "font_sp": 12,
+    "width_px": 104,
+    "height_px": 32,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "Күнді тазалау",
+    "font_sp": 14,
+    "width_px": 160,
+    "height_px": 72,
+    "lines": 2,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "Болдырмау",
+    "font_sp": 14,
+    "width_px": 156,
+    "height_px": 36,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  },
+  {
+    "text": "Сақтау",
+    "font_sp": 14,
+    "width_px": 94,
+    "height_px": 36,
+    "lines": 1,
+    "wrapped_money": false,
+    "overflow": false
+  }
+]

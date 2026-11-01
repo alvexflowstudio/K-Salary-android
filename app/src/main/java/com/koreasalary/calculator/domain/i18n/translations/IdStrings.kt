@@ -19,16 +19,16 @@ val IdStrings = AppStrings(
 
     calcTitle = "Perhitungan Gaji & Lembur 2026",
     foreignWorkerNotice = "Untuk pekerja asing: mulai dari potongan 3,3%; tambahkan pensiun dan asuransi hanya jika tercantum di slip gaji.",
-    minWage2026Notice = "Upah minimum 2026: 10,320 ₩/jam (termasuk bayaran istirahat mingguan)",
+    minWage2026Notice = "Upah minimum 2026: 10,320 ₩/jam",
     hourlyRateLabel = "Upah per jam",
     baseHoursLabel = "Jam kerja pokok bulanan",
-    baseHoursHelper = "Standar: 209 jam (termasuk 35 jam istirahat mingguan berbayar)",
+    baseHoursHelper = "Jam dasar hingga 8 per hari dibayar 1.0× sesuai jadwal, termasuk hari Minggu. Pilih kategori kerja secara manual.",
     overtimeHoursLabel = "Jam kerja lembur",
     nightHoursLabel = "Jam kerja malam 22:00-06:00",
     holidayHoursLabel = "Jam kerja hari libur hingga 8 jam",
     holidayOvertimeHoursLabel = "Jam kerja hari libur lebih dari 8 jam",
     calendarPaidHolidayBadge = "Libur",
-    calendarSundayPayBadge = "Minggu",
+    calendarSundayPayBadge = "Rehat",
     calendarHolidayBadge = "Hari",
     calendarNightShiftBadge = "12j M",
     calendarDayShiftBadge = "12j S",
@@ -99,6 +99,6 @@ val IdStrings = AppStrings(
     themeLight = "Mode Terang",
     themeDark = "Mode Gelap",
     appInfoTitle = "Tentang Aplikasi",
-    appVersion = "Versi 1.0.0 (Standar Ketenagakerjaan Korea 2026)",
+    appVersion = "Versi %s (Standar Ketenagakerjaan Korea 2026)",
     legalNotice = "Perhitungan mengikuti hukum ketenagakerjaan Korea Selatan dan upah minimum 2026 sebesar 10.320 won."
 )

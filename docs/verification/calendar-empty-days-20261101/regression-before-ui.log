@@ -1,0 +1,44 @@
+INSTRUMENTATION_STATUS: class=com.koreasalary.calculator.DayEditDialogTest
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+com.koreasalary.calculator.DayEditDialogTest:
+INSTRUMENTATION_STATUS: test=emptyDaysHaveOnlyDatesAndPopulatedDaysRetainBordersInBothThemes
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: class=com.koreasalary.calculator.DayEditDialogTest
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stack=java.lang.AssertionError: Empty 7 has a border in dark=false expected:<-1> but was:<-657673>
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.failNotEquals(Assert.java:835)
+	at org.junit.Assert.assertEquals(Assert.java:120)
+	at com.koreasalary.calculator.DayEditDialogTest.emptyDaysHaveOnlyDatesAndPopulatedDaysRetainBordersInBothThemes(DayEditDialogTest.kt:432)
+
+INSTRUMENTATION_STATUS: stream=
+Error in emptyDaysHaveOnlyDatesAndPopulatedDaysRetainBordersInBothThemes(com.koreasalary.calculator.DayEditDialogTest):
+java.lang.AssertionError: Empty 7 has a border in dark=false expected:<-1> but was:<-657673>
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.failNotEquals(Assert.java:835)
+	at org.junit.Assert.assertEquals(Assert.java:120)
+	at com.koreasalary.calculator.DayEditDialogTest.emptyDaysHaveOnlyDatesAndPopulatedDaysRetainBordersInBothThemes(DayEditDialogTest.kt:432)
+
+INSTRUMENTATION_STATUS: test=emptyDaysHaveOnlyDatesAndPopulatedDaysRetainBordersInBothThemes
+INSTRUMENTATION_STATUS_CODE: -2
+INSTRUMENTATION_RESULT: stream=
+
+Time: 2.377
+There was 1 failure:
+1) emptyDaysHaveOnlyDatesAndPopulatedDaysRetainBordersInBothThemes(com.koreasalary.calculator.DayEditDialogTest)
+java.lang.AssertionError: Empty 7 has a border in dark=false expected:<-1> but was:<-657673>
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.failNotEquals(Assert.java:835)
+	at org.junit.Assert.assertEquals(Assert.java:120)
+	at com.koreasalary.calculator.DayEditDialogTest.emptyDaysHaveOnlyDatesAndPopulatedDaysRetainBordersInBothThemes(DayEditDialogTest.kt:432)
+
+FAILURES!!!
+Tests run: 1,  Failures: 1
+
+
+INSTRUMENTATION_CODE: -1
