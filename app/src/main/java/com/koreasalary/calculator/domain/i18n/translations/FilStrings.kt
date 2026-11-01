@@ -19,10 +19,10 @@ val FilStrings = AppStrings(
 
     calcTitle = "Pagkalkula ng Sahod at Overtime 2026",
     foreignWorkerNotice = "Para sa mga dayuhang manggagawa: magsimula sa 3.3% withholding; idagdag ang pensiyon at seguro kapag nasa payslip lamang.",
-    minWage2026Notice = "Minimum Wage 2026: 10,320 ₩/oras (kasama ang bayad sa lingguhang pahinga)",
+    minWage2026Notice = "Minimum Wage 2026: 10,320 ₩/oras",
     hourlyRateLabel = "Sahod bawat oras",
     baseHoursLabel = "Pangunahing oras bawat buwan",
-    baseHoursHelper = "Pamantayan: 209 oras (kasama ang 35 oras na bayad na lingguhang pahinga)",
+    baseHoursHelper = "Hanggang 8 batayang oras bawat araw ay bayad ng 1.0× ayon sa iskedyul, kasama ang Linggo. Mano-manong piliin ang uri ng trabaho.",
     overtimeHoursLabel = "Oras ng overtime",
     nightHoursLabel = "Oras ng trabaho sa gabi 22:00-06:00",
     holidayHoursLabel = "Oras sa holiday hanggang 8 oras",
@@ -99,6 +99,6 @@ val FilStrings = AppStrings(
     themeLight = "Maliwanag na Mode",
     themeDark = "Madilim na Mode",
     appInfoTitle = "Tungkol sa App",
-    appVersion = "Bersyon 1.0.0 (Korea Labor Standards 2026)",
+    appVersion = "Bersyon %s (Korea Labor Standards 2026)",
     legalNotice = "Ang mga kalkulasyon ay batay sa batas paggawa ng South Korea at sa minimum wage para sa 2026 na 10,320 won."
 )

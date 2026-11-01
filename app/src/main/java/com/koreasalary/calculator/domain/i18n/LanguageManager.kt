@@ -33,6 +33,6 @@ object LanguageManager {
             AppLanguage.MS -> MsStrings
             AppLanguage.MY -> MyStrings
         }
-        return baseStrings.copy(ui = UiTranslations.forLanguage(language))
+        return baseStrings.copy(ui = UiTranslations.forLanguage(language), localeTag = language.code)
     }
 }

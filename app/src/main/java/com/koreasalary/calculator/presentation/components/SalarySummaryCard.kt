@@ -15,7 +15,6 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
-import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.koreasalary.calculator.data.model.SalaryResult
@@ -50,7 +49,7 @@ fun SalarySummaryCard(
                 fontWeight = FontWeight.Medium
             )
             Spacer(modifier = Modifier.height(4.dp))
-            Text(
+            FittingText(
                 text = "${CurrencyFormatUtil.formatWon(result.netSalary)} ${strings.currencyWon}",
                 fontSize = 32.sp,
                 fontWeight = FontWeight.ExtraBold,
@@ -74,23 +73,21 @@ fun SalarySummaryCard(
                     modifier = Modifier.weight(1f),
                     horizontalAlignment = Alignment.Start
                 ) {
-                    Text(
+                    FittingText(
                         text = strings.grossSalaryLabel,
                         style = MaterialTheme.typography.bodySmall,
                         color = palette.heroSecondaryText.copy(alpha = 0.9f),
                         maxLines = 1,
-                        softWrap = false,
-                        overflow = TextOverflow.Ellipsis
+                        softWrap = false
                     )
                     Spacer(modifier = Modifier.height(3.dp))
-                    Text(
+                    FittingText(
                         text = "${CurrencyFormatUtil.formatWon(result.breakdown.grossSalary)} ${strings.currencyWon}",
                         style = MaterialTheme.typography.titleMedium,
                         fontWeight = FontWeight.Bold,
                         color = palette.onAccent,
                         maxLines = 1,
-                        softWrap = false,
-                        overflow = TextOverflow.Ellipsis
+                        softWrap = false
                     )
                 }
 
@@ -109,23 +106,21 @@ fun SalarySummaryCard(
                         .padding(start = 12.dp),
                     horizontalAlignment = Alignment.Start
                 ) {
-                    Text(
+                    FittingText(
                         text = strings.totalDeductionsLabel,
                         style = MaterialTheme.typography.bodySmall,
                         color = palette.heroSecondaryText.copy(alpha = 0.9f),
                         maxLines = 1,
-                        softWrap = false,
-                        overflow = TextOverflow.Ellipsis
+                        softWrap = false
                     )
                     Spacer(modifier = Modifier.height(3.dp))
-                    Text(
+                    FittingText(
                         text = "-${CurrencyFormatUtil.formatWon(result.deductions.totalDeductions)} ${strings.currencyWon}",
                         style = MaterialTheme.typography.titleMedium,
                         fontWeight = FontWeight.Bold,
                         color = palette.heroDanger,
                         maxLines = 1,
-                        softWrap = false,
-                        overflow = TextOverflow.Ellipsis
+                        softWrap = false
                     )
                 }
             }
@@ -171,8 +166,10 @@ fun SalarySummaryCard(
                 horizontalArrangement = Arrangement.SpaceBetween,
                 verticalAlignment = Alignment.CenterVertically
             ) {
-                Text(
+                FittingText(
                     text = strings.breakdownTitle,
+                    modifier = Modifier.weight(1f),
+                    maxLines = 2,
                     style = MaterialTheme.typography.labelMedium,
                     color = palette.structureText
                 )
@@ -261,25 +258,23 @@ private fun SummaryDetailRow(
             .padding(vertical = 3.dp),
         horizontalArrangement = Arrangement.SpaceBetween
     ) {
-        Text(
+        FittingText(
             text = title,
             style = MaterialTheme.typography.bodySmall,
             color = palette.heroSecondaryText.copy(alpha = 0.9f),
             modifier = Modifier
                 .weight(1f)
                 .padding(end = 8.dp),
-            maxLines = 2,
-            overflow = TextOverflow.Ellipsis
+            maxLines = 2
         )
-        Text(
+        FittingText(
             text = value,
             style = MaterialTheme.typography.bodySmall,
             fontWeight = FontWeight.SemiBold,
             color = palette.onAccent,
             modifier = Modifier.weight(0.65f),
             textAlign = TextAlign.End,
-            maxLines = 2,
-            overflow = TextOverflow.Ellipsis
+            maxLines = 1
         )
     }
 }

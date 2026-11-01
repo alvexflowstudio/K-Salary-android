@@ -19,10 +19,10 @@ val MsStrings = AppStrings(
 
     calcTitle = "Pengiraan Gaji & Kerja Lebih Masa 2026",
     foreignWorkerNotice = "Untuk pekerja asing: mulakan dengan potongan 3.3%; tambah pencen dan insurans hanya jika tercatat pada slip gaji.",
-    minWage2026Notice = "Gaji minimum 2026: 10,320 ₩/jam (termasuk bayaran rehat mingguan)",
+    minWage2026Notice = "Gaji minimum 2026: 10,320 ₩/jam",
     hourlyRateLabel = "Kadar gaji sejam",
     baseHoursLabel = "Jam kerja asas bulanan",
-    baseHoursHelper = "Standard: 209 jam (termasuk 35 jam rehat mingguan berbayar)",
+    baseHoursHelper = "Jam asas hingga 8 sehari dibayar 1.0× mengikut jadual, termasuk Ahad. Pilih kategori kerja secara manual.",
     overtimeHoursLabel = "Jam kerja lebih masa",
     nightHoursLabel = "Jam kerja syif malam 22:00-06:00",
     holidayHoursLabel = "Jam kerja hari kelepasan sehingga 8 jam",
@@ -99,6 +99,6 @@ val MsStrings = AppStrings(
     themeLight = "Mod Cerah",
     themeDark = "Mod Gelap",
     appInfoTitle = "Mengenai Aplikasi",
-    appVersion = "Versi 1.0.0 (Piawaian Buruh Korea 2026)",
+    appVersion = "Versi %s (Piawaian Buruh Korea 2026)",
     legalNotice = "Pengiraan mematuhi undang-undang buruh Korea Selatan dan gaji minimum 2026 sebanyak 10,320 won."
 )

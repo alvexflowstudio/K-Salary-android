@@ -19,10 +19,10 @@ val ViStrings = AppStrings(
 
     calcTitle = "Tính lương & Phụ cấp 2026",
     foreignWorkerNotice = "Dành cho lao động nước ngoài: bắt đầu với khấu trừ 3,3%; chỉ thêm lương hưu và bảo hiểm khi có trên bảng lương.",
-    minWage2026Notice = "Lương tối thiểu 2026: 10,320 ₩/giờ (bao gồm tiền nghỉ hằng tuần)",
+    minWage2026Notice = "Lương tối thiểu 2026: 10,320 ₩/giờ",
     hourlyRateLabel = "Lương theo giờ",
     baseHoursLabel = "Giờ cơ bản hàng tháng",
-    baseHoursHelper = "Tiêu chuẩn: 209 giờ (bao gồm 35 giờ nghỉ tuần có lương)",
+    baseHoursHelper = "Giờ cơ bản tối đa 8 giờ mỗi ngày được trả 1.0× theo lịch làm việc, kể cả Chủ nhật. Chọn loại giờ làm thủ công.",
     overtimeHoursLabel = "Giờ làm thêm",
     nightHoursLabel = "Giờ làm đêm 22:00-06:00",
     holidayHoursLabel = "Giờ ngày lễ tối đa 8 giờ",
@@ -99,6 +99,6 @@ val ViStrings = AppStrings(
     themeLight = "Giao diện sáng",
     themeDark = "Giao diện tối",
     appInfoTitle = "Thông tin ứng dụng",
-    appVersion = "Phiên bản 1.0.0 (Chuẩn Luật Lao động Hàn Quốc 2026)",
+    appVersion = "Phiên bản %s (Chuẩn Luật Lao động Hàn Quốc 2026)",
     legalNotice = "Các phép tính dựa trên Luật Tiêu chuẩn Lao động Hàn Quốc và mức lương tối thiểu năm 2026 là 10,320 won."
 )

@@ -12,12 +12,13 @@ import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.focus.onFocusChanged
+import androidx.compose.ui.focus.FocusDirection
+import androidx.compose.ui.platform.LocalDensity
 import androidx.compose.ui.platform.LocalFocusManager
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.input.ImeAction
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.unit.dp
-import kotlinx.coroutines.launch
 import com.koreasalary.calculator.presentation.theme.LocalAppPalette
 import java.math.BigDecimal
 import java.math.RoundingMode
@@ -56,19 +57,38 @@ fun AppInputField(
     trailingContent: (@Composable () -> Unit)? = null,
     enabled: Boolean = true,
     readOnly: Boolean = false,
-    isError: Boolean = false
+    isError: Boolean = false,
+    imeAction: ImeAction = ImeAction.Done,
+    onFocusChange: (Boolean) -> Unit = {},
+    inputModifier: Modifier = Modifier,
+    compactLabel: Boolean = false
 ) {
     val palette = LocalAppPalette.current
     val focusManager = LocalFocusManager.current
     val bringIntoViewRequester = remember { BringIntoViewRequester() }
-    val scope = rememberCoroutineScope()
     var wasFocused by remember { mutableStateOf(false) }
+
+    val imeBottom = WindowInsets.ime.getBottom(LocalDensity.current)
+    LaunchedEffect(wasFocused, imeBottom) {
+        if (wasFocused) {
+            // Insets change during keyboard animation; wait for the resized viewport.
+            withFrameNanos { }
+            bringIntoViewRequester.bringIntoView()
+        }
+    }
 
     Column(modifier = modifier.fillMaxWidth()) {
         OutlinedTextField(
             value = value,
             onValueChange = onValueChange,
-            label = { Text(label) },
+            label = {
+                Text(
+                    label,
+                    style = if (compactLabel) MaterialTheme.typography.bodySmall else LocalTextStyle.current,
+                    maxLines = if (compactLabel) 1 else Int.MAX_VALUE,
+                    softWrap = !compactLabel
+                )
+            },
             suffix = suffixText?.let { { Text(it, fontWeight = FontWeight.SemiBold) } },
             trailingIcon = trailingContent,
             singleLine = true,
@@ -78,10 +98,13 @@ fun AppInputField(
             isError = isError,
             keyboardOptions = KeyboardOptions(
                 keyboardType = keyboardType,
-                imeAction = ImeAction.Done
+                imeAction = imeAction
             ),
-            keyboardActions = KeyboardActions(onDone = { focusManager.clearFocus() }),
-            modifier = Modifier
+            keyboardActions = KeyboardActions(
+                onDone = { focusManager.clearFocus() },
+                onNext = { focusManager.moveFocus(FocusDirection.Next) }
+            ),
+            modifier = inputModifier
                 .fillMaxWidth()
                 .bringIntoViewRequester(bringIntoViewRequester)
                 .onFocusChanged { focusState ->
@@ -93,9 +116,7 @@ fun AppInputField(
                         }
                     }
                     wasFocused = focusState.isFocused
-                    if (focusState.isFocused) {
-                        scope.launch { bringIntoViewRequester.bringIntoView() }
-                    }
+                    onFocusChange(focusState.isFocused)
                 }
         )
         if (!helperText.isNullOrBlank()) {

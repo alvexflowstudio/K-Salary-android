@@ -1,5 +1,6 @@
 package com.koreasalary.calculator.data.local.entity
 
+import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 
@@ -12,9 +13,11 @@ data class ShiftTemplateEntity(
     val id: Long = 0,
     val title: String,
     val colorHex: String,
+    @ColumnInfo(defaultValue = "1")
+    val workHoursVersion: Int = 2, // 1: legacy special-day conversion; 2: explicit categories
     val regularHours: Double = 0.0, // Базовые часы (макс 8)
     val scheduledBaseHours: Double = 0.0, // Плановая смена для 유급휴일/주휴일
-    val overtimeHours: Double = 0.0, // Сверхурочные (연장근로 1.5x)
+    val overtimeHours: Double = 0.0, // Combined 1.5x work; legacy holidayHours remains separate
     val nightHours: Double = 0.0, // Ночные часы (야간근로 +0.5x)
     val holidayHours: Double = 0.0, // Праздничные до 8ч (휴일근로 1.5x)
     val holidayOvertimeHours: Double = 0.0, // Праздничные свыше 8ч (휴일연장 2.0x)

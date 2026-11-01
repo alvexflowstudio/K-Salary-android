@@ -19,10 +19,10 @@ val EnStrings = AppStrings(
 
     calcTitle = "Salary & Overtime Calculation",
     foreignWorkerNotice = "For foreign workers: start with 3.3% withholding; add pension and insurance only when they appear on your payslip.",
-    minWage2026Notice = "2026 minimum wage: 10,320 ₩/hour (weekly holiday pay included)",
+    minWage2026Notice = "2026 minimum wage: 10,320 ₩/hour",
     hourlyRateLabel = "Hourly rate",
     baseHoursLabel = "Monthly base hours",
-    baseHoursHelper = "Standard: 209h (includes 35h of paid weekly rest)",
+    baseHoursHelper = "Base hours up to 8 per day pay 1.0× on any scheduled workday, including Sunday. Select work categories manually.",
     overtimeHoursLabel = "Overtime hours",
     nightHoursLabel = "Night hours 22:00-06:00",
     holidayHoursLabel = "Holiday hours up to 8h",
@@ -99,6 +99,6 @@ val EnStrings = AppStrings(
     themeLight = "Light Mode",
     themeDark = "Dark Mode",
     appInfoTitle = "About Application",
-    appVersion = "Version 1.0.0 (Korea Labor Standards 2026)",
+    appVersion = "Version %s (Korea Labor Standards 2026)",
     legalNotice = "Calculations use South Korea's Labor Standards Act and the 2026 minimum wage of 10,320 won."
 )
