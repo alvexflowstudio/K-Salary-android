@@ -760,6 +760,100 @@ class DayEditDialogTest {
         }
     }
 
+    // Layout contract for the new action row: Save keeps one whole centered line,
+    // Cancel stays centered, and "Очистить день" may wrap to two centered lines.
+    @Test fun actionRowKeepsSaveOneLineAndCentersLabelsAllLocalesBothThemes() {
+        var language by mutableStateOf(AppLanguage.RU)
+        var dark by mutableStateOf(false)
+        content {
+            key(language, dark) {
+                KoreaSalaryTheme(appTheme = if (dark) AppTheme.DARK else AppTheme.LIGHT) {
+                    DayEditDialog(1, month, DayRecordEntity("2026-11-01", "2026-11"),
+                        LanguageManager.getStringsFor(language), {},
+                        { _, _, _, _, _, _, _, _, _ -> }, {})
+                }
+            }
+        }
+        fun layout(label: String): TextLayoutResult = onMain {
+            val results = mutableListOf<TextLayoutResult>()
+            nodes().single { it.config.getOrNull(SemanticsProperties.Text)?.any { it.text == label } == true }
+                .config[SemanticsActions.GetTextLayoutResult].action!!.invoke(results)
+            results.single()
+        }
+        fun assertCentered(case: String, result: TextLayoutResult, maxLines: Int) {
+            assertTrue("$case exceeded maxLines", result.lineCount <= maxLines)
+            assertFalse("$case overflowed height", result.didOverflowHeight)
+            for (line in 0 until result.lineCount) {
+                val center = (result.getLineLeft(line) + result.getLineRight(line)) / 2f
+                assertEquals("$case line $line not centered", result.size.width / 2f, center, 2f)
+            }
+        }
+        val compact = instrumentation.targetContext.resources.configuration.screenWidthDp <= 320
+        for (mode in listOf(false, true)) for (lang in AppLanguage.entries) {
+            onMain { language = lang; dark = mode }
+            val strings = LanguageManager.getStringsFor(lang)
+            awaitCondition("Action row not rendered: $lang/$mode") {
+                nodes().any { it.config.getOrNull(SemanticsProperties.Text)?.any { it.text == strings.ui.saveAction } == true }
+            }
+            instrumentation.waitForIdleSync(); SystemClock.sleep(100)
+            // Save must show the complete word on exactly one centered line at a readable size.
+            val save = layout(strings.ui.saveAction)
+            assertEquals("Save wrapped in $lang/$mode: ${save.size.width}px", 1, save.lineCount)
+            assertCentered("Save $lang/$mode", save, 1)
+            assertTrue("Save font too small in $lang/$mode", save.layoutInput.style.fontSize.value >= 12f)
+            // Cancel stays centered; Russian never wraps it.
+            assertCentered("Cancel $lang/$mode", layout(strings.ui.cancelAction), 2)
+            // "Очистить день" may use two lines; both stay centered in its action area.
+            assertCentered("Clear $lang/$mode", layout(strings.ui.clearDayAction), 2)
+            // Save gets sufficient width for its whole word, wider than Cancel.
+            val saveWidth = onMain { rect(node("save-day")).width }
+            val cancelWidth = onMain { rect(node("cancel-day")).width }
+            assertTrue("Save too narrow in $lang/$mode: $saveWidth <= $cancelWidth", saveWidth > cancelWidth)
+            if (compact && lang == AppLanguage.RU) {
+                assertEquals("Russian clear label must wrap on 320 dp", 2,
+                    layout(strings.ui.clearDayAction).lineCount)
+            }
+            // Visual evidence: Russian (wrap case) plus the longest clear-label translations.
+            if (lang == AppLanguage.RU || lang in listOf(AppLanguage.ID, AppLanguage.MY)) {
+                scrollTo("save-day")
+                instrumentation.waitForIdleSync(); SystemClock.sleep(300)
+                if (lang == AppLanguage.RU) {
+                    screenshot(if (mode) "day-actions-3-ru-dark" else "day-actions-3-ru-light")
+                } else {
+                    screenshot("day-actions-3-${lang.name}-${if (mode) "dark" else "light"}")
+                }
+            }
+        }
+    }
+
+    @Test fun twoActionRowStaysBalancedWithOneLineSave() {
+        content {
+            KoreaSalaryTheme(appTheme = AppTheme.LIGHT) {
+                DayEditDialog(1, month, null, strings, {}, { _, _, _, _, _, _, _, _, _ -> }, {})
+            }
+        }
+        instrumentation.waitForIdleSync()
+        assertTrue("Clear action must stay hidden for empty days", onMain { absent("clear-day") })
+        val saveWidth = onMain { rect(node("save-day")).width }
+        val cancelWidth = onMain { rect(node("cancel-day")).width }
+        assertEquals("Two actions must stay balanced: $saveWidth vs $cancelWidth", saveWidth, cancelWidth)
+        fun centered(label: String) = onMain {
+            val results = mutableListOf<TextLayoutResult>()
+            nodes().single { it.config.getOrNull(SemanticsProperties.Text)?.any { it.text == label } == true }
+                .config[SemanticsActions.GetTextLayoutResult].action!!.invoke(results)
+            results.single().let { layout ->
+                assertEquals("$label wrapped: ${layout.size.width}px", 1, layout.lineCount)
+                val center = (layout.getLineLeft(0) + layout.getLineRight(0)) / 2f
+                assertEquals("$label not centered", layout.size.width / 2f, center, 2f)
+            }
+        }
+        centered(strings.ui.saveAction)
+        centered(strings.ui.cancelAction)
+        scrollTo("save-day")
+        instrumentation.waitForIdleSync(); SystemClock.sleep(300)
+        screenshot("day-actions-2-ru-light")
+    }
+
     @Test fun existingDayFooterValidationWarningAndInstalledVersionAllLocalesBothThemes() {
         var language by mutableStateOf(AppLanguage.RU)
         var dark by mutableStateOf(false)

@@ -12,6 +12,7 @@ import com.koreasalary.calculator.domain.i18n.formatDayHeading
 import java.time.YearMonth
 import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.ui.platform.testTag
+import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.input.KeyboardType
 import com.koreasalary.calculator.data.model.WorkHours
 import java.time.DayOfWeek
@@ -46,23 +47,33 @@ fun DayEditDialog(
         }
         AppInputField(value = note, onValueChange = { note = it }, label = strings.ui.noteLabel,
             keyboardType = KeyboardType.Text, inputModifier = Modifier.testTag("day-note"))
+        // Save never wraps: it always gets enough room for one whole word, even at
+        // 320 dp with the keyboard open. "Очистить день" may use two lines, and both
+        // of its lines stay centered inside its action area.
+        val hasClear = existingRecord != null
         Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.spacedBy(4.dp),
             verticalAlignment = Alignment.CenterVertically) {
-            if (existingRecord != null) {
-                TextButton(onClear, Modifier.weight(1f).testTag("clear-day"), contentPadding = PaddingValues(4.dp)) {
-                    FittingText(strings.ui.clearDayAction, maxLines = 2)
+            if (hasClear) {
+                TextButton(onClear, Modifier.weight(1.1f).testTag("clear-day"),
+                    contentPadding = PaddingValues(4.dp)) {
+                    FittingText(strings.ui.clearDayAction, modifier = Modifier.fillMaxWidth(),
+                        maxLines = 2, textAlign = TextAlign.Center)
                 }
             }
-            TextButton(onDismiss, Modifier.weight(1f).testTag("cancel-day"), contentPadding = PaddingValues(4.dp)) {
-                FittingText(strings.ui.cancelAction, maxLines = 2)
+            TextButton(onDismiss, Modifier.weight(if (hasClear) 0.9f else 1f).testTag("cancel-day"),
+                contentPadding = PaddingValues(4.dp)) {
+                FittingText(strings.ui.cancelAction, modifier = Modifier.fillMaxWidth(),
+                    maxLines = 2, textAlign = TextAlign.Center)
             }
             Button(onClick = {
                 val value = hours.hours()
                 onSave(value.regular, value.overtime, value.night, value.holiday, value.holidayOvertime,
                     isPaidHoliday, isSundayPay, note, existingRecord?.scheduledBaseHours ?: value.regular)
-            }, enabled = hours.valid, modifier = Modifier.weight(1f).testTag("save-day"),
+            }, enabled = hours.valid,
+                modifier = Modifier.weight(if (hasClear) 1.2f else 1f).testTag("save-day"),
                 contentPadding = PaddingValues(4.dp)) {
-                FittingText(strings.ui.saveAction, maxLines = 2)
+                FittingText(strings.ui.saveAction, modifier = Modifier.fillMaxWidth(),
+                    maxLines = 1, textAlign = TextAlign.Center)
             }
         }
     }
