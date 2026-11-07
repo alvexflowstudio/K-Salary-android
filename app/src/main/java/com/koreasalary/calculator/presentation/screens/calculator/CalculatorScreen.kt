@@ -17,6 +17,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.testTag
 import com.koreasalary.calculator.data.model.WorkHours
 import androidx.compose.ui.draw.clip
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.LineBreak
 import androidx.compose.ui.text.style.TextAlign
@@ -31,6 +32,7 @@ import com.koreasalary.calculator.data.model.SalaryResult
 import com.koreasalary.calculator.domain.i18n.AppStrings
 import com.koreasalary.calculator.domain.i18n.formatMonthHeading
 import com.koreasalary.calculator.presentation.components.*
+import com.koreasalary.calculator.presentation.theme.AppPalette
 import com.koreasalary.calculator.presentation.theme.LocalAppPalette
 import com.koreasalary.calculator.presentation.theme.LightAppPalette
 import com.koreasalary.calculator.presentation.viewmodel.SalaryViewModel
@@ -395,13 +397,8 @@ internal fun CalendarCell(
     )
 
     val badgeLabel = calendarBadgeLabel(dayRecord, strings)
-    val badgeColor = when {
-        dayRecord?.isPaidHoliday == true || dayRecord?.isSundayPay == true -> palette.success
-        (dayRecord?.holidayHours ?: 0.0) > 0 || (dayRecord?.holidayOvertimeHours ?: 0.0) > 0 -> palette.danger
-        (dayRecord?.nightHours ?: 0.0) > 0 -> palette.purple
-        (dayRecord?.overtimeHours ?: 0.0) > 0 -> palette.warning
-        else -> palette.success
-    }
+    // Work-category colors take precedence over paid-day flags, base hours and night premiums.
+    val badgeColor = calendarBadgeColor(dayOfWeek, dayRecord, palette)
 
     val badgeTextColor = if (calendarWorkedHours(dayRecord) == 0.0 &&
         (dayRecord?.isPaidHoliday == true || dayRecord?.isSundayPay == true)
@@ -494,6 +491,38 @@ internal fun calendarWorkedHours(record: DayRecordEntity?): Double {
     val hours = record?.let(WorkHours::from) ?: return 0.0
     return hours.regular + hours.overtime + hours.holiday + hours.holidayOvertime
 }
+
+/** Work-category styling of the worked-hours badge, independent of paid-day flag colors. */
+internal enum class CalendarWorkKind { Premium, Night, Overtime, Base }
+
+/**
+ * Priority: actual premium work (red) over night premiums (purple) over ordinary
+ * 1.5× overtime (orange) over base work (green), regardless of paid-day flags. Days
+ * without physical work keep the existing paid-holiday/weekly-rest status colors.
+ */
+internal fun calendarWorkKind(dayOfWeek: DayOfWeek, record: DayRecordEntity?): CalendarWorkKind? {
+    if (record == null) return null
+    val hours = WorkHours.from(record) // Decodes legacy holiday work into the holiday category.
+    val premiumDay = dayOfWeek == DayOfWeek.SATURDAY || dayOfWeek == DayOfWeek.SUNDAY ||
+        record.isPaidHoliday || record.isSundayPay
+    return when {
+        hours.holiday > 0.0 || hours.holidayOvertime > 0.0 -> CalendarWorkKind.Premium
+        hours.overtime > 0.0 && premiumDay -> CalendarWorkKind.Premium
+        hours.night > 0.0 -> CalendarWorkKind.Night
+        hours.overtime > 0.0 -> CalendarWorkKind.Overtime
+        hours.regular > 0.0 -> CalendarWorkKind.Base
+        else -> null // No physical work: flags alone keep the status styling.
+    }
+}
+
+internal fun calendarBadgeColor(dayOfWeek: DayOfWeek, record: DayRecordEntity?, palette: AppPalette): Color =
+    when (calendarWorkKind(dayOfWeek, record)) {
+        CalendarWorkKind.Premium -> palette.danger
+        CalendarWorkKind.Night -> palette.purple
+        CalendarWorkKind.Overtime -> palette.warning
+        CalendarWorkKind.Base -> palette.success
+        null -> palette.success
+    }
 
 internal fun calendarBadgeLabel(dayRecord: DayRecordEntity?, strings: AppStrings): String {
     val worked = calendarWorkedHours(dayRecord)
