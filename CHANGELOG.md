@@ -13,7 +13,7 @@ The project follows Semantic Versioning where practical.
 - Calendar worked-hours badges now follow the saved work categories (premium 1.5×/2.0×, night, ordinary overtime, base work) instead of paid-holiday/weekly-rest flags, so premium weekend and holiday work is no longer colored green. Status styling for non-working paid days is unchanged.
 
 ### Release scope
-- **1.0.6 / versionCode 7**, source and documentation release; the tested APK is debug-signed and not published as a production build.
+- **1.0.6 / versionCode 7**, attaches the production-signed release APK (`app-release.apk`, user key `AlvexFlow Studio`) with its SHA-256 identity; debug builds remain local.
 - No pay-rate rules, input validation or storage schema changes.
 
 
