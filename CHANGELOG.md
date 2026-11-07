@@ -6,6 +6,17 @@ The project follows Semantic Versioning where practical.
 
 ## [Unreleased]
 
+## [1.0.6] - 2026-11-07
+
+### Fixed
+- Day-edit dialog action row: "Сохранить" keeps one complete centered line at any width, "Очистить день" wraps into two centered lines, balanced two-action/three-action layouts.
+- Calendar worked-hours badges now follow the saved work categories (premium 1.5×/2.0×, night, ordinary overtime, base work) instead of paid-holiday/weekly-rest flags, so premium weekend and holiday work is no longer colored green. Status styling for non-working paid days is unchanged.
+
+### Release scope
+- **1.0.6 / versionCode 7**, source and documentation release; the tested APK is debug-signed and not published as a production build.
+- No pay-rate rules, input validation or storage schema changes.
+
+
 ## [1.0.5] - 2026-11-01
 
 ### Added
