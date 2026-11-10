@@ -104,12 +104,13 @@ The application does not replace professional legal, tax or accounting advice.
 
 K-Salary is currently under active development.
 
-Version: **1.0.5** (versionCode **6**).
+Version: **1.0.6** (versionCode **7**).
 
-The v1.0.5 milestone release contains source code and verification documentation.
-The Samsung-tested build uses Android Debug signing; no production-signed APK is
-attached. See [release notes](docs/releases/v1.0.5.md) for changes, compatibility
-and verification limits.
+The [v1.0.6 GitHub release](https://github.com/alvexflowstudio/K-Salary-android/releases/tag/v1.0.6)
+includes the production-signed `app-release.apk`, signed by AlvexFlow Studio.
+The locally tested debug build is retained locally and is not published.
+See [release documentation](docs/releases/v1.0.6.md) for changes, APK hashes,
+signing identity and verification details.
 
 ## License
 
